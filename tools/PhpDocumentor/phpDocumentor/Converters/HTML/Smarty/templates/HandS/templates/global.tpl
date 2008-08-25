@@ -15,7 +15,7 @@
 	{include file="docblock.tpl" sdesc=$globals[glob].sdesc desc=$globals[glob].desc}
   {/if}
 
-  <b>Default value:</b>&nbsp;&nbsp;<span class="var-default">{$globals[glob].global_value|replace:" ":"&nbsp;"|replace:"\n":"<br />\n"|replace:"\t":"&nbsp;&nbsp;&nbsp;"}</span>
+  <b>Default value:</b>&nbsp;&nbsp;<span class="var-default">{$globals[glob].global_value|replace:" ":"&nbsp;"|replace:"<a&nbsp;":"<a "|replace:"\n":"<br />\n"|replace:"\t":"&nbsp;&nbsp;&nbsp;"}</span>
 <br />
 	{include file="tags.tpl" api_tags=$globals[glob].api_tags info_tags=$globals[glob].info_tags}
 

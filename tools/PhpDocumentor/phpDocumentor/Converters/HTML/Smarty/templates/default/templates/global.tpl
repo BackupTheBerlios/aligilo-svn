@@ -9,7 +9,7 @@ global variable <a href="{$globals[glob].id}">{$globals[glob].global_name}</a> =
 	<p class="linenumber">[line {if $globals[glob].slink}{$globals[glob].slink}{else}{$globals[glob].line_number}{/if}]</p>
 	{include file="docblock.tpl" sdesc=$globals[glob].sdesc desc=$globals[glob].desc tags=$globals[glob].tags}
 
-	<p><b>Default Value:</b>{$globals[glob].global_value|replace:"\n":"<br>\n"|replace:" ":"&nbsp;"|replace:"\t":"&nbsp;&nbsp;&nbsp;"}</p>
+	<p><b>Default Value:</b>{$globals[glob].global_value|replace:"\n":"<br>\n"|replace:" ":"&nbsp;"|replace:"<a&nbsp;href":"<a href"|replace:"\t":"&nbsp;&nbsp;&nbsp;"}</p>
 	{if $globals[glob].global_conflicts.conflict_type}
 	<p><b>Conflicts with globals:</b> 
 	{section name=me loop=$globals[glob].global_conflicts.conflicts}

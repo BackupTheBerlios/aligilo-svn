@@ -1,6 +1,7 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
 <head>
+	<meta http-equiv="Content-Type" value="text/html; charset=utf-8">
 	<title>{$title}</title>
 	<link rel="stylesheet" type="text/css" id="layout" href="{$subdir}media/layout.css" media="screen">
 	<link rel="stylesheet" type="text/css" href="{$subdir}media/style.css" media="all">

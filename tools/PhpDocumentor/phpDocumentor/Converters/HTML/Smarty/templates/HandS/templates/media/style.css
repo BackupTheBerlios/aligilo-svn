@@ -9,7 +9,8 @@ div.header-top-right-subpackage{ background-color: #fdfcf2; color: #636331; font
 div.package{ padding-left: 5px; }
 div.warning{ background-color: transparent; color: #ff0000; }
 hr{ border-color: #ccc9a4; border-style: solid; height: 1px; margin-bottom: 10px; margin-top: 10px; }
-li { list-style-type: square; }
+li { list-style-type: square;
+ margin-left: 1em; }
 td{ font-size: 10pt; vertical-align: top; }
 td.class-overview{ padding: 2px; padding-left: 1em; }
 td.code{ background-color: #ccc9a4; color: #000000; padding-left: 3em; padding-right: 1em; text-indent: -2em; }
@@ -132,4 +133,35 @@ ul{ margin-left: 0px; padding-left: 8px; vertical-align: top; }
 .cmd-synopsis { margin: 1em 0em }
 .cmd-title { font-weight: bold }
 .toc { margin-left: 2em; padding-left: 0em }
+
+/* div#enhavtabelo {float:right; margin:1em; background: inherit;} */
+
+
+div#enhavtabelo > ul > li > ul li,
+div#enhavtabelo > ul > li > ul ul {
+   display: inline;
+}
+
+
+#enhavtabelo .toc-l2,
+#enhavtabelo .toc-l3,
+#enhavtabelo .toc-l2 ul {
+   display:inline;
+}
+
+#enhavtabelo .toc-l2:not(:first-child)::before,
+#enhavtabelo .toc-l3:not(:first-child)::before {
+   content: " - ";
+}
+
+#enhavtabelo .toc-l2 ul::before {
+   content: " ( ";
+/*   color: red; */
+}
+
+#enhavtabelo .toc-l2 ul::after {
+   content: " ) ";
+/*   color: green; */
+}
+
 

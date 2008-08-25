@@ -633,8 +633,10 @@ class phpDocumentor_setup
                         {
                             $filelist[] = $file;
                         } else {
-                            phpDocumentor_out("File $file Ignored\n");
-                            flush();
+////   sxangxo de Paul Ebermann (por malaperigi la longegan liston de "ignored".)
+//
+//                            phpDocumentor_out("File $file Ignored\n");
+//                            flush();
                         }
                     }
                 }
@@ -712,11 +714,14 @@ class phpDocumentor_setup
                         if ($fp)
                         {
                             $ret = fread($fp,filesize($tutorial['path']));
-                            // fix 1151650
-                            if (stristr($ret, "utf-8") !== "")
-                            {
-                                $ret = utf8_decode($ret);
-                            }
+//   "Unfix" by Paul Ebermann - see my comment (epaul) at
+//      http://sourceforge.net/tracker/index.php?func=detail&aid=1151650&group_id=11194&atid=111194
+//
+//                            // fix 1151650
+//                            if (stristr($ret, "utf-8") !== "")
+//                            {
+//                                $ret = utf8_decode($ret);
+//                            }
                             fclose($fp);
                             unset($fp);
                             phpDocumentor_out('Parsing '.$ptext.$tutorial['path'].'...');
