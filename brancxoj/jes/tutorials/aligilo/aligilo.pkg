@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding="utf-8" ?>
+<!DOCTYPE refentry PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+               "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+  <refentry id="{@id}">
+  <info>
+    <author><personname>Paul Ebermann</personname></author>
+    <copyright><year>2007</year><year>2008</year></copyright>
+    <releaseinfo>$Id$</releaseinfo>
+  </info>
+ <refnamediv>
+  <refname>Aligilo - superrigardo</refname>
+  <refpurpose>bla</refpurpose>
+ </refnamediv>
+ {@toc}
+ <refsect1 id="{@id intro}">
+  <title>Enkonduko</title>
+  <para>
+   La Renkontiĝo-Administrilo estas programo por administri la partoprenantojn de Esperanto-renkontiĝoj.</para>
+<para>La programo nuntempe estas uzata de GEJ por la {@link http://is.esperanto.de/ Internaciaj Seminarioj}, sed ni planas ebligi la uzadon ankaŭ por aliaj asocioj kaj renkontiĝoj. La sekva plano estas uzi ĝin por Internacia Junulara Kongreso 2009 (en Liberec).</para>
+
+</refsect1>
+
+
+</refentry>
+<!--
+Local Variables: 
+mode: xml
+End:
+-->

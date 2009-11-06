@@ -1,0 +1,11 @@
+@import "stilo.css";
+
+body {
+  background-color: silver;
+  }
+
+@media "print" {
+	body {
+		background-color: white !IMPORTANT;
+	}
+}

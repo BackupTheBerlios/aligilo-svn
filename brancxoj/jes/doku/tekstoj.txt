@@ -1,0 +1,195 @@
+# En la datumbazo estas tabelo 'tekstoj', kiu povas enhavi iujn
+# ajn tekstajn datumojn, kiuj estas po-renkontig^aj.
+#
+# S^losilo en tiu estas kombino de renkontig^o-ID kaj
+# aparta teksto-ID. Do oni por c^iu renkontig^o povas
+# havi novan eldonon de c^iu teksto.
+# Ili estas uzataj de la programo per donu_tekston() (en
+# iloj_tekstoj).
+#
+# Tiu dosiero enhavu liston de la teksto-Identifikiloj uzataj
+# de la programo. Iam g^i estu uzata por krei enprograman
+# dokumentadon (en la teksto-redaktilo tekstoj.php).
+#
+# Pri la dosierformato:
+# * Linioj komencig^antaj per # estas komentoj.
+# * Linioj komencig^antaj per = enkondukas nomon de kategorio.
+#   Tiu estos uzata nur por la ordigo (eble estonte en la redaktilo),
+#   ne havas iun enprograman signifon.
+# * Linioj komencig^antaj per | estos uzataj por dokumenti la uzon de
+#   la teksto (por la redaktilo) - uzu tie la ^c-kodigon por
+#   supersignoj. Ili c^iam rilatas al la antau^e menciita
+#   identigilo.
+# * malplenaj linioj ankau^ estas komentoj.
+# * aliaj linioj komencig^u per litero.
+#    Ili indikas la unuopajn identigilojn.
+#    Post la nomo povas aperi opcioj en [], disigita per
+#    komoj. G^is nun la sola opcio estas 'lingvo', kio
+#    signifas, ke per aldono de '_de' al la nomo eblas
+#    formi germanlingvan varianton (kaj eble estonte simile
+#    ankau^ alilingvajn).
+# * Ceteraj linikomencantaj signoj estas rezervitaj por estonta uzo.
+#
+#
+=  G^eneralaj tradukaj^oj  =
+#
+gxen-tuttempe  [lingvo]
+| "tuttempe"
+gxen-parttempe  [lingvo]
+| "parttempe"
+
+mangxmaniero-J  [lingvo]
+| "vegetarano"
+mangxmaniero-N  [lingvo]
+| "viandmang^ango"
+mangxmaniero-A  [lingvo]
+| "vegano"
+mangxmaniero-?  [lingvo]
+| "nekonata mang^anto"
+
+domotipo-M  [lingvo]
+| "log^os en la amaslog^ejo kaj mang^os memzorge"
+domotipo-J  [lingvo]
+| "log^os kaj mang^os en la junulargastejo"
+
+#
+=  Unua konfirmilo  =
+# -----------------
+# 
+konf1-invitilo   [lingvo]
+| estas uzata en la unua informilo por tiuj homoj, kiuj petis
+| invitleteron. C^e IS g^i estas speciala informo de la
+| invitletero-respondeculo.
+# uzata en iloj_mesagxoj.php (malnova) kaj iloj_konfirmilo.php (nova).
+
+konf1-dissendolisto   [lingvo]
+| Atentigo pri la dissendolisto pri la renkontig^o.
+# uzata en iloj_konfirmilo.php
+
+konf1-havas-asekuron   [lingvo]
+| "Vi havas asekuron ..." (por la unua informilo)
+# uzata en iloj_konfirmilo.php
+
+konf1-ne-havas-asekuron  [lingvo]
+| "Vi ne havas asekuron ..." (por la unua informilo)
+
+konf1-invitpeto-titolo  [lingvo]
+| "Detaloj por la Invitilo" (titolo de la superrigardo pri invitilo-detaloj)
+
+konf1-subskribo   [lingvo]
+| subskribo de unua konfirmilo
+
+konf1-germane-sube
+| indiko, ke la germana versio de la unua konfirmilo sekvos. (Tiu teksto estas
+| ankau^ uzata en la retmesag^teksto de la dua konfirmilo.)
+
+konf1-jen-germana-teksto
+| indiko, ke nun venos la germana varianto de la unua
+| konfirmilo. (eble g^i estu dulingva)  (Tiu teksto estas
+| ankau^ uzata en la retmesag^teksto de la dua konfirmilo.)
+
+#
+#  
+=  Dua konfirmilo  =
+# ----------------
+# (uzataj en kreu_konfirmilon.php)
+#
+konf2-sendanto-adreso
+| adreso de la sendanto, por printi malgrande super la
+| adreso de la ricevanto. Estu nur unu linio.
+konf2-enkonduko   [lingvo]
+| Enkondukaj frazoj en la dua informilo.
+konf2-elkonduko   [lingvo]
+| Nu, la malenkonduko. La lasta frazo antau^ la subskribo.
+konf2-parttempa   [lingvo]
+| Tio estos enmetita, se la ulo nur partoprenas parttempe. 
+| (Ekzemple atentigo, ke ni ne povas garantii liton.)
+konf2-kunportu-reston  [lingvo]
+| Atentigo, ke oni kunportu la restantan monon (en E^)
+| al la renkontig^o kontante. Vi povos uzi {{sumo}} por la
+| pagenda sumo.
+konf2-mankas-antauxpago   [lingvo]
+| Tiu estos enmetita, se la ulo g^is nun ne antau^pagis
+| sufic^e. Se enestas <code>{{sumo}}</code>, g^i estos
+| anstatau^ita per la bezonata sumo.
+konf2-mankas-cxambro   [lingvo]
+| Tiu tekstero aperos, se iu elektis junulargastejon, sed
+| g^is la tempo de la konfirmilo-kreado oni ne rezervis
+| c^ambron por li.
+konf2-cxio-enordas   [lingvo]
+| Estos enmetita, se la antau^pagoj (se necese) alvenis kaj la ulo
+| havas c^ambron (se junulargastejulo). Se vi enmetas {{en_domo}},
+| g^i estos anstatau^igita per "en la memzorgantejo" au^
+| "en la junulargastejo".
+
+konf2-gravaj-informoj   [lingvo]
+| Enhavo de sekcio "Gravaj informoj", aperos por c^iuj. Povus enhavi
+| ekzemple la adreson de la ejo.
+
+konf2-junulo   [lingvo]
+| aperos por homoj sub 18 jaroj (ekzemple atentigo pri neceso
+|  de gepatra permesilo)
+
+konf2-21a-horo   [lingvo]
+| aperos por c^iuj junulargastejuloj (c^e gravaj informoj).
+| (Ekzemple indiko, ke ni kutime nur rezervas liton g^is
+|  la 21a horo)
+
+konf2-memzorganto   [lingvo]
+| Estos enmetota, se la partoprenanto estos memzorganto.
+
+konf2-membreco-averto   [lingvo]
+| aperos, se la homo log^as en Germanio (au^ la lando, kiu estas
+|  konfigurita por tio). (Ekzemple averto pri deviga membreco.)
+
+konf2_tejo_estos_membro   [lingvo]
+| aperos, se la ulo estos (lau^ niaj kontroloj) TEJO-membro
+| por la membreco-jaro.
+
+konf2_tejo_ne_jam   [lingvo]
+| aperos, se la ulo indikis esti TEJO-membro, sed ne jam pagis.
+
+# 
+= Dua-konfirmilo-retposxto =
+# ------------------------
+# (Uzataj en diversaj_retmesagxoj.php, por krei la
+#  retmesagxon por la dua informilo+konfirmilo.
+#
+
+konf2_dua-informilo-teksto
+| teksto de la dua informilo (au^ io simila), por aldoni al la
+| dua-konfirmilo-mesagxo.
+
+#
+= Adresaro-retposxto =
+# ------------------
+# (Uzataj en sendu_adresaron_gxenerale.php respektive la koresponda
+#  s^ablono adresaro_retposxto.txt)
+
+adr-msgx-enkonduko
+| enkonduka frazo kiel "ni tre g^uis la renkontig^on".
+
+adr-msgx-enhavtabelo-resto
+| resto de la enhavtabelo, post la unua punkto
+|  "* adresaro".
+
+adr-msgx-datumprotekto
+| mencio, kial ni havas la datumprotektajn kondic^ojn.
+
+adr-msgx-trovitajxoj
+| Kion ni faris kun la trovitaj^oj, kaj kion vi povas fari
+| por rericevi ion de tio.
+
+adr-msgx-fotoj
+| sekcio pri tio, ke fotoj troveblas en nia retpag^o.
+
+adr-msgx-etaj-anoncoj
+| La lasta sekcio, uzebla por etaj anoncoj de partoprenintoj al siaj
+| kun-partoprenintoj.
+
+adr-msgx-sekva-renk
+| La unuaj informoj pri la sekva renkontig^o, kiujn ni jam havas.
+
+adr-msgx-finsaluto
+| La fina salutvorto ("nome de la teamo salutas bla bla.").
+

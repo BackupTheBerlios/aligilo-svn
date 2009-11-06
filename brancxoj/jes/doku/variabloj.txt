@@ -1,0 +1,99 @@
+Jen listo de globalaj variabloj en la programo.
+
+Se vi volas krei novan tian variablon, bonvolu unue kontroli,
+ĉu jam iu simila estas anstataŭe uzenda. Se ne, bonvolu
+atenti ne uzi la saman nomon de io alia.
+
+Globalaj variabloj:
+------------------
+
+parto
+prafix
+enkodo
+
+PASXO_NOMOJ
+   Listo de la nomoj de la paŝoj dum la akceptada proceduro.
+pasxolisto_detala
+   detala listo de la pasxoj, kreita de
+        kalkulu_necesajn_kaj_eblajn_pasxojn()
+   kaj poste uzita de aliaj funkcioj en iloj/iloj_akceptado.php
+
+
+tabelnomtradukilo
+tabelnomprefikso
+tabelnompostfikso
+   Eble uzataj por traduki la abstraktajn tabelnomojn al
+   konkretaj tabelnomoj. (Difinenda en konfiguro/opcioj.php)
+
+renkontigxo
+   Uzata kelkfoje, kiam $_SESSION['renkontigxo'] ne ekzistas.
+
+tekstpriskriboj
+   stokejo, por ke donu_tekstopriskribon() ne c^iam devu denove
+   legi la dosieron.
+
+kondicxolisto
+   array el nomoj de kondicxo-funkcioj (sen la prefikso "kondicxo_")
+   por krompagoj aux kromkostoj.
+   (El konfiguro/kondicxoj.php)
+
+
+Sesio-variabloj:
+---------------
+
+Ĝenerale:
+- - - - - 
+
+kodnomo
+   la entajpantonomo (salutnomo) de la aktuala uzanto. Kreita de index.php,
+   nuligita de fino.php.
+kodvorto
+   la pasvorto (donita dum la ensalutado)
+
+  kodnomo kaj kodvorto estas uzataj de funkcioj, kiuj kontrolas,
+  ĉu iu havas rajton por io.
+
+enkodo
+   aŭ 'unikodo' aŭ 'x-metodo'. (Teorie ankaŭ povus esti
+   'utf-8' aŭ 'ne-kodigu'). (Uzata por la uzantinterfaco.)
+
+kkren
+   array('entajpanto' => ...,       // (ID)
+         'entajpantonomo => ...,    // (salutnomo),
+         'partoprenanto_id' => ..., // (ID de la koresponda ero
+                                    // en la partoprenantoj-tabelo)
+         )
+
+renkontigxo
+   la renkontiĝo-objekto, kiu estis elektita dum la ensalutado.
+   Tio estas la "aktuala renkontiĝo".
+
+partoprenanto
+   la "aktuala" partoprenanto-objekto (aŭ la lastfoje elektita)
+partopreno
+   la "aktuala" partopreno de la aktuala partoprenanto. (Ne devas
+   esti de la aktuala renkontiĝo, sed tiam la eblecoj estas iom
+   limigita.)
+
+Nur en kelkaj dosieroj:
+- - - - - - - - - - - -
+
+memligo
+   uzata por transdoni detalojn de serĉoj de iloj/iloj_sercxo_rezulto.php
+   al sercxrezultoj.php (por ŝanĝi ordigon).
+
+sekvontapagxo
+   donas la celon de plusendoj de aligxatkontrolo.php (post partoprenanto.php)
+   kaj partoprenkontrolo.php (post partopreno.php). Utila, se oni vokas tiujn
+   redaktilojn el aliaj paĝoj ol partrezultoj.php kaj volas tien reen.
+
+ago
+   uzata por indiki al aligxatkontrolo.php, ĉu oni kreu novan aliĝon aŭ
+   ŝanĝu ekzistantan.
+
+pago
+   uzata en antauxpago.php  (TODO: ĉu necesas?)
+notiz
+   multe uzata en notoj.php
+rabato
+   uzata en rabato.php (TODO: ĉu necesas?)

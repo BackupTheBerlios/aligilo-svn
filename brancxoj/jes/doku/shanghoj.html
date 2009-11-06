@@ -1,0 +1,4274 @@
+<?xml version="1.0" encoding='utf-8'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang='eo' lang='eo'>
+<head>
+<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+<title>Aligilo: Listo de ŝanĝoj</title>
+<style type='text/css'>
+    body{ max-width:50em;
+        font-family: sans-serif; }
+    h2 { font-size: 130%; }
+    h3 { font-size: 122%; }
+    dt { /* font-family: monospace; */
+        font-size:115%;
+        margin-top: 1ex;}
+</style>
+</head>
+<body>
+
+<h1>Ŝanĝoj de la programo</h1>
+
+<p>
+Jen listo de ŝanĝoj inter la unuopaj SVN-versioj.
+Puraj  ŝanĝoj de komentoj aŭ similaj etaĵoj ne estas listigitaj.
+Ĉi tie aperas nur ŝanĝoj de la ĉefa programo (/programo/ en SVN)
+kaj de la IS-specifaj variantoj, ne ŝanĝoj de la retpaĝo. Pro tio
+estas kelkaj truoj inter la SVN-revizo-numeroj.
+</p>
+
+
+
+
+<h2> Aktuala revizo ($Revision$) </h2>
+
+ <!-- cx gx jx hx sx ux  ... ĉ ĝ ĵ ĥ ŝ ŭ -->
+
+<!-- sxablono:
+
+<p></p>
+<dl>
+<dt>
+</dl>
+
+<h2>Revizo ...</h2>
+-->
+
+<p>ŝanĝoj dum IJK</p>
+<dl>
+<dt>administrado.php</dt>
+<dd>+ Printado de specifa elekto de akceptofolioj, IJK-nomŝildoj 
+  ankaŭ por la specialaj.</dd>
+</dt>akceptado-pago.php</dt>
+<dd>Korekto de cimo pri repagoj/donacoj dum la akceptado,</dd>
+<dt>sercxrezultoj.php</dt>
+<dd>adapto de la ne-nula-saldo-serĉo al la novaj cirkonstancoj (valutoj, "ni fajfas", kiel tabelo).</dd>
+</dt>akceptado-fino.php</dt>
+<dd>korekto de cimo, kiu malebligis aŭtomatan disdonon de rezervita
+  ĉambro.</dd>
+<dt>akceptado-datoj.php</dt>
+<dd>studendeco estas eco de partopreno, ne partoprenanto.</dd>
+<dt>stilo.css</dt>
+<dd>Mia bela "position:fixed"-aspekto por la akceptado-proceduro
+  bedaŭrinde funkciis nur en Opera: en Firefox ĝi fiksis la keston ne supre,
+  sed meze de la paĝo. Do, reŝanĝo al la origina versio. Ankaŭ aldono
+  por la saldo-listo.</dd>
+<dt>stilo_hejme.css</dt>
+<dd>en printa versio ni uzu blankan fonon, por ne foruzi tro da inko.</dd>
+<dt>cxambrostatistiko.php</dt>
+<dd>Aldonaj tabellinioj kun antaŭpagintoj</dd>
+<dt>iloj/iloj_kotizo.php, iloj/iloj_kondicxoj.php</dt>
+<dd>kelkaj echo => debug_echo.</dd>
+<dt>iloj/iloj_cxambroj.php</dt>
+<dd>ĉambroredaktilo nun ebligas ŝalti ĉambron al unulita anstataŭ dulita.
+  TODO: Ankoraŭ repripensenda (aŭ ĝeneraligenda).</dd>
+<dt>iloj/kreu_akceptofolion.php</dt>
+<dd>Lastaj adaptoj de la aspekto (pagendaĵo)</dd>
+<dt>iloj/kreu_nomŝildojn.php</dt>
+<dt>Sur dua (spegula) flanko sen kadro, krome adaptoj de x-koordinatoj
+  por la printilo de IJK.
+</dl>
+
+<h2>Revizo 355</h2>
+
+<p> ... (dokumentado venos poste) </p>
+
+<h2>Revizo 344</h2>
+
+<p>cimo #15815 - la serĉo-parto.</p>
+<dl>
+<dt>gxenerala_sercxo.php</dt>
+<dd>uzo de la renkontiĝo-konfiguroj por domotipo, valutoj kaj tipoj de pagoj, krompagoj, rabatoj.</dd>
+<dt>partsercxo.php, sercxrezulto.php</dt>
+<dd>serĉoj pri domotipoj nun laŭ la konfiguroj. Ankoraŭ ne bela, sed funkcias.</dd>
+<dt>iloj/iloj_sercxo_html.php</dt>
+<dd>nova funkcio <code>el_konfigura_sercxelektolinio</code>.</dd>
+<dt>iloj/objekto_konfiguro.php</dt>
+<dd>nova dosiero kun la klaso Renkontigxaj_konfiguro, kaj rilataj
+  funkcioj.</dd>
+<dt>iloj/objektoj_diversaj</dt>
+<dd>klaso Renkontigxaj_konfiguroj ŝovita al aparta dosiero.</dd>
+</dl>
+
+<h2>Revizo 343</h2>
+
+<p>adreso estis ĉe partopreno anstataŭ partoprenanto.</p>
+<dl>
+<dt>gxenerala_sercxo.php</dt>
+<dd>aldono de "ant" en la taŭga loko.</dd>
+</dl>
+
+<h2>Revizo 342</h2>
+
+<p>cimo #15714</p>
+<dl>
+<dt>publikaj_skriptoj/ijk2009/kotizokalkulo.js.php</dt>
+<dd>Internet-Explorer denove ... ne traktas "onchange"-eventojn ĝuste.
+     Do necesis aldoni "onclick". (Mi imagus, ke unue venus la "Click"
+      kaj poste la ŝanĝo, ses ŝajne ne ...</dd>
+</dl>
+
+<h2>Revizo 341</h2>
+
+<p>nur dokumentaĵo ... multa.</p>
+
+<h2>Revizo 340</h2>
+<p>TEJO-membro-kontrolilo finita - nun vere</p>
+<dl>
+<dt>tejomembroj.php</dt>
+<dd>nun mi vere aldonis la ŝanĝo-ordonojn.</dd>
+</dl>
+
+<h2>Revizo 339</h2>
+<p>TEJO-membro-kontrolilo finita (fakte ne!)</p>
+<dl>
+<dt>tejomembroj.php</dt>
+<dd>plilaborita la TEJO-liston, taŭga rajto, tabelkapo kun
+        reordigo-ligoj, redaktilo por UEA-kodoj. (Sed la aktualajn
+        ŝanĝojn mi iel forgesis.)
+</dd>
+<dt>partsercxo.php</dt>
+<dd>ligo al la tejo-kontrollisto, forigo de kelkaj ne plu uzendaj
+        (aŭ eĉ ne plu funkciantaj) serĉoj.</dd>
+<dt>iloj/iloj_html.php</dt>
+<dd>HtmlKapo: korekto de la dokumenttipo, simpla_entajpbutono:
+        "id=..." nur, se ne estas [] en la "variablonomo" (ambaŭ
+      por ebligi la validecon de la kreita dokumento)</dd>
+</dl>
+
+<h2>Revizo 338</h2>
+<p>korekto por cimo #15641</p>
+<dl>
+<dt>partrezultoj.php</dt>
+<dd>sendu-ligo por unua konfirmilo respektive informmesaĝo nur
+        por homoj, kiuj havas la necesan rajton.</dd>
+</dl>
+
+<h2>Revizo 337</h2>
+<p>komenco de TEJO-membro-kontroltabelo</p>
+<dl>
+<dt>tejomembroj.php</dt>
+<dd>nova dosiero, kun tabelo de ĉiuj partoprenantoj kaj ilia TEJO-statoj.</dd>
+</dl>
+
+<h2>Revizo 336</h2>
+<p>manĝstatistiko</p>
+<dl>
+<dt>statistikoj.php</dt>
+<dd>aldono de ligo al la manĝ- kaj ĉambrostatistiko.</dd>
+<dt>cxambrostatistiko.php</dt>
+<dd>ŝanĝo de la rajto al "statistikumi" (anstataŭ "administri"),
+        aldono de manĝ-mendo-tabeloj apud la tranokto-tabeloj.</dd>
+<dt>mangxredakto.php</dt>
+<dd>forigo de la "prezo"-kampo (kiu en la datumbazo neniam vere ekzistis.</dd>
+</dl>
+
+<h2>Revizo 335</h2>
+
+<p>dokumentaĵo, kaj eta cimo pri la rajtoj por redakti</p>
+<dl>
+<dt>partrezultoj.php</dt>
+<dd>la ŝanĝo de partoprenoj aŭ partoprenantoj fakte bezonas la
+        rajton "aligi", sed la ligo postulis "ŝanĝi" ... nun
+        ankaŭ "aligi".</dd>
+<dt>specialaj_skriptoj/sendu_informmesagxojn.php</dt>
+<dd>malŝaltita.</dd>
+</dl>
+
+<h2>Revizo 334</h2>
+
+<p>ankoraŭ unu fuŝo ... ni ne volas sendi al $_SESSION[partoprenanto], sed al $anto.</p>
+<dl>
+<dt>specialaj_skriptoj/sendu_informmesagxojn.php</dt>
+<dd>korekto de du variablonomoj.</dd>
+</dl>
+
+<h2>Revizo 333</h2>
+
+<p>cimo #15477 (forgesita anstataŭado de {1}.)</p>
+<dl>
+<dt>iloj/traduko/traduko_objektoj.php</dt>
+<dd><code>CH_mult()</code> nun ankaŭ povas anstataŭi
+        {1} ktp. en la teksto.</dd>
+</dl>
+
+<h2>Revizo 332</h2>
+
+<p>diversaj plibonigoj, prepare al la dissendo de mesaĝo
+      post ioma tempo</p>
+<dl>
+<dt>instalilo/kreu_datumbazon.php</dt>
+<dd>serĉoj.nomo nun estas pli longa.</dd>
+<dt>gxenerala_sercxo.php</dt>
+<dd>aldono de valida-de/ĝis, ĝeneraligo de la subtabeloj
+        pri pseŭdopagoj.</dd>
+<dt>tradukendaj_iloj/iloj_konfirmilo.php</dt>
+<dd>ne plu forigas \r el la ŝablono. (Mi ne plu memoras, kial ne plu necesas. Hmm.)</dd>
+</dl>
+
+<h2>Revizo 329</h2>
+
+<p>	preparoj por la informmesaĝo sendenda morgaŭ, #2</p>
+<dl>
+<dt>specialaj_skriptoj/sendu_informmesagxojn.php</dt>
+<dd>nova dosiero, inspirita el sendu_adresaron_gxenerale.php,
+        por amasa sendado de informmesaĝoj.</dd>
+</dl>
+
+<h2>Revizo 328</h2>
+
+<p>preparoj por la informmesaĝo sendenda morgaŭ, #1</p>
+<dl>
+<dt>partrezultoj.php</dt>
+<dd>aldono de kreilo por la informmesaĝo.</dd>
+<dt>tradukendaj_iloj/iloj_konfirmilo.php</dt>
+<dd>nova funkcio <code>kreu_informmesagxan_tekston()</code> kaj
+        <code>kreu_informmesagxan_tekston_en()</code>, kiuj kreas
+        la tekston por la informmesaĝo.</dd>
+<dt>iloj/diversaj_retmesagxoj.php</dt>
+<dd>nova funkcio
+        <code>sendu_informmesagxon_al_partoprenanto</code>.</dd>
+</dl>
+
+<h2>Revizo 327</h2>
+
+<p>diversaj plibonigoj</p>
+<dl>
+<dt>partrezultoj.php</dt>
+<dd>restrukturigis la subtabelojn pri pagoj, rabatoj, krompagoj.</dd>
+<dt>partsercxo.php</dt>
+<dd>nova serĉo por "krompagoj".</dd>
+<dt>sercxrezultoj.php</dt>
+<dd>serĉoj pri antaŭpagoj, rabatoj kaj krompagoj unuigitaj.</dd>
+<dt>konfiguro/kondicxoj.php</dt>
+<dd>la kondiĉoj pri invitleteroj nun kontrolas "sendenda != n"
+        anstataŭ "sendenda == j", por fakturi ĝin ankaŭ en
+        la kazo de "ankoraŭ ne decidita".</dd>
+<dt>iloj/objektoj_pseuxdopagoj.php</dt>
+<dd>nova funkcio <code>tabelu_pseuxdopagojn_por()</code>, kiu estas
+        uzata ekzemple el partrezultoj.php.</dd>
+</dl>
+
+<h2>Revizo 326</h2>
+
+
+<p>Cimo #15466 (valido-datumoj de pasportoj)</p>
+<dl>
+<dt>invitpeto.php</dt>
+<dd>aldonis entajpejojn por pasport-valido-informoj.</dd>
+<dt>iloj/objekto_invitpeto.php</dt>
+<dd>aldono de valida_de kaj valida_ĝis en la listo de
+        montrataj kampoj.</dd>
+</dl>
+
+<h2>Revizo 325</h2>
+
+
+<p>	cimoj #15460 ("mankanta poŝtkodo"),
+      #15434 (kampo "studento")</p>
+<dl>
+<dt>instalilo/kreu_datumbazon.php</dt>
+<dd>Mi forgesis la poŝtkodon :-/.
+      Krome mi aldonis kampon por "studento".</dd>
+<dt>publikaj_skriptoj/ijk2009/Aligxilo2.php</dt>
+<dd>elektilo por "mi estos studento aŭ ne."</dd>
+<dt>partopreno.php</dt>
+<dd>elektilo por studenteco</dd>
+<dt>iloj/objekto_partopreno</dt>
+<dd>nova kampo: "studento"</dd>
+<dt>iloj/objekto_partoprenanto</dt>
+<dd>forigo de <code>loka_landonomo</code>, anstataŭe nova funkcio
+        <code>landonomo_en_lingvo()</code>, kiu uzas la
+        traduksistemon.</dd>
+</dl>
+
+<h2>Revizo 324</h2>
+
+
+<p>Hmm, esperanta landonomo estu ordigita laŭ esperantaj sistemoj, ĉu ne?</p>
+<dl>
+<dt>iloj/iloj_listo.php</dt>
+<dd>komparilo_lando_eo() vokas nun strcmp_eo anstataŭ
+        strcmp_lok.</dd>
+</dl>
+
+<h2>Revizo 323</h2>
+
+
+<p>ĝusta ordigo ankaŭ por la aliĝintolisto</p>
+<dl>
+<dt>iloj/iloj_html.php</dt>
+<dd>nova funkcio <code>metu_ordigolokalaĵon()</code>, kaj
+        uzo de ĝi el <code>ordigu_laux_lingvo()</code>.
+<dt>iloj/iloj_listo.php</dt>
+<dd><code>kreu_aligxintoliston()</code> vokas nun <code>metu_ordigolokalajxon()</code>, kaj tiel ebligas ordigon laŭ ĝusta lingvo.</dd>
+</dl>
+
+<h2>Revizo 322</h2>
+
+
+<p>korekto de la ordigo ankaŭ en ĉeĥa/pola ... dankon al Dáša pro la trovo de la cimo.</p>
+<dl>
+<dt>iloj_iloj_html.php</dt>
+<dd>ordigu_laux_lingvo() nun ankaŭ por la ĉeĥa kaj pola faras
+        la ĝustan.</dd>
+</dl>
+
+<h2>Revizo 321</h2>
+
+
+<p>korekto de la serĉformularo ... dankon al LukiZ pro pacienca testado.</p>
+<dl>
+<dt>partsercxo.php</dt>
+<dd>Nu, simple estis "," anstataŭ "." en iu loko.</dd>
+</dl>
+
+<h2>Revizo 320</h2>
+
+
+<p>adaptoj de la serĉilo al forigo de kampoj (por denove funkciigi ĝin)</p>
+<dl>
+<dt>sercxrezultoj.php</dt>
+<dd>forigo de pluraj ne plu aŭ nur en ne-KAMPOELEKTO_IJK
+        ekzistantaj kampoj el la serĉilo, aldono de lingva
+        festivalo.
+</dl>
+
+<h2>Revizo 319</h2>
+
+
+<p>valutoj en pago-listo</p>
+<dl>
+<dt>sercxrezultoj.php</dt>
+<dd>la listo de ĉiuj pagoj (kaj la sumoj) nun ankaŭ
+        montras la valutojn.</dd>
+</dl>
+
+<h2>Revizo 318</h2>
+
+
+<p>aliĝintolisto ankaŭ por ne-ensalutintoj</p>
+<dl>
+<dt>sercxrezultoj.php</dt>
+<dd>ni prenas la renkontiĝo-ID-on por la aliĝintolisto
+        el parametro, sesio aŭ konstanto, laŭ bezono.</dd>
+</dl>
+
+<h2>Revizo 317</h2>
+
+
+<p>cimo #15432 (aliĝkategorio el antaŭpago)</p>
+<dl>
+<dt>iloj/iloj_kotizo_kategorioj.php</dt>
+<dd>kalkulado de aliĝkategorio refarita, kun
+        atentado de valuto.</dd>
+<dt>iloj/objektoj_pseuxdopagoj.php</dt>
+<dd>nova metodo (por pseŭdopagoj), kiu kalkulas la valoron
+        en la ĉefa valuto.</dd>
+</dl>
+
+<h2>Revizo 316</h2>
+
+<p>restrukturigo de kotizokalkulado finita</p>
+<dl>
+<dt>partrezultoj.php</dt>
+<dd>forigo/kaŝigo de multaj debug-eldonoj
+<dt>instalilo/kreu_datumbazon.php, kategorisistemoj.php</dt>
+<dd>forigo de "nur_por" en krompago-/rabato-regulo.
+<dt>specialaj_skriptoj/elprovado.php</dt>
+<dd>(nova) dosiero por elprovi, kiel reagas PHP al iuj
+            agoj/funkcioj.
+<dt>tradukendaj_iloj/iloj_kotizo_tabeloj.php</dt>
+<dd>iuj novaj funkcioj por la tabelo ...</dd>
+<dt>partopreno.php</dt>
+<dd>detaloj, kiuj nur ekzistas kun KAMPOELEKTO_IJK
+              aŭ sen ĝi, estas nun ankaŭ nur tiam
+              redakteblaj.</dd>
+<dt>regulo.php</dt>
+<dd>forigo de "nurPor".</dd>
+<dt>iloj/iloj_kotizo.php</dt>
+<dd>restrukturigo, ĝeneraligita traktado de individuaj
+              pseŭdopagoj (anstataŭ krompagoj, pagoj, rabatoj
+              aparte) kaj regulaj pseŭdopagoj (krompagoj/rabatoj).
+</dd>
+<dt>iloj/objektoj_diversaj.php</dt>
+<dd>forigo de la pseŭdopagoj (-> objektoj_pseuxdopagoj.php)</dt>
+<dt>iloj/objektoj_reguloj.php</dt>
+<dd><code>aplikigxas()</code> nun prenas array()-on de la objektoj,
+                anstataŭ individuaj objektoj, por esti pli
+                ĝenerale uzebla.</dd>
+<dt>iloj/iloj_kondicxoj.php</dt>
+<dd>nova funkcio <code>kreu_objektoliston()</code>.</dd>
+<dt>iloj/objektoj_kotizo.php</dt>
+<dd>nova funkcio <code>listu_regulajn_pseuxdopagojn()</code>.
+                Kaj la <code>aplikigxas</code>-metodo en la
+                subkalkulilo nun prenas ankaŭ nur la
+                kutiman objekto-liston.</dd>
+<dt>iloj/iloj_kotizo_kategorioj.php</dt>
+<dd>forigo de tradukita-funkcio (hm, mi ne plu scias, kial),
+                uzo de kreu_objektliston() por la loĝkategorio
+                (anstataŭ krei la liston mem).</dd>
+<dt>iloj/iloj.php</dt>
+<dd>uzo de objektoj_pseuxdopagoj.php, kaj nova funkcio
+                <code>array_append()</code>.</dd>
+<dt>iloj/objektoj_pseuxdopagoj.php</dt>
+<dd>nova dosiero, el parto de objektoj_diversaj.php, kun la pseŭdopagoj-klasoj.</dd>
+</dl>
+
+<h2>Revizo 315</h2>
+
+<p>plia paŝo al regulaj rabatoj kaj krompagoj</p>
+<dl>
+<dt>instalilo/kreu_datumbazon.php</dt>
+<dd>nomŝanĝo "rabatreguloj" -> "rabatoreguloj"
+        (por plia sistematigo de la nomoj)</dd>
+<dt>krompagotipo.php</dt>
+<dd>ŝovita al regulo.php</dd>
+<dt>regulo.php</dt>
+<dd>(antaŭe krompagotipo.php) nova: redaktilo por regulaj
+          krompagoj kaj regulaj rabatoj.</dd>
+<dt>kategorisistemoj.php</dt>
+<dd>ioma restrukturigo per uzo de funkcioj.</dd>
+<dt>iloj/objektoj_reguloj</dt>
+<dd>nova (antaŭe partoj en iloj/iloj_kotizo_krompagoj.php), enhavas
+        datumbazajn objektojn por krompago- aŭ rabatreguloj.
+</dt>iloj/iloj_kotizo_krompagoj.php</dt>
+<dd>ŝovita al iloj/objektoj_reguloj (kaj tre ŝanĝita)</dd>
+<dt>iloj/iloj_html.php</dt>
+<dd>nova funkcio <code>simpla_elektolisto_el_konfiguroj()</code>.</dd>
+<dt>iloj/iloj.php</dt>
+<dd>enmeto de objektoj_reguloj.php</dd>
+<dt>iloj/objektoj.php</dt>
+<dd>ŝanĝo de implementado de <code>prenu_el_datumbazo()</code>,
+          por ebligi prenadon de objektoj per alia ŝlosilo ol ID
+          (kondiĉo-array),
+          nova metodo <code>sxangxus_ion()</code></dd>
+<dt>kotizosistemo.php</dt>
+<dd>reimplementado, por subteni ne nur regulajn krompagojn,
+          sed ankaŭ (per sama redaktilo) regulajn rabatojn.</dd>
+</dl>
+
+<h2>Revizo 314</h2>
+<p>nova datumbazstrukturo por regulaj krompagoj kaj rabatoj</p>
+<dl>
+<dt>instalilo/kreu_datumbazon.php</dt>
+<dd>ŝanĝo de la datumbazstrukturo, en tabeloj "regulaj_krompagoj", "regulaj_rabatoj", "krompagoreguloj" kaj "rabatreguloj".</dd>
+<dt>krompagotipo.php</dt>
+<dd>ni memoru la entajpanton en la krompago-tipo.</dd>
+</dl>
+
+<h2>Revizo 313</h2>
+
+<p>kotizokalkulilo por aliĝilo nun funkcias, diversaj malgrandaj ŝanĝoj
+      dise</p>
+<dl>
+<dt>partrezultoj.php</dt>
+<dd>montrado de la kotizokalkulo inversigita</dd>
+<dt>publikaj_skriptoj/ijk2009/Aligxilo1.php</dt>
+<dd>uzo de nova kotizokalkulilo kaj rilataj ŝanĝoj.</dd>
+<dt>publikaj_skriptoj/ijk2009/stilo.css.php</dt>
+<dd>adaptoj por montrado de la kotizo</dd>
+</dl>
+
+<h2>Revizo 312</h2>
+
+<p>pli pri la kotizo-antaŭ-kalkulilo</p>
+<dl>
+<dt>publikaj_skriptoj/ijk2009/Aligxilo1.php</dt>
+<dd>preparado por la montrado de la kotizo-kalkulilo,
+        limdato-listo nun enhavas ĉiujn limdatojn
+        (ankaŭ jam pasintajn).</dt>
+<dt>publikaj_skriptoj/ijk2009/kotizokalkulo.js.php</dt>
+<dd>Kalkulo de eŭro-valoro de la kotizo, invitletera krompago,
+          kotizoj en ĉiuj aliĝkategorioj.</dd>
+<dt>iloj/iloj_kotizo_formatado.php</dt>
+<dd>nova funkcio <code>kreu_ordonon()</code>, kiu formatas valoron
+          kun pre- kaj postfikso.
+          Kaj formatu_liston() nun ankaŭ kapablas formati
+          simplajn valorojn, ne nur listojn.</dd>
+</dl>
+
+<h2>Revizo 311</h2>
+
+<p>kotizokalkulilo por la aliĝilo.</p>
+<dl>
+<dt>instalilo/kreu_datumbazon.php</dt>
+<dd>nova kolumno "ĵavaskripta formo" por kondiĉoj (por uzo en la
+        aliĝilo).</dd>
+<dt>publikaj_skriptoj/ijk2009/Aligxilo1.php</dt>
+<dd>erarindikoj, kiam oni elektis netaŭgan partoprentempon, aŭ forgesis
+        indiki la pagomanieron</dd>
+<dt>publikaj_skriptoj/ijk2009/kotizokalkulo.js.php</dt>
+<dd>diversaj ŝanĝoj, por ebligi kalkuladon de la kotizoj en ĝusta maniero. Ankoraŭ ne finita.</dd>
+<dt>publikaj_skriptoj/ijk2009/AligxiloDankon.php</dt>
+<dd>cimo-fikso, kiu kaŭzis kalkulon de programkotizo de 0 por ĉiuj
+        (en la unua konfirmilo), pro malĝusta loko de aĝo-kalkulo.</dd>
+<dt>tradukendaj_iloj/trad_htmliloj.php</dt>
+<dd>la mendo/malmendo ankaŭ kaŭzu rekalkulon de la kotizo, se eblas.</dd>
+<dt>konfiguro/kondicxoj.php</dt>
+<dd>nova kondiĉo-funkcio "landokategorio_estas".</dd>
+<dt>kondicxo.php</dt>
+<dd>entajpbokso por la Ĵavaskripta formo.</dd>
+<dt>iloj/iloj_kondicxoj.php</dt>
+<dd>ioma plilarĝiĝo de la gramatiko, por ebligi parametrisitajn nomitajn
+        kondiĉojn.</dd>
+<dt>iloj/objektoj_kotizo.php</dt>
+<dd>uzu de <code>eltrovu_gxenerale</code> anstataŭ reprogramado de ĝi,
+        aldono de kelkaj funkcioj en Parttempkotizosistemo analoge al tiuj en
+        Kotizosistemo. Nova funkcio
+        <code>array_map_multiply_recursive()</code>.
+      </dd>
+</dl>
+
+<h2>Revizo 310</h2>
+
+<p>kotizokalkulilo nun vere funkcias.</p>
+<dl>
+<dt>partrezultoj.php</dt>
+<dd>reorganizado de kotizotabelo</dd>
+<dt>instalilo/kreu_datumbazon.php</dt>
+<dd>nova tabelo <code>parttempkotizosistemoj</code>,
+        renomigo de tabelo <code>krompagoj</code> al <code>regulaj_krompagoj</code>.</dd>
+<dt>tradukendaj_iloj/iloj_kotizo_tabeloj.php</dt>
+<dd>pliaj tekstoj por la kotizokalkultabelo.</dd>
+<dt>tradukendaj_iloj/iloj_konfirmilo.php</dt>
+<dd>ni nun uzas la (tekste formatitan) kotizotabelon en la
+        unua konfirmilo.</dd>
+<dt>iloj/iloj_kotizo.php</dt>
+<dd>la klaso Kotizosistemo estas ŝovita al <code>objektoj_kotizo.php</code>.
+        Ĉi tie do nur restas Kotizokalkulilo.
+        Tiu nun ankaŭ povas trakti parttempajn partoprenantojn
+        laŭ aparta kalkulilo, kaj provas aŭtomate eltrovi la minimumon.
+</dd>
+<dt>iloj/objektoj_kotizo.php</dt>
+<dd>nova dosiero, por enhavi datumbazajn objektojn (klasojn) kotizorilatajn.
+        Kotizosistemo estas ŝovita ĉi tien.
+        Nova klaso Parttempkotizosistemo por trakti parttempulojn.
+</dd>
+<dt>traduko_objektoj.php</dt>
+<dd>CH_mult() nun ankaŭ konvertas eo-tekstojn al UTF-8,
+      traduku_datumbazeron kapablas ankaŭ traduki erojn, kiuj estas
+        en pseŭdo-dosierujoj grupigitaj.</dd>
+<dt>iloj/objektoj.php</dt>
+<dd>kopiu() nun prenas (opcian) array-parametron, por povi preni siajn
+        datumojn laŭbezone el tiu fonto, anstataŭ $_POST.</dd>
+<dt>iloj/iloj_kotizo_formatado</dt>
+<dd>formatu_cxelon() nun povas trakti valorojn en ajnaj valutoj, kaj
+        formati ilin bele.
+        La tabel-kreiloj nun laboras ankaŭ kun pli ol tri kolumnoj (kiel necesas por la nova kotizokalkulilo kun du valutoj).</dd>
+<dt>kotizosistemo.php</dt>
+<dd>reordigita laŭ pluraj funkcioj, kaj aldono de parttempulo-sistemoj.</dd>
+</dl>
+
+<h2>Revizo 309</h2>
+
+<p>kotizosistemo por IJK funkcias, ŝajne.</p>
+<dl>
+<dt>partrezultoj.php</dt>
+<dd>montro de la nova kotizotabelo.</dd>
+<dt>instalilo/komencaj_datumoj.php</dt>
+<dd>cimo-fikso: la loĝkategorio por la triviala sistemo havis malĝustan kondiĉon.</dd>
+<dt>instalilo/kreu_datumbazon.php</dt>
+<dd>la teksto-kampo por la renkontiĝo-konfiguro-tabelo nun estas pli taŭge
+        konfigurebla (kun subdivido por la renkontiĝoj, kaj tipo/interna kiel
+        helpoteksto).</dd>
+<dt>tradukendaj_iloj/iloj_kotizo_tabeloj.php</dt>
+<dd>nova dosiero, kun tradukeblaj tekstoj uzataj en la kreado de
+        la kotizo-tabeloj.</dd>
+<dt>iloj/iloj_konfiguroj.php</dt>
+<dd>donu_konfiguran_tekston nun donas ĝin en tradukita maniero.</dd>
+<dt>iloj/iloj_kotizo.php</dt>
+<dd>Ordigo de kategorioj (en kotizosistema tabelo) laŭ la ordigo
+        de la kategorisistemo,
+        uzo de tradukeblaj tekstoj en la kotizo-kalkul- (kaj prezento-)tabelo.
+      </dd>
+<dt>iloj/iloj_kotizo_kategorioj.php</dt>
+<dd>dua listo de kategorio-tipoj, por la tabelo, kaj ordigo nun por ĉiuj
+        kategorisistemoj.</dd>
+<dt>iloj/traduko/ghisdatigu.php</dt>
+<dd>reordigo de else-partoj por ebligi uzon de ĝusta komento ĉiam.</dd>
+<dt>iloj/objektoj.php</dt>
+<dd>tradukita(): la lingvo-parametro estas nun opcia.</dd>
+</dl>
+
+<h2>Revizo 308</h2>
+
+<p>executable-flag-fiksoj, kotizokalkulilo-ŝanĝoj por IJK</p>
+<dl>
+<dt>rabato.php, antauxpago.php</dt>
+<dd>unuigitaj, nun sub nomo pago-detaloj.php</dd>
+<dt>pago-detaloj.php</dt>
+<dd>nova dosiero, bazita sur antauxpago.php, por redakti pagojn,
+        rabatojn kaj krompagojn.</dd>
+<dt>partrezultoj.php</dt>
+<dd>forigo de forkomentitaj partoj, ŝanĝo de diversaj ligoj
+        al pago-detaloj.php, provizora uzo de nova kotizo-kalkulado.</dd>
+<dt>instalilo/kreu_datumbazon.php</dt>
+<dd>reorganizo: nova funkcio kreu_pagajn_tabelojn(), kiu kreas la tabelojn
+        por pagoj, (individuaj) rabatoj kaj individuaj krompagoj.
+        Nova tabelo manĝtipo, kun la kostoj de la diversaj manĝtipoj.
+<dt>sercxrezultoj.php</dt>
+<dd>ŝanĝo de ligo, nun al pago-detaloj.php.</dd>
+<dt>renkontigxaj_konfiguroj.php</dt>
+<dd>ŝanĝo de kelkaj "kialo"j al "tipo"j.</dd>
+<dt>konfiguro/opcioj.php</dt>
+<dd>nova opcio "deviga_membreco_valuto".</dd>
+<dt>iloj/iloj_konfiguroj.php</dt>
+<dd>nova dosiero, por enhavi funkciojn rilate al la
+          renkontiĝo-konfiguroj.</dd>
+<dt>iloj/iloj_kotizo.php</dt>
+<dd>gravaj ŝanĝoj en la kotizo-kalkulilo, por kalkuli krompagojn,
+          rabatojn, ktp. laŭ nova sistemo en diversaj valutoj.</dd>
+<dt>iloj/objektoj_diversaj</dt>
+<dd>nova klaso PseuxdoPago kiel superklaso de Pagoj, rabatoj kaj
+          (individuaj) krompagoj.</dd>
+<dt>iloj/iloj_kurzoj.php</dt>
+<dd>nova dosiero, por enhavi funkciojn rilate al kurzoj. Nuntempe nur
+          <code>eltrovu_kurzon()</code>.</dd>
+<dt>iloj/iloj_mangxoj.php</dt>
+<dd>nova funkcio <code>kalkulu_mangxojn()</code>.</dd>
+<dt>iloj/iloj.php</dt>
+<dd>voko de iloj_kurzoj.php kaj iloj_konfiguroj.php</dd>
+<dt>diversaj dosieroj:</dt>
+<dd>forigo de eco "svn:executable", kiu estas tute sensenca
+          por PHP-dosieroj.</dd>
+</dl>
+
+<h2>Revizo 307</h2>
+
+<p>ĝisdadigo de la kopirajt-informoj en ĉiuj dosieroj redaktitaj
+      ĉi-jare.</p>
+
+<h2>Revizo 306</h2>
+
+<p>datumbaza restrukturigo: renkontiĝo-konfiguro, (antaŭ)pagoj, kurzoj</p>
+<dl>
+<dt>instalilo/kreu_datumbazon.php</dt>
+<dd>tajperaro, kaj ankaŭ novaj tabeloj
+        "renkontigxaj_konfiguroj", "kurzoj", "individuaj_krompagoj",
+        aldonaj kampoj por "pagoj" kaj "rabatoj".
+</dd>
+<dt>antauxpago.php</dt>
+<dd>ŝanĝoj por povi uzi plurajn valutojn, kaj ankaŭ entajpanto-ID-on.</dd>
+</dl>
+
+<h2>Revizo 305</h2>
+
+<p>domotipoj ktp. por IJK</p>
+<dl>
+<dt>partoprenkontrolo.php, partopreno.php</dt>
+<dd>
+   forigo de la "tuttempa/parttempa"-elektilo - elekto de la datoj sufiĉas.
+        Kaj por IJK ni nun havas pliajn elekteblecojn por domotipoj.
+        Ankaŭ por kunloĝ-demando ne plu necesas meti hokon.
+<dt>iloj/objekto_partopreno.php</dt>
+<dd>reorganizado de la detaltabelo: GEJmembro for (depende de konfiguro),
+          "kunmanĝas"-informoj ankaŭ for (same), kaj la diversaj domotipoj
+          nun estas montritaj.
+</dd>
+</dl>
+
+<h2>Revizo 304</h2>
+<p>Hmm, denove io fuŝiĝis pri la vizo-petoj ...</p>
+<dl>
+<dt>publikaj_skriptoj/ijk2009/Aligxilo4.php</dt>
+<dd>korekto de la nomoj de la pasport-valido-dato-kampoj.</dd>
+</dl>
+
+<h2>Revizo 303</h2>
+<p>dokumentado de lastatempaj ŝanĝoj, kaj ĝisdatigo de SVN-ecoj.</p>
+
+<h2>Revizo 302</h2>
+
+<p>aldono de la adreso al la konfirmilo (kaj konfirmo-paĝo de la aliĝilo)</p>
+<dl>
+<dt>tradukendaj_iloj/iloj_konfirmilo.php</dt>
+<dd>aldono de la forgesita subtabelo kun la adreso.</dd>
+</dl>
+
+<h2>Revizo 301</h2>
+
+<p>cimo #14546: forigis ĉiujn menciojn de lando.kategorio kaj lando.lokanomo
+      (kiujn mi trovis) el la programo – la kategorio ja nun (jam de longe)
+      dependas de la kotizosistemo, la nomo estas en la traduksistemo.</p>
+<dl>
+<dt>gxenerala_sercxo.php</dt>
+<dd>forigo de loka nomo</dd>
+<dt>partsercxo.php</dt>
+<dd>Landoelektilo montras landokodon anstataŭ kategorion,
+      forigo de malnovaj statistikoj/listoj</dd>
+<dt>sercxrezultoj.php</dt>
+<dd>forigo de malnovaj statistikoj/listoj (ŝovitaj al malnovajxoj/malnovaj_sercxrezultoj.php)</dd>
+<dt>landoj.php</dt>
+<dd>forigo de lokanomo kaj kategorio</dd>
+</dl>
+
+<h2>Revizo 300</h2>
+
+<p>fiksoj de erarmesaĝoj de PHPDocumentor (nur dokumentaĵaj ŝanĝoj)</p>
+
+<h2>Revizo 299</h2>
+
+<p>forigo de ĝena malplena paĝo post 'forgesigo' de ĉambro el
+      partrezultoj.php.</p>
+<dl>
+<dt>cxambroago.php</dt>
+<dd>simple necesis memori $_REQUEST['sp'] en la sesio.</dd>
+</dl>
+
+<h2>Revizo 298</h2>
+
+<p>cimo #13530: pleneco de ĉambro</p>
+<dl>
+<dt>iloj/iloj_cxambroj.php</dt>
+<dd>Ni nun kalkulas por ĉiu ĉambro, kiom da litoj estas rezervitaj,
+        disdonitaj kaj liberaj (kun ioma miskalkulo de la lasta en
+        iuj specialaj kazoj, plibonigenda (TODO)!), kaj uzas tiun
+        informon en la ĉambro-superrigarda tabelo.</dd>
+</dl>
+
+<h2>Revizo 297</h2>
+
+<p>Cimo #13518 (surloka membrokotizo estis metita al 'n' por ĉiuj)</p>
+<dl>
+<dt>publikaj_skriptoj/2008/AligxiloDankon.php</dt>
+<dd>Finfine mi trovis la kialon ... AligxiloDankon.php metis
+        'surloka_membrokotizo' al 'n', kion la programo interpretas kiel
+        "ne devas kotizi, ĉar eksterlandano", eĉ por germanoj. Nun
+        ŝanĝita al '?'.</dd>
+<dt>iloj/iloj_aligxilo.php</dt>
+<dd>la sama ŝanĝo ĉi tie, sed la kampo fakte ne estas uzata por IJK
+        (kaj '?' estas la defaŭlto, se la kampo ekzistas).</dd>
+</dl>
+
+<h2>Revizo 296</h2>
+
+<p>cimo #14612: nun la aliĝkategorioj aperos ordigitaj laŭ aliĝtempo (plej frua unue). Ankaŭ la aliajn kategoriojn eblas ordigi, sed mi ĝis nun ne havas ideon, laŭ kio (landokategorioj ordiĝas laŭ nomo: A, B, C).</p>
+<dl>
+<dt>iloj/iloj_kotizo_kategorioj.php</dt>
+<dd>nova metodo <code>donu_kategorian_ordigon()</code> por kategorisistemoj,
+        kiu ebligas ordigi la kategoriojn en iuj tabelaj rigardoj laŭ
+        iu sistemo-specifa (aŭ pli kutime, tipo-specifa) maniero,
+      kaj uzo de tiu metodo en <code>listu_kategoriojn()</code>.
+        Forigo de <code>loka nomo</code> el la aliĝkategorioj,
+        ordigo de landokategorioj laŭ nomo, ordigo de aliĝkategorioj laŭ
+        limdato (pli fruaj unue).
+      </dd>
+</dl>
+
+<h2>Revizo 295</h2>
+
+<p>KKRen → organizantoj_nomo (cimo #14608)</p>
+<dl>
+<dt>administrado.php,
+        gxenerala_sercxo.php,
+        partsercxo.php,
+        iloj/objekto_partopreno.php,
+        rabato.php
+      </dt>
+<dd>anstatauigo de la ĉeno "KKRen" per la valoro de konfigura
+        opcio <code>organizantoj_nomoj</code> por la uzanto-interfaco,
+        en diversaj lokoj.
+      </dd>
+</dl>
+
+<h2>Revizo 294</h2>
+
+<p>forigu de multaj aperoj de fiksaj retpoŝtadresoj, por cimo #11732.</p>
+<dl>
+<dt>specialaj_skriptoj/sendu_dissendolistinformon.php,
+        malnovajxoj/iloj_mesagxoj.php,
+        malnovajxoj/sendu_adresaron-2006.php,
+        malnovajxoj/sendu_adresaron-2007.php
+        malnovajxoj/sendu_adresaron-2008.php
+        malnovajxoj/kreu_adresaron.php
+      </dt>
+<dd>forigo de diversaj aperoj de retpoŝtadresoj (kaj nomoj) el la kodo.</dd>
+<dt>publikaj_skriptoj/2008/Aligxilo5.php, </dt>
+<dd>la retpoŝtadreso-ligoj por JEFO kaj JEB estas iom pli kaŝitaj nun.
+        TODO: metu en konfiguron</dd>
+<dt>malnovajxoj/sendu_adresaron-2005.php</dt>
+<dd>forigo de ne-plu relevantaj informoj, kaj retpoŝtadresoj.</dd>
+</dl>
+
+<h2>Revizo 293</h2>
+
+<p>forigo de iloj_mesagxoj.php ... finfine.</p>
+<dl>
+<dt>iloj/iloj_mesagxoj.php</dt>
+<dd>sxovita al malnovajxoj/iloj_mesagxoj.php.</dd>
+<dt>iloj/iloj.php</dt>
+<dd>ne plu vokas iloj_mesagxoj.php.</dd>
+</dl>
+
+<h2>Revizo 292</h2>
+
+<p>fina forigo de ĉiuj uzoj de funkcioj el iloj_mesagxoj.php</p>
+<dl>
+<dt>partrezultoj.php, publikaj_skriptoj/ijk2009/AligxiloDankon.php</dt>
+<dd>forigo de jam antaŭe forkomentitaj kodo-partoj, kiuj vokis
+        malnovajn funkciojn el iloj_mesagxoj.php.</dd>
+<dt>publikaj_skriptoj/2008/AligxiloDankon.php</dt>
+<dd>forigo de la voko de <code>sendu_auxtomatajn_mesagxojn()</code>.</dd>
+</dl>
+
+<h2>Revizo 291</h2>
+
+<p>Cimo #14784</p>
+<dl>
+<dt>stilo.css</dt>
+<dd>adapto, por eviti IE-7.0-cimon.</dd>
+</dl>
+
+<h2>Revizo 290</h2>
+<p>rajto-specifaj funkcioj al aparta dosiero, rajto-montrilo al uzanto-paĝo.</p>
+<dl>
+<dt>entajpantoj.php</dt>
+<dd>- kreado de la rajto-listo (=> iloj/iloj_rajtoj.php)</dd>
+<dt>uzanto.php</dt>
+<dd>+ montrado de la rajtoj</dd>
+<dt>iloj/iloj.php</dt>
+<dd>voko de iloj/iloj_rajtoj.php, forŝovo de rajto-rilataj funkcioj tien.</dd>
+<dt>iloj/iloj_rajtoj.php</dt>
+<dd>nova dosiero: ĉiuj rajto-rilataj funkcioj kune.</dd>
+</dl>
+
+<h2>Revizo 289</h2>
+<p>elekto de aliaj ordigoj (en la interreta aliĝinto-listo), kaj
+      implementado de tiuj</p>
+<dl>
+<dt>sercxrezultoj.php</dt>
+<dd>aldono de ligoj al aliaj ordigoj</dd>
+<dt>iloj/iloj_listo.php</dt>
+<dd>implementado de ordigo laŭ<ul>
+          <li>ŝildnomo</li>
+          <li>persona nomo</li>
+          <li>familia nomo</li>
+          <li>lando (esperanta)</li>
+          <li>landokodo</li>
+          <li>lando (loka)</li>
+          <li>urbo</li>
+</ul></dd>
+</dl>
+
+<h2>Revizo 288</h2>
+
+<p>forigo de debug-eldono, kiu produktis fuŝajn rezultojn</p>
+<dl>
+<dt>iloj/traduko/traduko_objektoj.php</dt>
+<dd>forigo de debug-eldono, kiu produktis fuŝajn rezultojn</dd>
+</dl>
+
+<h2>Revizo 287</h2>
+
+<p>kunKiu nun funkcianta</p>
+<dl>
+<dt>publikaj_skriptoj/ijk2009/Aligxilo1.php</dt>
+<dd>nun la kunloĝo-deziro estos memorota.</dd>
+</dl>
+
+<h2>Revizo 285</h2>
+
+<p>diversaj pliaj ŝanĝoj (hmm, bona resumo, ĉu)</p>
+<dl>
+<dt>partsercxo.php</dt>
+<dd>fikso de cimo: tabelĉelo finiĝis meze de input-elemento,
+      ligo al la provizora interreta listo</dd>
+<dt>specialaj_skriptoj/sendu_adresaron_gxenerale.php</dt>
+<dd>malŝaltigo, ŝanĝo de ricevanto-retpoŝtadreso (prenu el
+        konfiguroj).</dd>
+<dt>partoprenanto.php</dt>
+<dd>cimfikso: uzo de $_SESSION['partoprenanto'] anstataŭ la malĝusta
+        $_SESSION['partopreno'].</dd>
+<dt>publikaj_skriptoj/ijk2009/kontrolu.php</dt>
+<dd>elekto pri reta konfirmilo (kiu ne eblas) ne estu bezonata.</dd>
+<dt>publikaj_skriptoj/ijk2009/AligxiloDankon.php</dt>
+<dd>malŝalto de sendu_auxtomatajn_mesagxojn() (por finfine iam povi forĵeti
+      iloj_mesagxoj())</dd>
+<dt>partoprenkontrolo.php</dt>
+<dd>forigo de ne plu ekzistanta kampo kaj opcionigo de alia ne-IJK-a
+        kampo.</dd>
+<dt>sercxrezultoj.php</dt>
+<dd>nova serĉo: prototipo de aliĝinto-listo</dd>
+<dt>tradukendaj_iloj/trad_htmliloj.php</dt>
+<dd>nova funkcio: <code>formatu_aligxintoliston()</code>, kiu kreas liston de
+        ĉiuj aliĝintoj, por uzo en la retpaĝo.</dd>
+<dt>sxablonoj/adresaro_retposxto.txt</dt>
+<dd>cimfiksoj, por ke ĝi nun vere funkciu</dd>
+<dt>partopreno.php</dt>
+<dd>aldona redaktilo por ordigoID</dt>
+<dt>iloj/objektoj_diversaj.php</dt>
+<dd>nova klaso por la landoj - ĝis nun nur uzata por la ppanto-listo.</dd>
+<dt>iloj/iloj_tekstoj.php</dt>
+<dd>korekto de la eltrovo de bezonataj tekstoj el ŝablono</dd>
+<dt>iloj/objekto_partopreno.php</dt>
+<dd>aldono de ordigo-ID al tabela superrigardo.</dd>
+<dt>iloj/iloj_kotizo_kategorioj.php</dt>
+<dd>forigo de lokanomo el la landolisto</dd>
+<dt>iloj/iloj_listo.php</dt>
+<dd>nova dosiero, kun kreilo de listo de partoprenantoj (sen formatilo).</dd>
+</dl>
+
+<h2>Revizo 284</h2>
+
+
+
+<p>	ŝanĝoj antaŭ IS (tiuj, kiuj ankoraŭ ne eniris antaŭe)</p>
+<dl>
+<dt>instalilo/kreu_datumbazon.php</dt>
+<dd>partoprenoj: nova kampo ordigoID.</dd>
+<dt>publikaj_skriptoj/retpagxo.php</dt>
+<dd>ioma restrukturigo, por ebligi IJK-aliĝilon samtempe.
+<dt>tradukendaj_iloj/iloj_konfirmilo.php</dt>
+<dd>forkomento de debug-eldonoj</dd>
+<dt>partopreno.php</dt>
+<dd>kelkaj germanlingvaj komentoj en malĝusta kodigo kreis problemon - nun ŝanĝita.</dd>
+</dl>
+
+<h2>Revizo 283</h2>
+
+<p>jen la versio de antaŭ IS, kiun mi ial hodiaŭ matene anstataŭigis per malnova ...</p>
+<dl>
+<dt>publikaj_skriptoj/ijk2009/Aligxilo1.php</dt>
+<dd>nun ankaŭ tiu dosiero enhavas la version, kiu de la 25a de decembro estis
+        laboranta. Diversaj etaj cimfiksoj (aŭ aspektaj plibonigoj):
+        manĝo(mal)elekto per la ligo nun eblas, antaŭpago-ĝis funkcias
+        la invito-kotizo estas 10 eŭroj anstataŭ 5, la ebleco iĝi
+        TEJO-membro nur surloke malaperis, la kunloĝ-deziro estas en la sama
+        tabelĉelo kiel la aliaj ĉambro-mendoj.
+      </dd>
+</dl>
+
+<h2>Revizo 282</h2>
+
+<p>surlokaj ŝanĝoj dum IS, kaj etaj plibonigoj</p>
+<dl>
+<dt>partrezultoj.php</dt>
+<dd>unua konfirmilo nun uzas sesio-datumojn (kaj $partopreno_renkontiĝo).</dd>
+<dt>gxenerala_sercxo.php</dt>
+<dd>aldonis serĉeblecon pri surloka membrokotizo, kaj adresaro-apero, kaj
+        ĉambro-ID enhavas numeron de ĉambro.</dd>
+<dt>akceptado-fino.php</dt>
+<dd>cim-korekto, por reebligi disdonon de rezervita ĉambro.</dd>
+<dt>route.php</dt>
+<dd>ankaŭ por viditaj ni nun ebligas la akceptado-paĝon
+        anstataŭ partopreno-detaloj.</dd>
+<dt>landoj.php</dt>
+<dd>forigo de kategorioj (kiuj nun estas en alia tabelo), kaj de
+        lokanomo,
+      simpligo de la tabelo, ligo al landokategorio-redaktilo.
+</dd>
+<dt>partopreno.php</dt>
+<dd>aldono de redaktilo por stato de deviga (GEJ/GEA-)membreco,
+        GEJ/GEA-kotizo, kaj tien-ŝovo de la tiurilataj informoj el la
+        aliĝilo.</dd>
+<dt>iloj/objektoj.php</dt>
+<dd>metodo kopiu: nun trairas per ripeto la erojn de $this->datoj anstataŭ
+        de $_POST, por eviti cimon, kie ne eblis meti valoron, kie estis
+        antaŭe  SQL NULL.</dd>
+</dl>
+
+<h2>Revizo 281</h2>
+
+<p>aliĝilo-poluroj - sed unua paĝo nun havas malnovan version</p>
+<p>Kelkaj el la antaŭ-IS-ŝanĝoj por la IJK-aliĝilo eniris, sed ne ĉiuj,
+      ĉar mi sukcesis anstataŭi Aligxilo1.php per malnova versio.</p>
+<dl>
+<dt>publikaj_skriptoj/lib/konfiguro.php</dt>
+<dd>aldona dosierujo-nomo, por IJK. Eble ni elpensu iun pli ĝeneralan
+        solvon.</dd>
+<dt>publikaj_skriptoj/lib/shablono.php</dt>
+<dd><code>aliĝilo_tabelelektilo_radie()</code> havas aldonan parametron,
+        por ebligi ne fini la tabel-ĉelon.</dd>
+<dt>publikaj_skriptoj/ijk2009/Aligxilo1.php</dt>
+<dd>ŝanĝo de <code>kunkiu</code> al <code>kunKiu</code> -- sed bedaŭrinde
+        mi per tio detruis la antaŭ-IS-ŝanĝojn.</dd>
+<dt>publikaj_skriptoj/ijk2009/Aligxilo2.php,
+        publikaj_skriptoj/ijk2009/kontrolu.php</dt>
+<dd>retpoŝto nun estas deviga</dd>
+<dt>publikaj_skriptoj/ijk2009/Aligxilo5.php</dt>
+<dd>forigo de anonco ("aperos") de afero, kiu fakte jam ekzistas, aldono de
+      ligo al la kondiĉoj.</dd>
+<dt>publikaj_skriptoj/ijk2009/Aligxilo5.php,
+        publikaj_skriptoj/ijk2009/kontrolu.php</dt>
+<dd>forigo de ebleco mendi paperan konfirmilon.</dd>
+<dt>publikaj_skriptoj/ijk2009/kontrolu.php</dt>
+<dd>nova funkcio por kontroli entajpitajn tripartajn datojn kaj kunmetu
+        al unu valoro, kaj uzo de ĝi por naskiĝdato kaj
+        pasport-validecoj.</dd>
+<dt>publikaj_skriptoj/ijk2009/stilo.css.php</dt>
+<dd>aranĝo de enhavo de &lt;th&gt;-elementoj supren en la aliĝilo-tabelo.
+</dl>
+
+<h2>Revizo 280</h2>
+
+<p>kristnaska versio (malŝaltita aliĝilo)</p>
+<p>Tiu versio _ne_ enhavas ŝanĝojn faritajn antaŭ IS por la IJK-aliĝilo,
+      tiuj nur eniris en revizoj 281-284. Stultaĵo de mi.</p>
+<dl>
+<dt>publikaj_skriptoj/2008/AligxiloMalsxaltita.php</dt>
+<dd>nova dosiero por uzi en kazo de malŝaltita aliĝilo anstataŭ
+        la vera.</dd>
+<dt>publikaj_skriptoj/2008/aligxilo.php</dt>
+<dd>nun uzas la malŝaltitan dosieron.</dd>
+</dl>
+
+<h2>Revizo 279</h2>
+
+<p>unua konfirmilo laŭ nova maniero</p>
+<dl>
+<dt>tradukendaj_iloj/iloj_konfirmilo.php</dt>
+<dd>reorganizado, nun tabeloj ankaŭ por la konfirmilo,
+        per Tabelformatiloj, nova unua konfirmilo.
+        TODO: elĵetu malnovan.
+</dd>
+</dl>
+
+<h2>Revizo 278</h2>
+
+<h2>Revizo 277</h2>
+
+<p></p>
+<dl>
+<dt>instalilo/kreu_datumbazon.php</dt>
+<dd><code>kreu_tabelon()</code> nun scipovas krei tabelojn de alia ol
+        la defaŭlta tipo (ekzemple MEMORY, tion ni uzas por helpaj
+        tabeloj).</dd>
+</dl>
+
+
+
+<h2> Revizo 276 </h2>
+
+<p>denove multegaj ŝanĝoj ... ŝajnas, ke la aliĝilo nun
+      funkcias plimalpli, krom la kotizokalkulilo kaj la unua informilo.
+    Detaloj sekvos.</p>
+<dl>
+<dt>instalilo/kreu_datumbazon.php</dt>
+<dd><ul>
+          <li>en komentoj antaŭ &apos; nun estas aŭtomate metota \, por
+            ne detrui la SQL-ordonojn.</li>
+          <li>ankaŭ flag-kolumnoj estas nun tradukeblaj (sed en
+            speciala maniero)</li>
+          <li>pluraj adaptoj de la datumbazstrukturo por IJK 2009.
+            Poste ni denove pripensos, kiujn kampojn ni uzos vere.</li>
+          <li>
+        </ul>
+</dd>
+<dt>konfiguro/opcioj.php</dt>
+<dd>nova opcio KAMPOELEKTO_IJK por distingi la du diversajn datumbaz-formatojn
+        (aliaj kampoj en partopreno, partoprenanto, invitpeto), kiujn ni
+        nun uzas (IJK havas aliajn ol IS). Post IS mi pripensos, kiel
+        daŭrigi tion.</dd>
+<dt>partopreno.php</dt>
+<dd>forigo de jam longe ne plu uzitaj kampoj.</dd>
+<dt>gxenerala_sercxo.php, partsercxo.php, partoprenanto.php,
+        partoprenkontrolo.php, aligxatkontrolo.php, sercxrezultoj.php,
+        iloj/objekto_partopreno.php, iloj/iloj.php, iloj/kreu_akceptofolion.php
+        iloj/kreu_adresaron_tcpdf.php</dt>
+<dd>adaptoj al la ŝanĝita datumbazstrukturo (tamen laŭ opcio).</dd>
+<dt>publikaj_skriptoj/retpagxo.php</dt>
+<dd>ioma reorganizo: debug-moduso nur por HTML (en CSS kaj JS la komentoj
+        ja devas aspekti alimaniere), uzo de traduko_objektoj.php anstataŭ
+        traduko.php, ktp.</dd>
+<dt>publikaj_skriptoj/lib/shablono.php</dt>
+<dd>titolo nun kun paŝo-numero, piednotoj nun kiel objekto,
+        sekven-butono-teksto donebla per parametro</dd>
+<dt>publikaj_skriptoj/ijk2009/kontrolu.php</dt>
+<dd>pliaj adaptoj ĝisnunaj ŝanĝoj de aliĝilo-partoj.</dd>
+<dt>publikaj_skriptoj/ijk2009/stilo.css.php</dt>
+<dd>deklaro de kodigo, voko de IJK-paĝaro-stilfolio, aldono de kelkaj
+        korektoj kompare al ĝi, reguloj por kompartabelo.
+<dt>publikaj_skriptoj/ijk2009/Aligxilo5.php</dt>
+<dd>kontroltabelo havebla, elektilo por la konfirmilo-lingvo, forigo
+      de aĵoj, kiuj jam estas en la aliaj paĝoj (= fino de reorganizo)</dd>
+<dt>publikaj_skriptoj/ijk2009/AligxiloDankon.php</dt>
+<dd>plisimpligo, ĉar la plej multan laboron nun faras <code>mangxu_Aligxilajn_datumojn()</code> el iloj_aligxilo.php (kiun ankaŭ uzas Aligxilo5.php)</dd>
+<dt>iloj/iloj_aligxilo.php</dt>
+<dd>nova dosiero, por funkcioj uzitaj ĉefe de la aliĝilo.
+          Nuntempe <code>mangxu_Aligxilajn_datumojn()</code>, uzata de
+          <code>Aligxilo5.php</code> kaj <code>AligxiloDankon.php</code>.
+<dt>tradukendaj_iloj/diversaj_cxenoj.php</dt>
+<dd>Nova dosiero, por enhavi funkciojn, kiuj redonu iujn tekstojn
+          laŭ lingvo.</dd>
+<dt>tradukendaj_iloj/iloj_konfirmilo.php</dt>
+<dd>novaj funkcioj <code>kreu_aligxilan_kontroltabelon()</code> kaj 
+          <code>aligxilo_formatu_subtabelon()</code>. Krome komenco de
+          ŝanĝoj al la unua konfirmilo.
+</dd>
+<dt>iloj/iloj_tekstoj.php</dt>
+<dd>uzo de traduko_objektoj.php anstataŭ traduko.php,
+          reimplementado de <code>teksttransformo_donu_datumon()</code> -
+          ĝi nun akceptas la variablonomojn ankaŭ unikode (transformas al
+          iksoj) kaj la datumojn ankaŭ kiel objektoj.</dd>
+<dt>iloj/iloj_kunlogxadoj.php, iloj/objekto_partoprenanto.php,
+            iloj/kreu_akceptofolion.php</dt>
+<dd>renomigo de la objekta atributo $sekso al $seksa, por evito de konflikto
+          kun la samnoma datumbaza kampo (pro la ŝanĝo en iloj_tekstoj).</dd>
+<dt>iloj/traduko/traduko_objektoj.php</dt>
+<dd>nova dosiero, kiel anstataŭaĵo de la antaŭa traduko.php. Ni nun uzas
+          kiel bazo tradukilo-objekton.</dd>
+<dt>iloj/traduko/traduko.php</dt>
+<dd>ne plu bezonata dosiero, forigenda.</dd>
+<dt>iloj/traduko/chenlisto_datumoj.php</dt>
+<dd>pli simpla implementado de la listo de tradukendaj
+          ĉenoj, sen portempaj tabeloj (anstataŭe nun nur
+          unu daŭra help-tabelo de MEMORY-tipo).</dd>
+<dt>iloj/traduko/iloj.php</dt>
+<dd><code>analizu_cxenon()</code> nun ankaŭ akceptas array kiel dua
+          parametro, kun iom alia signifo.
+          <code>skatolo_por_cheno</code> per du aldonaj parametroj ebligas
+          montri la originalan tekston en &lt;pre&gt;-formato.
+        </dd>
+<dt>iloj/traduko/konservu.php, iloj/traduko/redaktilo.php</dt>
+<dd>plia markobutono en la eo-versioj, por ebligi montradon de tiuj
+          en &lt;pre&gt; por la tradukoj. Ni misuzas la stato-kampon
+          por tio. TODO: ni pripensu pli bonan datumbazstrukturon por
+          la tradukilo.
+        </dd>
+<dt>iloj/traduko/ghisdatigu.php</dt>
+<dd>nova funkcio <code>traktu_kampon_flag()</code> kiel varianto de
+          <code>traktu_kampon_interne</code> por flag-kampoj,
+          por rigardi ne laŭ IDoj, sed laŭ valoroj de la kampoj.</dd>
+<dt>iloj/objektoj.php</dt>
+<dd>aldono de tradukebleco por flag-kampoj. TODO: Bedaŭrinde nuntempe la 
+            uzanto devas ankoraŭ indiki, ke temas pri flag-kampo, per finado
+            de la nomo per "#", sed eble ni trovos ion pli bonan.</dd>
+</dl>
+
+<h2>Revizo 275</h2>
+
+<p>Adaptoj de la aliĝilo al la propono de LukiZ (2008-11-25)</p>
+<dl>
+<dt>
+<dt>iloj/iloj_html.php</dt>
+<dd>aldonaj parametroj por <code>simpla_entajpejo()</code> kaj
+          <code>entajpbutono()</code>, por ebligi uzon el la
+          aliĝilo.</dd>
+<dt>iloj/iloj_kotizo_kategorioj.php</dt>
+<dd>nova funkcio <code>listu_limdatojn()</code> kaj samnoma funkcio
+          en klaso <code>Aligxkategorisistemo</code>.</dd>
+<dt>publikaj_skriptoj/ijk2009/Aligxilo1.php,
+          publikaj_skriptoj/ijk2009/Aligxilo2.php,
+          publikaj_skriptoj/ijk2009/Aligxilo3.php,
+          publikaj_skriptoj/ijk2009/Aligxilo4.php,
+          publikaj_skriptoj/ijk2009/Aligxilo5.php</dt>
+<dd>reorganizo de la enhavo laŭ proponoj de LukiZ</dd>
+<dt>publikaj_skriptoj/ijk2009/konfiguro.php</dt>
+<dd>la nomoj de la paŝoj nun tradukeblaj (kaj ne en bildo)</dd>
+<dt>publikaj_skriptoj/ijk2009/kontrolu.php,
+          publikaj_skriptoj/ijk2009/stilo.css.php</dt>
+<dd>adaptoj al la reorganizo.</dd>
+<dt>publikaj_skriptoj/lib/shablono.php</dt>
+<dd>nova funkcioj <code>aliĝilo_tabelelektilo_radie()</code>,
+          <code>aliĝilo_tabel_jesne_ilo()</code>,
+          <code>listu_paŝojn_kun_bildoj()</code>,
+          <code>listu_paŝojn_tekste()</code>,
+          <code>deviga()</code>
+          <code>aliĝilo_aldonu_piednoton()</code>
+          kaj etaj adaptoj al aliaj funkcioj.
+</dl>
+
+<h2>Revizo 274</h2>
+
+<p>aliĝilo provizore preta nun ... kaj mi iros al ferioj, do nun intertempa versio. (2008-11-11, vespere)</p>
+<dl>
+<dt>publikaj_skriptoj/ijk2009/Aligxilo1.php</dt>
+<dd>adaptoj al traduksistemaj ŝanĝoj, uzo de manĝmendila skripto.</dd>
+<dt>publikaj_skriptoj/ijk2009/Aligxilo2.php</dt>
+<dd>forigo de GEJ-membreco kaj loĝtip-dependa manĝ-demando</dd>
+<dt>publikaj_skriptoj/ijk2009/Aligxilo5.php</dt>
+<dd>uzo de retadreso-skripto nun el propra dosierujo.</dd>
+<dt>iloj/retadreso.php</dt>
+<dd>nova: skripto ĝis nun vokita de alia dosierujo en la esperanto.de-servilo,
+        nun inkluzivigita por ebligi uzon ankaŭ en aliaj serviloj.
+        Temas pri skripto por kaŝi retadresojn (klaso Kaŝilo).
+      </dd>
+<dt>publikaj_skriptoj/ijk2009/mangxmendilo.js.php</dt>
+<dd>nova, simpla voko de JS-kreilo en trad_htmliloj.php.</dd>
+<dt>publikaj_skriptoj/ijk2009/stilo.css.php</dt>
+<dd>adapto al manĝmendilo.</dd>
+<dt>publikaj_skriptoj/ijk2009/AligxiloDankon.php</dt>
+<dd>traktado de manĝmendoj (TODO: kontrolu, ĉu daŭre funkcias!)</dd>
+<dt>publikaj_skriptoj/2008/Aligxilo1.php</dt>
+<dd>adaptoj al traduksistemaj ŝanĝoj</dd>
+<dt>tradukendaj_iloj/trad_htmliloj.php</dt>
+<dd>aldono de <code>kreu_mangxmendilan_JS()</code> por kreo de la JS-kodo
+        por la manĝmendilo, kaj <code>montru_mangxomendilon()</code>, kiu
+        kreas la manĝmendilan tabelon el aliaj dosieroj.</dd>
+<dt>iloj/iloj_mangxoj.php</dt>
+<dd><code>montru_mangxomendilon()</code> ŝovita al tradukendaj_iloj/trad_htmliloj.php.</dd>
+<dt>iloj/cxiujpagxoj.js</dt>
+<dd>forŝovo de la menduCxiujn()-funkcio al
+        tradukendaj_iloj/trad_htmliloj.php.</dd>
+<dt>iloj/iloj_kotizo_kategorioj.php</dt>
+<dd>ŝanĝo de la <code>tradukita()</code>-metodo en klaso Kategorio,
+        por uzi ankaŭ la kategorisisteman nomon en la "dosieruja" parto.</dd>
+<dt>instalilo/kreu_datumbazon.php</dt>
+<dd>aldonaj tradukinformoj por la kategoriaj nomoj (por ebligi
+        subdividon laŭ kategorisistemo).</dd>
+<dt>iloj/traduko/ghisdatigu.php</dt>
+<dd>se indikita de la instalilo, ni kreas por iuj tabeloj subdividojn laŭ
+        alia tabelo. (Nun uzata por la kategorioj, por dividi ilin laŭ
+        kategorisistemoj.)
+<dt>rkonfiguroj.php</dt>
+<dd>kopio de tekstoj.php, iom ŝanĝita (kaj pluŝanĝenda), por redakti la
+        renkontiĝo-konfigurojn.</dd>
+</dl>
+
+<h2>Revizo 273</h2>
+
+<p>ek-adapto de aliĝilo por IJK</p>
+<dl>
+<dt>iloj/iloj_mangxoj.php</dt>
+<dd><code>montru_mangxmendilon()</code> nun ankaŭ funkcias sen partopreno (por la aliĝilo).</dd>
+<dt>iloj/traduko/index.php, iloj/traduko/agordoj.php</dt>
+<dd>forigo de aŭtomata kreado de la traduktabelo - tion prefere
+        faru la instalilo.</dt>
+<dt>publikaj_skriptoj/ijk2009/stilo.css.php</dt>
+<dd>ne plu uzo de la IS-stilfolio kiel bazo</dd>
+<dt>publikaj_skriptoj/ijk2009/Aligxilo1.php</dt>
+<dd>forigo de kotizokalkulo (ĝis ni funkciigos ĝin),
+          aldono de manĝmendilo.</dd>
+</dl>
+
+<h2>Revizo 272</h2>
+
+<p>loĝkategorioj nun vere kun kondiĉoj, ankaŭ tiel redaktebla</p>
+<dl>
+<dt>instalilo/kreu_datumbazon.php</dt>
+<dd>forigo de ŝlosillitero el loĝkategorioj</dd>
+<dt>instalilo/komencaj_datumoj.php</dt>
+<dd>bazaj kondiĉoj nun en aparta funkcio, reorganizad de loĝkategorioj/-sistemoj.</dd>
+<dt>instalilo/datumoj/krompagotipoj.csv</dt>
+<dd>uzo de kondiĉo-IDoj kaj mallongigoj, anstataŭ kondiĉo-kodo kaj
+        loka nomo. (Kaj la aŭto-korektado de OpenOffice estas stulta,
+        ĝi insistas korekti "sa" al "Sa".)</dd>
+<dt>publikaj_skriptoj/ijk2009/Aligxilo1.php,
+        publikaj_skriptoj/ijk2009/konfiguro.php</dt>
+<dd>komenco de adapto al IJK</dd>
+<dt>iloj/iloj_kotizo_kategorioj.php</dt>
+<dd>kategorisistemo nun havas liston de la kategorioj, kio estas uzata
+        de la loĝkategorisistemo por trovi la ĝustan kategorion.
+        La loĝkategorioj nun uzas la kondiĉon por scii, ĉu ili aplikiĝas,
+        kaj montras ĝin en tabelo kaj redaktilo.</dd>
+</dd>
+<dt>iloj/iloj_html.php</dt>
+<dd>nova funkcio <code>simpla_kondicxoelektilo()</code>, analoga al
+        <code>tabela_kondicxoelektilo()</code>.</dd>
+</dl>
+
+<h2>Revizo 271</h2>
+
+<p>aliĝilo-paĝoj por IJK 2009</p>
+<dl>
+<dt>publikaj_skriptoj/ijk2009</dt>
+<dd>nova dosierujo kiel kopio de publikaj_skriptoj/2008.</dd>
+</dl>
+
+<h2>Revizo 270</h2>
+
+
+<p>Ordigado de la aliĝilo.</p>
+<dl>
+<dt>publikaj_skriptoj/lib/shablono.php, publikaj_skriptoj/2008/Aligxilo1.php,
+        publikaj_skriptoj/2008/Aligxilo2.php,
+        publikaj_skriptoj/2008/Aligxilo3.php,
+        publikaj_skriptoj/2008/Aligxilo3a.php,
+        publikaj_skriptoj/2008/Aligxilo4.php,
+        publikaj_skriptoj/2008/Aligxilo5.php,
+        publikaj_skriptoj/2008/kontrolu.php,
+        publikaj_skriptoj/2008/kotizokalkulo.js.php,
+        publikaj_skriptoj/2008/AligxiloDankon.php</dt>
+<dd>plia ordigado, inkluzive de unikodigo de funkcinomoj.</dd>
+</dl>
+
+<h2>Revizo 269</h2>
+
+<p>nomŝanĝo + dokumentado</p>
+<dl>
+<dt>tradukendaj_iloj/trad_htmliloj.php</dt>
+<dd>ŝanĝo de nomo <code>donu_mankoCSS()</code> al
+        <code>donu_mankoAttr()</code>.</dd>
+</dl>
+
+<h2>Revizo 268</h2>
+
+<p>eta cimofikso de traduksistemo</p>
+<dl>
+<dt>iloj/traduko/konservu.php</dt>
+<dd>Redaktado de eo-versio ne metis indikon "retradukenda"
+        al alilingvaj versioj.</dd>
+</dl>
+
+<h2>Revizo 267</h2>
+
+<p>reordigado de la aliĝilo</p>
+<dl>
+<dt>publikaj_skriptoj/lib/shablono.php</dt>
+<dd>forigo de <code>kontrolu_lingvojn()</code> kaj
+        <code>kreu_elektilon()</code>, nomŝanĝo de
+        <code>tabelentajpilo()</code>, <code>granda_tabelentajpilo()</code>,
+        <code>tabelkasxilo()</code> per aldono de prefikso
+        <code>aliĝilo_</code>, aldono de
+        <code>aliĝilo_listu_donitaĵojn()</code> kaj
+        <code>aliĝilo_tabelkaŝilo()</code>.</dd>
+<dt>publikaj_skriptoj/2008/Aligxilo*.php</dt>
+<dd>adapto al la ŝanĝoj de shablono.php, forigo de forkomentita kodo,
+        ofte uzo de <code>elektilo_simpla</code> anstataŭ
+        <code>simpla_elektilo()</code>.</dd>
+<dt>publikaj_skriptoj/2008/Aligxilo1.php</dt>
+<dd>uzo de <code>simpla_datoelektilo()</code></dd>
+<dt>publikaj_skriptoj/2008/kontrolu.php</dt>
+<dd>pli simpla implementado de <code>aligxilon()</code>,
+        <code>kontrolu_informojn()</code> kaj la kontrolo de paĝo 1
+        adaptita al uzo de array-variabloj </dd>
+<dt>publikaj_skriptoj/2008/kotizokalkulo.js.php</dt>
+<dd><code>eltrovu_naskigxdaton</code> adaptita al uzo de array-nomoj
+        por jaro/monato/tago.</dd>
+<dt>tradukendaj_iloj/trad_htmliloj.php</dt>
+<dd>nova dosiero - por HTMLaj iloj kun tradukendaj tekstoj. Nun ĉefe <code>simpla_datoelektilo()</code>.</dd>
+</dl>
+
+<h2>Revizo 266</h2>
+
+<p>Redaktilo por la kondiĉoj ktp.</p>
+<dl>
+<dt>instalilo/kreu_datumbazon.php</dt>
+<dd>nova kondiĉo-tabelo, nun nur ligoj al tiuj
+        tabelo en krompagotipoj kaj loĝkategorioj.</dd>
+<dt>instalilo/komencaj_datumoj.php</dt>
+<dd>kreo de bazaj kondiĉoj uzendaj ĉie ajn.</dd>
+<dt>krompagotipo.php</dt>
+<dd>ŝanĝo al uzo de kondiĉo-ID, anstataŭ entajpo de
+        kondiĉo-teksto.</dd>
+<dt>kategorisistemoj.php</dt>
+<dd>listo de kondiĉoj, kun redakto-ligoj.</dd>
+<dt>konfiguro/kondicxoj.php</dt>
+<dd>ŝanĝo de la kondiĉo-funkcioj al uzo de array() anstataŭ
+        unuopaj parametroj.</dd>
+<dt>kondicxo.php</dt>
+<dd>nova dosiero: Kondiĉo-redaktilo.</dd>
+<dt>iloj/iloj_kondicxoj.php</dt>
+<dd>nova klaso Kondicxo por datumbaza objekto, renomigo de antaŭa
+        klaso Kondicxo al Kondicxarbo.
+<dt>iloj/iloj_kotizo_kategorioj.php</dt>
+<dd>dekodu_kategoriojn() nun prenas plian parametron por la ŝlosiloj
+          de la listo.</dd>
+<dt>iloj/iloj_html.php</dt>
+<dd>tabela_kondicxoelektilo() nun uzas la novan kondiĉo-tabelon.</dd>
+<dt>iloj/iloj.php</dt>
+<dd>voko de iloj_kondicxoj.php</dd>
+<dt>iloj/iloj_kotizo_krompagoj.php</dt>
+<dd>krompagotipo nun uzas eksternan kondiĉo-objekton,
+          kaj delegas al ĝi.</dd>
+<dt>kotizosistemo.php</dt>
+<dd>simpligo de la kotizo-tabelero-ŝanĝo.</dd>
+</dl>
+
+<h2>Revizo 265</h2>
+
+<p>fikso de etaj cimoj, kaj granda ŝtupo pri la kondiĉoj.
+      Sekva paŝo estos aparta datumbaztabelo por kondiĉoj,
+      kiujn aliaj tabeloj nur ligas.</p>
+<dl>
+<dt>kategorisistemoj.php</dt>
+<dd>la listo de krompagotipoj kaj personkostotipoj montris ne ĉiujn,
+        sed nur la unuan. TODO: rigardu, ĉu ankaŭ en aliaj lokoj
+      "1" estas uzata similcele.
+</dd>
+<dt>iloj/iloj_html.php</dt>
+<dd>tabela_kondicxoelektilo() nun enhavas ĉiam la "---"-enskribon.</dd>
+<dt>iloj/iloj_sql.php</dt>
+<dd>darf_nicht_sein() nun traktas sian parametron alie, se ĝi estas
+        ĉeno (por ne superflue denove eskapi ĝin).</dd>
+<dt>iloj/konvertiloj.php</dt>
+<dd>nova funkcio utf8_al_iksoj().</dd>
+<dt>iloj/iloj_kondicxoj.php</dt>
+<dd>implementado de la gramatiko preta, kun kelkaj plibonigoj
+        de la leksika analizilo. Aldone kelkaj helpaj
+        funkcioj pri kondiĉoj, kaj diversaj kondiĉo-klasoj.</dd>
+<dt>specialaj_skriptoj/kondicxotesto.php</dt>
+<dd>nova dosiero, por testi la analizadon kaj evaluadon de
+        kondiĉoj.</dd>
+<dt>krompagotipo.php,
+        instalilo/kreu_datumbazon.php,
+        iloj/iloj_kotizo_krompagoj.php</dt>
+<dd>krompagotipoj nun uzas tiun novan varianton mencii la kondiĉojn</dd>
+</dl>
+
+<h2>Revizo 264</h2>
+
+<p>diversaj cimetoj, kaj komenco de pli ĝenerala
+      kondiĉo-priskribo</p>
+<dl>
+<dt>
+<dt>partsercxo.php, sercxrezultoj.php</dt>
+<dd>nun du versioj de ĉambrohavemuloj-listo, kun pli klara priskribo, kiu estas kiu.</dd>
+<dt>iloj/iloj_kondicxoj.php</dt>
+<dd>nova dosiero. Komenco de implementado de ĝenerala
+          kondiĉo-priskribo.</dd>
+<dt>iloj/iloj_sql.php</dt>
+<dd>korekto de cimo enkondukita en revizo 264.</dd>
+<dt>iloj/traduko/iloj.php</dt>
+<dd>uzo de <code>$id</code> en inicializa kodo kaŭzis
+          problemojn kun uzo de tiu nomo por atingi
+          samnoman GET/POST-variablon ==> renomita.</dd>
+</dl>
+
+<h2>Revizo 263</h2>
+
+
+<p>Fino de la tradukilo, almenaŭ por nun. Ĝi nun laboras en
+      la IS-aligilo.</p>
+<dl>
+<dt>wp-kromprogramoj/aligilo-aligxintoj-nombro.php,
+        wp-kromprogramoj/aligilo-kotizotabelo.php</dt>
+<dd>adapto al la uzo de la tradukilo kaj rilataj ŝanĝoj:
+        $prafix nun estu globala.</dd>
+</dl>
+
+<h2>Revizo 262</h2>
+
+<p>daŭre pri #14397 - landoelektilo finita</p>
+<dl>
+<dt><dt>publikaj_skriptoj/lib/shablono.php,
+          publikaj_skriptoj/2008/kontrolu.php</dt>
+<dd>nova provo de solvo por #14390</dd>
+<dt>iloj/iloj_html.php</dt>
+<dd>uzo de <code>simpla_elektilo</code> en
+          <code>montru_landoelektilon()</code>, anstataŭ mem krei
+          la elektilon. Aldone ordigo de la landonomoj en la montrita
+          lingvo (se eblas, eĉ laŭ reguloj de tiu lingvo). Kelkaj novaj
+          helpaj funkcioj por plisimpligi la funkcion
+          <code>montru_landoelektilon()</code>.
+<dt>iloj/objektoj.php</dt>
+<dd>reordigado de la implementado de la metodo <code>tradukita()</code>.</dd>
+</dl>
+
+<h2>Revizo 261</h2>
+
+<p>Nun la landolisto uzas niajn tradukojn ... ni progresas :-)</p>
+<dl>
+<dt>iloj/iloj_html.php</dt>
+<dd><code>montru_landoelektilon()</code> nun uzas la tradukitan version
+          de la landonomo (kaj kategorio-nomo), se tia ekzistas kaj oni
+          donis lingvo-parametron.</dd>
+<dt>publikaj_skriptoj/2008/Aligxilo1.php</dt>
+<dd>adapto al la nova parametro-signifo de <code>montru_landoelektilon()</code>.</dd>
+<dt>iloj/traduko/traduko.php</dt>
+<dd>uzo de <code>datumbazdemando()</code> ankaŭ en
+          <code>traduku_datumbazeron</code>.</dd>
+<dt>iloj/traduko/traduko.php, iloj/objektoj.php, iloj/iloj_html.php</dt>
+<dd>marko de tradukmanko per "¹" apud la Eo-versio.</dd>
+<dt>publikaj_skriptoj/lib/shablono.php</dt
+<dd>indiko pri uzo de ¹ por marki, kiam mankis traduko kaj ni uzis Esperantan
+        anstataŭaĵon.</dd>
+<dt>iloj/traduko/konservu.php</dt>
+<dd>fikso de cimeto (NULL por neĉeestanta komento, nun "")</dd>
+<dt>iloj/sqlobjektoj.php</dt>
+<dd>baza klaso <code>SQLMergxilo</code> por kunigi SQL-fluojn el
+            du fontoj, kaj subklaso <code>SQL_Outer_left_join</code> por
+            fari ĝuste tion, kion la nomo diras.</dd>
+<dt>iloj/objektoj.php</dt>
+<dd>la <code>tradukita()</code>-metodo nun memoras jam trovitajn
+            tradukojn, por ne devi serĉi ilin daŭre denove.</dd>
+</dl>
+
+<h2>Revizo 260</h2>
+
+<p>Transformo de la tradukilo-biblioteko por tute uzi
+      nian datumbaz-sistemon, kaj plia uzo de ĝi (nu, ankoraŭ ne tute).
+      Samtempe plibonigo de nia SQL-biblioteko.
+</p>
+<dl>
+<dt>iloj/iloj_sql.php</dt>
+<dd><code>datumbazdemando()</code> nun ankaŭ uzas <code>donu_where_kondicxon()</code>.
+        <code>donu_where_kondicxon()</code> (kaj diversaj funkcioj vokintaj
+        ĝin) nun uzas la saman parametro-formaton (por la sesio-restriktoj)
+        kiel <code>datumbazdemando()</code>, kaj ankaŭ la formato de 
+        la normalaj restriktoj estas iom plilarĝigita por enhavi ankaŭ
+        la unuan formaton.</dd>
+<dt>iloj/iloj_html.php</dt>
+<dd>Komenco de reimplementado de montru_landoelektilon().</dd>
+<dt>iloj/traduko/iloj.php, iloj/traduko/traduko.php</dt>
+<dd>nun plena uzo de niaj ĝeneralaj iloj.</dd>
+<dt>iloj/traduko/konservu.php, iloj/traduko/ghisdatigu.php</dt>
+<dd>uzo de datumbazdemando(), datumbazaldono(), datumbazsxangxo() kaj datumbazforigo() anstataŭ la rektaj SQL-ordonoj.</dd>
+<dt>iloj/sqlobjektoj.php</dt>
+<dd>komenco de objektoj por altnivela datumbazaliroj.</dd>
+</dl>
+
+<h2>Revizoj 258+259</h2>
+
+<p>ordigado, dokumentado, ŝanĝo de la tabelnomo,
+      kaj uzo de la traduka sistemo en la programo.</p>
+<dl>
+<dt>instalilo/kreu_datumbazon.php</dt>
+<dd>nova tabelo por la traduko-sistemo</dd>
+<dt>konfiguro/datumaro.php, konfiguro/opcioj.php</dt>
+<dd>translokiĝo de la tabelnomtradukaj opcioj al la
+        datumaro-konfiguroj.</dd>
+<dt>iloj/traduko/traduko-mn.php.txt, iloj/traduko/traduko-2005-01-10.php.txt
+        iloj/traduko/ghisdatigu-mn.php.txt</dt>
+<dd>forŝovo al <code>malnovajxoj/</code>.</dt>
+<dt>iloj/traduko/iloj.php, iloj/traduko/agordoj.php</dt>
+<dd>uzo de <code>traduku_tabelonomon()</code> por transformi
+        nian traduko-tabelnomon.</dd>
+<dt>iloj/objektoj.php</dt>
+<dd>nova metodo <code>tradukita()</code> por doni la tradukitan version
+          de iu kampo de tiu objekto.</dd>
+</dl>
+
+<h2>Revizo 257</h2>
+
+<p>glatigoj de la implementadoj lasttagaj.</p>
+<dl>
+<dt>publikaj_skriptoj/lib/cxio.php,
+          publikaj_skriptoj/lib/datumbazkonekto.php</dt>
+<dd>forŝovita al <code>malnovajxoj/</code>.
+<dt>publikaj_skriptoj/lib/shablono.php,</dt>
+<dd>uzo de la <code>~#bla</code>-sintakso.</dd>
+<dt>iloj/traduko/iloj.php</dt>
+<dd>forigo de <code>alghustigu_dosiernomon()</code> (post forigo de
+            ĉiuj ĝiaj uzoj), novaj funkcioj
+            <code>kunmetu_uri_relative</code> kaj
+            <code>absoluta_dosiernomo_al_interna()</code> (el partoj
+            de <code>analizu_cxenon()</code>).
+            </dd>
+<dt>iloj/traduko/redaktejo.php</dt>
+<dd>forigo de superfluaj uzoj de $dosiero.</dd>
+<dt>iloj/traduko/traduko.php</dt>
+<dd>forigo de funkcio <code>include_trad</code>, kaj
+            <code>eniru_dosieron()</code> nun komprenas relativajn
+            uri-ojn.
+          Krome nun ĉiuj CH_*()-funkciojn uzas <code>analizu_cxenon</code>,
+          anstataŭ fari tion mem (kaj ĉiu en diversa maniero).
+</dd>
+</dl>
+
+<h2>Revizo 256</h2>
+
+<p>Nun ankaŭ la aliĝilo funkcias kun la nova strukturo (pluraj
+      ĉefdosierujoj, kiuj havas iun nomon kvazaŭ URL-protokolo).
+      Hmm, mi eble iam devus ie skribi dokumentadon, kiel
+      funkcias (aŭ almenaŭ, kiel oni uzu ĝin).
+    </p>
+<dl>
+<dt>publikaj_skriptoj/retpagxo.php</dt>
+<dd>adapto al ŝanĝoj de la traduksistemo</dd>
+<dt> publikaj_skriptoj/lib/konfiguro.php</dt>
+<dd>Adapto al testa varianto</dd>
+<dt>iloj/traduko/iloj.php</dt>
+<dd>dosierujo-indikoj nun estos absolutigitaj, por ebligi taŭgan komparon.
+        Krome novaj funkcioj <code>analizu_chenon()</code>,
+        <code>simpligu_dosiernomon()</code> kaj
+        <code>eltrovu_vokantan_dosieron()</code>.
+</dd>
+<dt>iloj/traduko/traduko.php</dt>
+<dd>uzo de <code>analizu_chenon()</code>, anstataŭ mem fari
+        la analizadon</dd>
+<dt>iloj/traduko/chenlisto_datumoj.php</dt>
+<dd>ankoraŭ iuj adaptoj por kongrui al la nova strukturo ...</dd>
+<dt>iloj/traduko/agordoj.php</dt>
+<dd>pliaj adaptoj al la nova strukturo ...</dd>
+<dt>iloj/traduko/ghisdatigu.php</dt>
+<dd>uzo de <code>analizu_chenon()</code>, anstataŭ mem fari la analizadon,
+        kaj aliaj adaptoj al la nova strukturo.</dd>
+</dl>
+
+<h2>Revizo 255</h2>
+
+<p>(hmm, ĉu mi daŭre devas ripeti la saman tekston?)</p>
+<dl>
+<dt>iloj/iloj_tekstoj.php</dt>
+<dd><code>donu_tekston_lauxlingve()</code> nun uzas la traduksistemon.</dd>
+<dt>iloj/konvertiloj.php</dt>
+<dd>nova funkcio <code>transformu_x_al_eo()</code>, kiu konvertas el la iksa
+        sistemo uzata en la traduksistemo al la sistemo uzata en la resto
+        de la programo.</dd>
+<dt>iloj/traduko/iloj.php</dt>
+<dd>tajperaro</dd>
+<dt>iloj/traduko/traduko.php</dt>
+<dd>traduku_datumbazeron()</code> havas nun propran implementadon,
+        sendependa de <code>CH</code>.</dd>
+<dt>iloj/traduko/agordoj.php</dt>
+<dd>nun uzas $GLOBALS['prafix'], kaj metas siajn agordojn
+        nun kiel globalajn variablojn (ankaux se oni vokis gxin
+        el funkcio).</dd>
+</dl>
+
+<h2>Revizo 254</h2>
+
+<p>daŭrigo pri tradukebligo: plia dosierujo kun tradukeblaj dosieroj</p>
+<dl>
+<dt>tradukendaj_iloj/<dt>
+<dd>nova dosierujo por tradukendaj dosieroj
+            uzitaj ene de la programo (ekzemple por sendi
+            retpoŝtojn).</dd>
+<dt>iloj/iloj_konfirmilo.php, iloj/kreu_konfirmilon.php</dt>
+<dd>ŝovitaj al tradukendaj_iloj/.</dd>
+<dt>partrezultoj.php, administrado.php,
+            specialaj_skriptoj/sendu_duan_informilon.php,
+            publikaj_skriptoj/2008/AligxiloDankon.php, iloj/iloj.php</dt>
+<dd>adapto de ŝanĝitaj lokoj</dd>
+<dt>iloj/traduko/chenlisto_datumoj.php</dt>
+<dd>subteno de pluraj ĉef-dosierujoj (kun propraj nomoj en la tradukejo)</dd>
+<dt>iloj/traduko/agordoj.php</dt>
+<dd>konfiguro por "tradukendaj_iloj".</dd>
+</dl>
+
+<h2>Revizo 253</h2>
+
+<p>plia granda paŝo al tradukebligado</p>
+<dl>
+<dt>instalilo/kreu_datumbazon.php</dt>
+<dd>nova parametro "tradukebla => ..." por la
+        datumbazo-kolumnoj, kiu estas skribita
+        en dosiero por tradukado.
+        Tiu dosiero <code>generitaj_dosieroj/db_tradukoj.txt</code>
+        samtempe ekhavas alian formaton (smalltalk-eca).
+        Krome ni nun (por kontrolaj
+        celoj) montras la enhavon de tiu dosiero post la
+        kreado.
+      </dd>
+<dt>instalilo/kreu_datumbazon.php, iloj/iloj_teksto.php, tekstoj.php</dt>
+<dd>La teksto-tabelo nun estas disigita en teksto- kaj
+        konfiguro-tabelo. (Mankas ankoraŭ aparta
+        konfiguro-redaktilo.)
+        Pro tio ni havas nun apud <code>donu_tekston</code> ankaŭ
+        <code>donu_renkkonfiguron()</code>.
+        <code>legu_tekstpriskribjon()</code> povas nun legi el diversaj
+        dosieroj, ne nur el <code>doku/tekstoj.txt</code>.
+        (Tiel ni povas uzi la saman funkcion por legi la
+        dokumentaĵon pri la konfiguroj.)</dd>
+<dt>iloj/traduko/iloj.php</code>
+<dd>pli simpla trakto de dosierujoj kaj $prafix, adapto de la grandeco
+          de la komento-kampo en la redaktilo.</dd>
+<dt>iloj/traduko/ghisdatigu.php</dt>
+<dd>adapto al nova formato de db_tradukoj.txt, kaj samtempe ŝanĝo de
+          <code>traktu_kampon()</code> por zorgi ankaŭ pri tiuj
+          aldonaj atributoj de tradukendaĵo.
+</dl>
+
+<h2>Revizo 252</h2>
+
+<p>etaj plibonigoj de tradukilo</p>
+<dl>
+<dt>iloj/traduko/iloj.php</dt>
+<dd>ŝanĝo de al_utf8 (por pli bone subteni tiun eskapan funkcion, kiel
+        mi supozas, ke ĝi estis celita), kaj ĝiaj uzoj
+<dt>iloj/traduko/chenlisto_datumoj.php</dt>
+<dd>ioma reordigado.</dd>
+<dt>iloj/traduko/konservu.php</dt>
+<dd>aldono de "aktualigu" (kiel sinonimo de "redaktu"), kaj reordigo de
+          la implementado.</dd>
+<dt>iloj/traduko/agordoj.php</dt>
+<dd>fikso de gramatikaj kaj tajperaroj.</dd>
+<dt>ghisdatigu.php</dt>
+<dd>Uzo de la nova konvertiloj.php, kaj la serĉo nun
+          traktas absolutajn dosiernomojn kiel relativajn al
+          la baza dosierujo, kiu nun estas traserĉita.
+        </dd>
+</dl>
+
+<h2>Revizo 251</h2>
+
+<p>nova dosiero por konverto-funkcioj.</p>
+<dl>
+<dt>iloj/konvertiloj.php</dt>
+<dd>nova dosiero, kiu enhavas diversajn konverto-funkcioj.
+        La enhavo estas kunŝovita el iloj.php kaj iloj_html.php
+      (krom ioma reorganizo de <code>eotransformado()</code>).</dd>
+<dt>iloj/iloj.php</dt>
+<dd>forŝovo de la konverto-funkcioj, kaj voko de konvertiloj.php.</dd>
+<dt>iloj/iloj_html.php</dt>
+<dd>konverto-funkcioj forŝovitaj al konvertiloj.php.</dd>
+</dl>
+
+<h2>Revizo 250</h2>
+
+<p>pli bona organizado de la ĉenoj - nu, fakte de la pseŭdo-dosiernomoj por la ĉenoj.</p>
+<dl>
+<dt>traduko/chenlisto_datumoj.php</dt>
+<dd>kreado de la arbo-strukturo reverkita
+</dl>
+
+<h2>Revizo 249</h2>
+
+<p>(preskaŭ nur dokumentado)</p>
+<dl>
+<dt>iloj/traduko/agordoj.php</dt>
+<dd>elĵetu la lando-nomojn el la manuala kampolisto - ili
+        ja jam aperas en la aŭtomata listo.</dd>
+</dl>
+
+<h2>Revizo 248</h2>
+
+<p>Pli por cimo #14397</p>
+<dl>
+<dt>instalilo/kreu_datumbazon.php</dt>
+<dd>ni nun kreas ankaŭ liston de tradukeblaj kampoj.</dd>
+<dt>iloj/traduko/traduko.php, iloj/traduko/agordoj.php, iloj/traduko/ghisdatigu.php</dt>
+<dd>prefikso por la datumbazaj kampoj (t.e. kiel ili aperos 
+        en la traduktabelo) estas nun konfigurebla.<dd>
+<dt>chenlisto_datumoj.php</dt>
+<dd>helpaj tabeloj estas nur kreitaj, kiam ili ankoraŭ ne ekzistas (kaj forigitaj nur, kiam ekzistas). Ankaŭ la renomado de #244 estas nun kompleta.</dd>
+<dt>iloj/traduko/agordoj.php, iloj/traduko/ghisdatigu.php</dt>
+<dd>ni nun povas serĉi la tradukendajn tabelojn el la dosiero kreita
+            de la instalilo.</dd>
+</dl>
+
+<h2>Revizo 247</h2>
+
+<p>malfermu_datumaro() nun redonas la db-konekton.</p>
+<dl>
+<dt>konfiguro/datumaro.php</dt>
+<dd>ni nun redonas la db-konektan resurcon,
+        por tiu kiu bezonas ĝin (kiel la tradukilo).</dd>
+</dl>
+
+<h2>Revizo 246</h2>
+
+<p>ordigo publikaj skriptoj (3)</p>
+<dl>
+<dt>publikaj_skriptoj/lib/konfiguro.php</dt>
+<dd>forĵeto de nebezonataĵoj.</dd>
+<dt>publikaj_skriptoj/lib/shablono.php</dt>
+<dd>ŝanĝo de <code>kontrolu_lingvojn()</code>, por ke ne plu estu
+        bezonataj metu_kapon() kaj metu_piedon(), kaj poste forigo de
+        tiuj funkcioj.</dd>
+</dl>
+
+<h2>Revizo 245</h2>
+
+<p>>ordigo publikaj skriptoj (2)</p>
+<dl>
+<dt>publikaj_skriptoj/lib/shablono.php</dt>
+<dd>forĵeto de nebezonataĵoj.</dd>
+</dl>
+
+<h2>Revizo 244</h2>
+
+<p>Aktivigo de tradukilo kiel integra programparto, kun aldono
+      de novaj funkcioj por #14397 (t.e. traduko de datumbazeroj).
+      Ankaŭ dokumentaĵo por la ŝanĝitaj dosieroj.</p>
+<dl>
+<dt>iloj/traduko/iloj.php, iloj/traduko/index.php,
+      iloj/traduko/traduko.php, iloj/traduko/chenlisto-datumoj.php,
+      iloj/traduko/konservu.php, iloj/traduko/agordoj.php,
+      iloj/traduko/ghisdatigu.php</dt>
+<dd>Pli bonaj erareldonoj en kazo de SQL-eraroj,
+        eblo trakti plurajn dosierujojn (kun uzo de ĉenoj),
+        eblo trakti datumbazajn kampojn,
+        pli bona kalkulado de grandeco de elekto-skatolo,
+        forĵeto de ne plu bezonataj partoj,
+        unikodigo de dokumentaĵo (parte),
+        uzu dosiernomojn relative de la propra loko anstataŭ
+        relativa al $DOCUMENT_ROOT (kio bezonus adapton por
+        ĉiu instalaĵo),
+        uzo de aligilo-datumbazkonekto (anstataŭ propra
+        memorado de pasvorto),
+        korektetoj por la treeview-datumkreilo (aliaj nomoj por
+        helpaj tabeloj, fikso de stranga hierarkio, se ŝlosilnomoj
+        komenciĝas ne per '/').</dd>
+</dl>
+
+<h2>Revizo 243</h2>
+
+<p>ordigo publikaj skriptoj (1)</p>
+<dl>
+<dt>publikaj_skriptoj/lib/rssilo.php,
+        publikaj_skriptoj/lib/tagoj_gxis.php,
+        publikaj_skriptoj/lib/mesagxlisto.php,
+        publikaj_skriptoj/lib/shablono-malnova.php</dt>
+<dd>
+        forigo de ne plu bezonataj dosieroj.
+</dd>
+</dl>
+
+<h2>Revizo 242</h2>
+
+<p>nombro kaj sumo por pagoj</p>
+<dl>
+<dt>sercxrezultoj.php</dt>
+<dd>aldono de sumlinio kun nombro kaj sumo de pagoj por <code>elekto=antauxpagoj</code>.</dd>
+</dl>
+
+<h2>Revizo 241</h2>
+
+<p>iom pli pri #14395 (manĝoj)</p>
+<dl>
+<dt>administrado.php</dt>
+<dd>aldono de ligo al mangxredakto.php</dd>
+<dt>mangxredakto.php</dt>
+<dd>plulaboro por krei redaktilon por manĝo-tempoj.
+        Ankoraŭ necesas pli bona dato-elektilo, kaj
+        pli bona protekto kontraŭ duoblaj enskriboj
+        (anstataŭ nur SQL-eraro).
+<dt>iloj/objekto_sercxilo.php</dt>
+<dd>la sumilo nun povas ankaŭ adicii valorojn post
+          anstataŭo.</dd>
+</dl>
+
+<h2>Revizo 240</h2>
+
+
+<p>Cimo #14609</p>
+<dl>
+<dt>iloj/objekto_noto.php</dt>
+<dd>korekto de cimo #14609 per ŝanĝo "&lt;>" al "=".</dd>
+</dl>
+
+<h2>Revizo 239</h2>
+
+
+<p>cimo #14607, kaj ĉambro-plibeligoj.</p>
+<dl>
+<dt>kreu_cxambron.php</dt>
+<dd>korekto de ligo al la ĉambro-detaloj.</dd>
+<dt>stilo.css</dt>
+<dd>kelkaj reguloj por ĉambro-tabeloj kaj -listo.</dd>
+<dt>cxambroj.php</dt>
+<dd>aspekto-adaptoj</dd>
+<dt>iloj/iloj_cxambroj.php</dt>
+<dd>kelkfoje uzo de klaso cxambro, fikso de #14607,
+        ligo-korektoj, aspekto-adaptoj, nova funkcio
+        <code>montru_cxambrosekson()</code>, por montri koloran indikon
+        pri la tipo de ĉambro kaj ĝia taŭgeco.</dd>
+</dl>
+
+<h2>Revizo 238</h2>
+
+
+<p>fikso de cimo #14605</p>
+<dl>
+<dt>iloj/tcpdf_php4/config/tcpdf_config.php</dt>
+<dd>relativa anstataŭ absoluta dosierujo-nomo, tiel la sama dosiero povas vivi en ĉiu instalaĵo sen ŝanĝo.</dd>
+</dl>
+
+<h2>Revizo 237</h2>
+
+
+<p>partoprenoidento -> partoprenidento (en ligoj por partrezultoj.php), per tio korekto de diversaj etaj cimoj</p>
+<dl>
+<dt>partrezultoj.php, gxenerala_sercxo.php, invitpeto.php, sercxrezultoj.php, akceptado-fino.php, cxambro_sxangxo.php, iloj/iloj_akceptado.php</dt>
+<dd>ŝanĝo de ligoj de <code>partrezultoj.php?partoprenoidento=</code> al la ĝusta
+        <code>partrezultoj.php?partoprenidento=</code>.</dd>
+</dl>
+
+<h2>Revizo 236</h2>
+
+<p>ne plu haveblas dulitaj ĉambroj, + cimfikso en tabelelektilo()</p>
+<dl>
+<dt>publikaj_skriptoj/lib/shablono.php</dt>
+<dd>Aldona parametro por <code>tabelelektilo</code>, eĉ jam antaŭe uzita.</dd>
+<dt>publikaj_skriptoj/2008/Aligxilo2.php</dt>
+<dd>Forigo de elekteblo de dulitaj ĉambroj (kun mencio de tio),
+        ĝustigo de tab-sinsekvo.</dd>
+</dl>
+
+<h2>Revizo 235</h2>
+
+<p>fikso de tabelkampo-nomoj. Eble ankoraŭ pripensu, kaj tiam ŝanĝu ĉie, ne nur en la instalilo.</p>
+<dl>
+<dt>instalilo/kreu_datumbazon.php</dt>
+<dd>Reŝalto al datumbazkampaj nomoj, kiuj estas uzitaj en la programo.</dd>
+</dl>
+
+<h2>Revizo 234</h2>
+
+<p>provizora solvo de noto-listo-problemo ... mi ankoraŭ pripensos, kiel la metodo finfine nomiĝus. (Mi nun estas en Bratislavo sen taŭga komputilo ...)</p>
+<dl>
+<dt>iloj/objekto_sercxilo.php</dt>
+<dd>unuecigo de la nomo al metu_datumbazdemandon(), ankaŭ en la objekto (ne nur,
+        kie ĝi estis vokita).</dd>
+</dl>
+
+<h2>Revizo 233</h2>
+
+<p>daŭrigo de manĝo-traktado</p>
+<dl>
+<dt>gxenerala_sercxo.php</dt>
+<dd>forigo de ne plu bezonata landokategorio-linio.
+        Indas anstataŭe ebligi serĉon per la nova
+        kategorissistemo.</dd>
+<dt>mangxredakto.php</dt>
+<dd>komenco de paĝo por dinini la manĝotempojn ene de la programo, por
+          uzo de la administranto/teknikisto.</dd>
+<dt>iloj/objekto_sercxilo.php, iloj/objekto_noto.php</dt>
+<dd>renomigo de metodo <code>Sercxilo::datumbazdemando()</code> al
+ <code>metu_datumbazdemandon()</code>, pro
+        <a href='https://sourceforge.net/forum/forum.php?thread_id=2203132&forum_id=35065'>dokumentada problemo</a>.</dd>
+<dt>iloj/iloj_mangxoj.php</dt>
+<dd>nova funkcio <code>kalkulu_mangxmendojn()</code>.</dd>
+</dl>
+
+<h2>Revizo 232</h2>
+
+<p>Diversaj plibonigoj</p>
+<dl>
+<dt>partrezultoj.php</dt>
+<dd>CSS-fikso.</dd>
+<dt>instalilo/kreu_datumbazon.php</dt>
+<dd>korekto de la "CHARACTER SET"-pozicio (estu
+        parto de la tipo, ne post "NOT NULL").
+</dd>
+<dt>iloj/iloj_sql.php</dt>
+<dd>korekto de tajperaro en <code>eltrovu_gxenerale</code>.</dd>
+<dt>iloj/iloj.php</dt>
+<dd>nova funkcio <code>jesne_al_boolean()</code>.</dd>
+</dl>
+
+<p>Komenco de traktado de cimo #14395 (aparta manĝo-mendado)</p>
+<dd>
+<dt>iloj/objektoj_diversaj.php</dt>
+<dd>nova klaso <code>mangxtempo</code>, difinita nur kaze de <code>mangxotraktado == 'libera'</code>.</dd>
+<dt>iloj/iloj_mangxoj.php</dt>
+<dd>nova dosieroj, kun funkcioj rilate la novan manĝo-traktadon.</dd>
+<dt>instalilo/kreu_datumbazon.php</dt>
+<dd>novaj datumbaztabeloj "mangxtempoj" kaj "mangxmendoj".</dd>
+<dt>partoprenkontrolo.php, partopreno.php, iloj/cxiujpagxoj.js</dt>
+<dd>adaptoj por la nova manĝtraktado-sistemo.</dd>
+</dl>
+
+
+<h2>Revizo 231</h2>
+
+
+<p>pasvort-cimo, kaj aspektaj detaloj.</p>
+<dl>
+<dt>renkontigxo.php</dt>
+<dd>tipografiaĵoj</dd>
+<dt>entajpantoj.php</dt>
+<dd>korekto de cimo, kiu malebligis pasvort-donadon kaj pasvortŝanĝon.</dd>
+<dt>menuo.php</dt>
+<dd>forigo de nebezonataj ligoj</dd>
+</dl>
+
+<h2>Revizo 230</h2>
+
+<p>Cimo #14418</p>
+<dl>
+<dt>uzanto.php</dt>
+<dd>nova paĝo, por ke uzanto povu ŝanĝi kelkajn
+        el siaj datumoj mem.</dd>
+<dt>menuo.php</dt>
+<dd>Ligo al la uzanta paĝo (alternative al la salutpaĝo).</dd>
+<dt>iloj/iloj_html.php</dt>
+<dd>nova funkcio <code>tabela_montrilo()</code>, reimplementado de
+        <code>erareldono()</code> </dd>
+<dt>doku/pseuxdoklasoj.php</dt>
+<dd>PHP-dosiero kun klasoj, kiuj nur ekzistas por la
+        dokumentaĵ-farilo.</dd>
+</dl>
+
+<h2>Revizo 229</h2>
+
+<p>plibonigo de serĉilo.</p>
+<dl>
+<dt>iloj/objekto_sercxilo.php
+<dd>Ebleco kaŝi la ligojn al aliaj rezulto-versioj, kaj ankaŭ ebleco
+          por la uzanto dinamike kaŝi/malkaŝi ilin.</dd>
+<dt>stilo.css, iloj/iloj_sercxo.php</dt>
+<dd>adaptoj por montrado aŭ nemontrado de ligoj al aliaj rezulto-versioj.</dd>
+<dt>iloj/objekto_noto.php</dt>
+<dd>Adapto al la kaŝado/malkaŝado, krome uzo de tuta nomo kaj
+          aparta kampo kun ligoj en la listoj, anstataŭ ligitaj kaj persona kaj
+          familia nomo.</dd>
+</dl>
+
+<h2>Revizo 228</h2>
+
+<h2>Revizo 227</h2>
+
+<p>espereble lasta fikso pri la notoj ...</p>
+
+<dl>
+<dt>sercxrezultoj.php</dt>
+<dd>"notoj pri" nun ankaŭ montras nur la elektitan tipon de notoj,
+        anstataŭ ĉiujn.</dd>
+</dl>
+
+
+<h2>Revizo 226</h2>
+
+<p>Ankoraŭ unu fikso, jam farita vendrede, sed ne plu sendita</p>
+
+<dl>
+<dt>iloj/objekto_noto.php</dt>
+<dd>"prilaborita" ne aperis en la serĉ-kampoj, kaj pro tio la
+        koresponda kolumno en la tabelo ĉiam montris "neprilaborita".</dd>
+</dt>
+</dl>
+
+
+<h2>Revizo 225</h2>
+
+<p>Pli pri notoj por entajpantoj (#14460) - principe solvita (krom la etaj
+fiksoj aldonitaj en la sekvaj du revizoj)</p>
+<dl>
+<dt>partsercxo.php</dt>
+<dd>diversaj ligoj por noto-listo nun aŭtomate metita (per listo), krome
+      entajpanto-elektilo por vidi notojn por/de/pri li.</dd>
+<dt>sercxrezultoj.php</dt>
+<dd>notoj por/pri/de entajpantoj - nun kun elektebleco de prilaboreco.
+        Notoj de nun nur serĉas, ĉu la nomo estas parto de la "kiu"-kampo,
+        kaze ke tie estas pluraj elementoj.
+</dt>iloj/objekto_noto.php</dt>
+<dd>$GLOBALS['notomontrotipoj'] kiel listo de eblaj nototipoj.</dd>
+</dl>
+
+
+<h2>Revizo 224</h2>
+<p>Cimo #14490</p>
+<dl>
+<dt>entajpantoj.php</dt>
+<dd>solvo de cimo #14490 (ne eblis krei novan entajpanton), kaj krome
+        korekto de problemo en la tabelo.</dd>
+</dl>
+
+<h2>Revizo 223</h2>
+
+<p>Adaptoj por IJK-uzo</p>
+<dl>
+<dt>stilo.css</dt>
+<dd></dd>
+<dt>menuo.php</dt>
+<dd>pli bona varbaĵa teksto (el konfiguro) ligo (per ligu-funkcio).</dd>
+<dt>.htaccess</dt>
+<dd>ekzempla konfigur-dosiero por novaj instalaĵoj.</dd>
+</dl>
+
+<h2>Revizo 222</h2>
+
+<p>funkciigado de la instalilo</p>
+
+<dl>
+<dt>instalilo/komencaj_datumoj.php</dt>
+<dd>tajperaroj, kaj nova implementado de faru_SQL por la kazo,
+        ke INSTALA_MODUSO == true.</dd>
+<dt>instalilo/kreu_datumbazon.php</dt>
+<dd>varianto por malnovaj MySQL-instalaĵoj (antaŭ 4.1)
+        sen CHARSET-subteno, simila faru_SQL kiel en komencaj_datumoj.php,
+        korekto de kelkaj eraretoj.
+</dl>
+
+<h2>Revizo 221</h2>
+
+<p>Notoj por entajpantoj (daŭrigo)</p>
+<dl>
+<dt>iloj/objekto_notoj.php</dt>
+<dd>nova dosiero, parte el objektoj_diversaj, parte de iloj_html,
+        parte de serĉrezultoj, por kunigi ĉiujn noto-rilatajn funkciojn.
+</dd>
+</dl>
+
+
+<h2> Revizo 220 </h2>
+
+<h2> Revizo 218 </h2>
+
+<p>Notoj por entajpantoj</p>
+<dl>
+<dt>sercxrezultoj.php</dt>
+<dd>listo de notoj por/de/pri iu entajpanto.</dd>
+<dt>entajpantoj.php</dt>
+<dd>modernigo de la formularo, kaj restrukturigo de la tuta dosiero (pluraj funkcioj nun).</dd>
+<dt>menuo.php</dt>
+<dd>"viaj notoj" nun ligas al la nova listo de notoj por/pri tiu entajpanto.</dd>
+<dt>notoj.php</dt>
+<dd>formular-partoj kaj akceptado de tio por "noto por kiu?"</dd>
+<dt>iloj/objektoj_diversaj</dt>
+<dd>aldonaj funkcioj al klaso Noto (por eltrovi/kapti la entajpantojn),
+        nova klaso por la entajpantoj.</dd>
+<dt>iloj/iloj_html.php, iloj/iloj_sercxo_html.php,
+        iloj/iloj_sercxo_konservo.php</dt>
+<dd>nomŝanĝo <code>skripto_jes_ne_bokso</code> al <code>jes_ne_bokso</code></dd>
+<dt>iloj/iloj_sql.php</dt>
+<dd>nova funkcio <code>donu_where_kondicxon()</code> el parto de <code>datumbazsxangxo()</code>, nun ankaŭ uzata de <code>forigu_el_datumbazo()</code>.
+</dl>
+
+<h2> Revizo 217 </h2>
+
+<p>HTML-kapo</p>
+<dl>
+<dt>iloj/iloj_html.php</dt>
+<dd>korekto de kelkaj mankantaj spacoj kaj linifinoj en la HTML-kapo.</dd>
+</dl>
+
+<h2> Revizo 216 </h2>
+
+<p>instalilo-eraro</p>
+<dl>
+<dt>instalilo/kreu_datumbazon.php</dt>
+<dd>korekto de cimo, kiu kreis difektajn ĉef-ŝlosilojn (kaj mankantajn aliajn), pro tio, ke 'primary' == 0 estas vera en PHP ...
+Krome nova tabelo notoj_por_entajpantoj (ankoraŭ ne uzata, vidu la sekvajn
+revizojn por tio).
+</dd>
+</dl>
+
+<h2> Revizo 215 </h2>
+
+<p>(nur Dokumentado - kio mankis en la lastaj kelkaj revizoj)</p>
+
+<h2> Revizo 214 </h2>
+
+<p>Instalilo-pluverkado</p>
+<dl>
+<dt>instalilo/komencaj_datumoj.php</dt>
+<dd>kreado de iom da datumbazenhavo por iuj tabeloj.
+        Parte per importado de CSV, parte per rekta programado.
+        (Ĝis nun nur printas la SQL-ordonojn, ne faras ion.)</dd>
+<dt>instalado/kreu_datumbazon.php</dt>
+<dd>korekto de eraroj rimarkitaj survoje.</dd>
+<dt>instalado/datumoj/krompagotipoj.csv, programo/instalilo/datumoj/landolisto-is.csv, programo/instalilo/datumoj/malaligxkondicxotipoj.csv</dt>
+<dd>Kelkaj komencaj datumoj bezonataj por ĉiu nova instalado.</dd>
+<dt>administrado.php</dt>
+<dd>Ligo al la instalilo-dosierujo.</dd>
+<dt>iloj/iloj_sql.php</dt>
+<dd>nova funkcio <code>datumbazaldono()</code>, kaj uzo de ĝi en
+<code>aldonu_al_datumbazo()</code>.
+</dl>
+
+<p>diversaĵoj</p>
+<dl>
+<dt>sendumesagxon.php</dt>
+<dd>kodigo de la mesaĝoj laŭ preferoj de la partoprenanto, kaj krome korekto de
+    Cimo #14473 (malapero de ricevanto-adreso).</dd>
+<dt>gxenerala_sercxo.php</dt>
+<dd>Korekto de difekta ligo ("UTF88csv" anstataŭ "UTF8csv").</dd>
+<dt>iloj/iloj_html.php</dt>
+<dd>forigo de superfluaj spacoj komence de la linioj en la HTML-kapo.</dd>
+<dt>iloj/objekto_sercxilo.php</dt>
+<dd>Uzo de exit() anstataŭ return ĉe kelkaj serĉ-tipoj en montru_rezulton_en_tipo().</dd>
+</dl>
+
+<h2> Revizo 213 </h2>
+
+<p>Reorganizo de instalilo-dosierstrukturo.</p>
+<dt>instalilo/</dt>
+<dd>nova dosierujo.</dd>
+<dt>specialaj_skriptoj/instalilo.php -> instalilo/kreu_datumbazon.php</dt>
+<dd>ŝovo de la dosiero</dd>
+</dl>
+
+<h2> Revizo 212 </h2>
+
+<p>(La log-mesaĝoj hodiaŭ (212,213,214) nur parte priskribas,
+      kio okazis.  Mi volis nur sendi partojn de la dosieroj,
+      la reston aparte, sed fuŝis. Mi vere bezonas la changeset-funkcion
+      se Subversion 1.5 ...)
+      </p>
+<dl>
+<dt>sxablonoj/unua_konfirmilo_eo.txt, sxablonoj/unua_konfirmilo_de.txt</dt>
+<dd>Iom pli da klarigo pri aliĝ-kategorio.</dd>
+<dt>iloj/objekto_sercxilo.php</dt>
+<dd>nova metodo <code>montru_rezulton_en_tipo()</code>, kiu povas montri
+        ajnan rezulto-formaton per granda switch. Tiel tia switch ne plu
+        estas bezonata aliloke.
+        Krome ni havas metodon <code>printu_memligojn()</code>, kiu
+        metas liston de ligoj (sub tia rezulto), por havi saman rezulton
+        en alia formato. (Ni trovu ankoraŭ eblecon ne montri tian liston.)
+</dd>
+<dt>gxenerala_sercxo.php, sercxrezultoj.php, iloj/iloj_sercxo.php,
+        stilo.css</dt>
+<dd>adaptoj al la uzo de <code>montru_rezulton_en_tipo()</code>.
+</dl>
+
+<h2> Revizo 211</h2>
+
+<h2> Revizo 210 </h2>
+
+<p>Multe da dokumentado, kaj etaj plibonigoj de la serĉoj.</p>
+<dl>
+<dt>gxenerala_sercxo.php</dt>
+<dd>Ioma restrukturado por ke ĝi en ĉiuj cirkonstancoj
+        (serĉado en diversaj tipoj, kun aŭ sen ŝarĝado
+        de konservita) funkciu.</dd>
+<dt>iloj/iloj_sercxo_konservo.php</dt>
+<dd><code>trovuSercxon()</code> nun prenas plian parametron por decidi,
+        ĉu montri detalojn pri la trovita serĉo.</dd>
+<dt>sercxrezultoj.php</dt>
+<dd>lasta serĉo nun ankaŭ funkcias kun diversaj rezulttipoj,
+        ne nur diversaj ordigoj.</dd>
+<dt>iloj/objekto_sercxilo.php</dt>
+<dd>al-menuo-ligo ankaŭ en la HTML-CSV-versio, kaj en ambaŭ HTMLaj
+        versioj ligoj al aliaj variantoj (la alia HTMLa, kaj UTF8-CSV),
+        per memligo.</dd>
+</dl>
+
+<h2> Revizo 209 </h2>
+
+<p>Eta restrukturigo de la ĝenerala serĉo,
+      aliaj rezultoformatoj, uzo de nova serĉilo.</p>
+<dl>
+<dt>gxenerala_sercxo.php</dt>
+<dd>Preparo por ne-montrado de HTML-kapo (kaj serĉformularo) por la
+        ne-HTMLaj rezultoformatoj, kaj elektilo por la rezultotipo.</dd>
+<dt>iloj/iloj_sercxo_analizo.php</dt>
+<dd>ŝanĝo de kelkaj <code>echo</code> al <code>debug_echo</code>, por
+          ne malhelpi la ne-HTMLajn formatojn.</dd>
+<dt>iloj/iloj_sercxo_konservo.php</dt>
+<dd><code>trovuSercxon()</code> nun nur en kazo de HTMLaj rezultoj montras
+          detalojn, kaj <code>sercxoElektilo()</code> nun montras
+          tabelon anstataŭ liston.</dd>
+<dt>iloj/iloj_sercxo.php</dt>
+<dd><code>montruRezulton()</code> nun uzas la novan serĉilo-klason,
+          kaj tiel povas ankaŭ produkti aliajn formatojn.
+</dl>
+
+<h2> Revizo 208 </h2>
+
+<p>Plulaboro pri la instalilo.</p>
+<dl>
+<dt>instalilo.php</dt>
+<dd>Kelkaj formato-ŝanĝoj en la SQL-kreilo, kaj kreado de
+        multaj funkcioj por (produkti la SQL-on por) krei ĉiujn
+        bezonatajn tabelojn.</dd>
+</dl>
+
+<h2> Revizo 207 </h2>
+
+<p>konfiguro pli taŭga por freŝa instalo, instalilo (komenco)</p>
+<dl>
+<dt>specialaj_skriptoj/instalilo.php</dt>
+<dd>dosiero, kiu helpu dum la instalado. Ĝi ĝis nun ankoraŭ
+nenion faras (krom printi iun generitan SQL-kodon).</dd>
+<dt>INSTALL</dt>
+<dd>priskribo, kiel instali (ankoraŭ ne tute funkcias tiel!)
+<dt>konfiguro/datumoj.php, konfiguro/moduso.php</dt>
+<dd>reverkado, por ke ĝi estu pli facile uzebla por
+    novaj instalaĵoj - inkluzive instala moduso.</dd>
+<dt>
+</dl>
+
+<h2> Revizo 204 </h2>
+
+<p>Ioma reorganizado kaj cimoj
+  #14442, #14441 kaj #13522 - detaloj poste. </p>
+
+<dl>
+<dt>cxambroj.php, cxambro-detaloj.php, cxambroago.php</dt>
+<dd>disigo de la malnova dosiero cxambroj.php al tri
+    dosieroj, laŭ funkcioj.  Iom da ordigado ankoraŭ necesas.
+    Survoje ni trovis kaj fiksis cimon #14441, kaj ankaŭ fiksis #13522.
+  </dd>
+<dt>cxambro_sxangxo.php</dt>
+<dd>ioma reaspektigado: nun tabela formularo,
+    kaj montrado de pli da informoj.</dd>
+<dt>iloj/iloj_cxambroj.php</dt>
+<dd>adaptoj al la splito de cxambroj.php, kaj reorganizo de la granda funkcio montru_cxambron(). Survoje trovo kaj fikso de cimo #14442.</dd>
+<dt>partrezultoj.php, akceptado-cxambro.php</dt>
+<dd>adaptoj al la splito de cxambroj.php.</dd>
+<dt>iloj/iloj_sesio.php, partrezultoj.php, notoj.php, partoprenforigo.php, partoprensxangxo.php</dt>
+<dd><code>sesio_aktualigo_laux_get()</code> nun estas <code>sesio_aktualigu_laux_get()</code>.</dd>
+<dt>iloj/iloj_sercxo_rezulto.php</dt>
+<dd></dd>
+<dt>iloj/iloj_html.php</dt>
+<dd>nova alteco-parametro por diversaj elektilo-funkcioj. Reimplementado de listu_notojn() per la nova sercxilo.</dd>
+<dt>iloj/objekto_sercxilo.php</dt>
+<dd>iomete pli gxenerale uzebla kolumno-regulo.</dd>
+</dl>
+
+<h2>Revizo 203</h2>
+
+<p>Cimo #13845 - principe solvita.</p>
+<dl>
+<dt>iloj/objekto_sercxilo.php</dt>
+<dd>Nun ni ankaux povas krei CSV-dosierojn, kiel la malnova
+    sercxu-funkcio - sed laux pli gxenerala mehxanismo,
+    do same nun eblas krei suficxe diversajn CSV-variantojn
+    (diversaj kodigoj, diversaj disigiloj, eble citiloj
+     cxirkaux la valoroj, ktp.)
+</dd>
+</dl>
+
+<h2>Revizo 202</h2>
+
+<p>notoj.php reverkita, kaj novaj funkcioj por iloj_sesio.php.</p>
+<dl>
+<dt>route.php</dt>
+<dd>Uzo de novaj funkcioj el iloj_sesio.php.</dd>
+<dt>notoj.php</dt>
+<dd>tute reverkita, kun pluraj funkcioj por la farendaĵoj
+        anstataŭ unu longa kodo-bloko.</dd>
+<dt>iloj/iloj_kotizo.php</dt>
+<dd>Specialtraktado de la kazo, ke la renkontiĝo ne havas kotizosistemon.</dd>
+<dt>iloj/iloj_sesio.php</dt>
+<dd>tute reverkita, novaj funkcioj por meti partoprenanton/kaj/aŭ partoprenon al iu valoro, se necesas.</dd>
+<dt>iloj/iloj_html.php</dt>
+<dd><code>tabel_entajpbutono()</code> havas aldonan parametron kaj tiel alian funkcimanieron, se bezonatas.</dd>
+<dt>iloj/objektoj.php</dt>
+<dd>nova metodo <code>skribu_kreante_se_necesas()</code>, kiu aŭ kreas novan (datumbazan) objekton,
+        aŭ ŝanĝas ekzistantan.</dd>
+</dl>
+
+
+<h2> Revizo 201 </h2>
+
+<p>Cimo #13845 (komenco), kaj komenco de reverkado de notoj.php</p>
+<dl>
+<dt>sercxrezultoj.php
+<dd>Uzo de la nova serĉfunkcio en unu loko (germanoj_laux_landoj), por elprovi.
+Krome forigo de la uzo de "extra"/"okupigxtipo" (kiu ne bezonatas),
+aldono de plia serĉilo por subteni la novan serĉfunkcion.</dd>
+<dt>notoj.php</dt>
+<dd>Ioma restrukturado - sed ankoraŭ ne finita.</dd>
+<dt>iloj/iloj_html.php</dt>
+<dd><code>donu_ligon()</code> kaj <code>ligu()</code> havas nun aldonan
+   parametron por pliaj atributoj, ekzemple event-funkcioj.</dd>
+<dt>iloj/iloj.php</dt>
+<dd>voko de nova dosiero objekto_sercxilo.php.</dd>
+<dt>iloj/objekto_sercxilo.php</dt>
+<dd>Reimplementado de sercxu() en objekta formo - ĝis nun nur la
+    HTMLa varianto, tamen.</dd>
+<dt>iloj/iloj_cxambroj.php</dt>
+<dd>nova funkcio <code>montru_litojn_de_ppeno()</code>.</dd>
+</dl>
+
+<h2>Revizo 200</h2>
+
+<p>Cimo #14390 (sed ankoraŭ ne finita)</p>
+<dl>
+<dt>publikaj_skriptoj/lib/shablono.php</dt>
+<dd>Plisimpligo de la Reen/sekven-butonoj</dd>
+<dt>publikaj_skriptoj/2008/Aligxilo2.php</dt>
+<dd>valida HTML</dd>
+<dt>publikaj_skriptoj/2008/kontrolu.php</dt>
+<dd>pli detala komparo de $_POST['sendu'], por
+    eviti tiun IE-misfunkcion (sed ankoraŭ ŝanĝenda)</dd>
+</dl>
+
+
+<h2>Revizo 199</h2>
+
+<p>Gramatiko, noto-ligoj, ordigado</p>
+<dl>
+<dt>partrezultoj.php</dt>
+<dd>revortumado de la informo pri notoj (#14408), aldono de ligo por
+    krei novan noton (#13523).</dd>
+<dt>sendumesagxon.php, partsercxo.php, partrezultoj.php, sercxrezultoj.php,
+    iloj/iloj_html.php</dt>
+<dd>Gramatiko (itismo!): prilaborata -> prilaborita en pluraj
+    lokoj (sed nur por la tekstoj montrataj, ne por la datumbaza
+    kampo, ĝis nun).</dd>
+<dt>iloj/iloj.php</dt>
+<dd>nova funkcio iom() por formati kvantojn</dd>
+<dt>akceptado-kontroloj.php</dt>
+<dd>uzo de listu_notojn() anstataŭ preskaŭ identa kopio de ties kodo.</dd>
+</dl>
+
+<h2>Revizo 196</h2>
+
+<p>Forigo de retpoŝtadresoj (#11732).</p>
+
+<dl>
+<dt>renkontigxo.php</dt>
+<dd>Forigo de retpoŝtadresoj.</dd>
+<dt>sxablonoj/dua_konfirmilo_retposxto_de.txt, sxablonoj/dua_konfirmilo_retposxto_eo.txt</dt>
+<dd>Forigo de retpoŝtadreso, kaj de unulita-ĉambro-indiko.</dd>
+</dl>
+
+
+<h2>Revizo 195</h2>
+
+<p>Cimo <a href="http://developer.berlios.de/bugs/?func=detailbug&amp;bug_id=13687&amp;group_id=8006">#13687</a></p>
+<dl>
+<dt>iloj/kreu_akceptofolion.php</dt>
+<dd>Aldono de renkontiĝo-nomo kaj -loko (cimo #13687),
+        iometa reorganizado (de kodo) kaj reformatado (de la rezulto).
+</dl>
+
+<h2>Revizo 193</h2>
+
+<p>refunkciado (= kompletigo de antaŭaj ŝanĝoj), reordigado,
+dokumentado
+</p>
+<dl>
+<dt>administrado.php</dt>
+<dd>restrukturigo (disigo al pluraj funkcioj, anstataŭ ke ĉio estu rekte
+    en la paĝo), forigo de nefunkciantaj punktoj (backup).</dd>
+<dt>iloj/kreu_nomŝildojn.php</dt>
+<dd>korekto de require_once-voko, ebleco savi printadon ankaŭ
+   por specialaj nomŝildoj</dd>
+<dt>iloj/diversaj_retmesagxoj.php</dt>
+<dd>pludono de parametroj en <code>sendu_invitilomesagxon()</code>, por ke la
+        administranto-adreso kaj la sendanto-nomo aperu en la mesaĝo.</dd>
+<dt>iloj/mangxkuponoj.php</dt>
+<dt>iloj/kreu_akceptofolion.php</dt>
+<dd>korekto de require_once-voko + dokumentado</dd>
+</dl>
+
+
+<h2> Revizo 186 </h2>
+
+<p>korekto de nefunkcianta aliĝilo</p>
+<dl>
+<dt>publikaj_skriptoj/2008/AligxiloDankon.php</dt>
+<dd>ŝovo de <code>require_once</code>-vokoj, por ke <code>sendu_auxtomatajn_mesagxojn</code> denove funkciu (post ŝovo de uzata funkcio al <code>iloj/retmesagxiloj.php</code>.</dd>
+<dt>iloj/retmesagxiloj.php</dt>
+<dd>La indikaj eldonoj pri sendo de mesaĝoj nun estas malŝalteblaj.</dd>
+</dl>
+
+<h2>Revizo 185</h2>
+
+
+<h2>Revizo 184</h2>
+
+<p>Pli pri cimo <a href='https://developer.berlios.de/bugs/?func=detailbug&amp;bug_id=13768&amp;group_id=8006'>#13768</a>, kun ordigado.</p>
+<dl>
+<dt>partrezultoj.php</dt>
+<dd>forigo de ne plu bezonataj partoj, kaj ŝanĝo al
+        <code>sendu_informmesagxon_pri_programero()</code>
+        anstataŭ <code>sendu_auxtomatajn_mesagxojn</code>.</dd>
+<dt>sendumesagxon.php</dt>
+<dd>integrigo de la enhavo de <code>kreunoton()</code> (el iloj_mesagxoj.php)
+        al <code>faru_noton_el_gxi</code>.</dd>
+<dt>specialaj_skriptoj/sendu_adresaron-2005.php,
+        specialaj_skriptoj/sendu_adresaron-2006.php,
+        specialaj_skriptoj/sendu_adresaron-2007.php,
+        specialaj_skriptoj/sendu_adresaron-2008.php</dt>
+<dd>forŝovo al <code>malnovajxoj/</code> pro evidentaj kialoj.</dd>
+<dt>publikaj_skriptoj/2008/AligxiloDankon.php</dt>
+<dd>Uzo de <code>sendu_invitilomesagxon()</code> kaj <code>sendu_informmesagxon_pri_programero()</code> aldone al <code>sendu_auxtomatajn_mesagxojn</code>,
+        la lasta baldaŭ estos forigota. Krome mi forigis la vokon de
+      <code>sendu_ekzport()</code>.</dd>
+<dt>route.php</dt>
+<dd>Riparo - <em>nova noto</em> kaj <em>notojn</em> ne plu funkciis en PHP 4
+      pro ne-difino de <code>http_redirect</code>.
+</dd>
+<dt>cxambrookupantoj.php</dt>
+<dd>forŝovo al <code>malnovajxoj</code>.</dd>
+<dt>iloj/diversaj_retmesagxoj.php</dt>
+<dd>nova funkcio <code>sendu_informmesagxon_pri_programero</code>.</dd>
+</dl>
+
+<h2> Revizo 183 </h2>
+
+<p>Cimo <a href='https://developer.berlios.de/bugs/?func=detailbug&amp;bug_id=13528&amp;group_id=8006'>#13528</a></p>
+<dl>
+<dt>iloj/iloj_html.php</dt>
+<dd>La funkcio <code>hazard_ligu()</code> (por ligi al dosieroj)
+        nun montras ilin ĉiam en nova kadro/fenestro, kaj pro tio
+        ne plu bezonas la trian parametron.</dd>
+<dt>administrado.php, iloj/kreu_adresaron_tcpdf.php</dt>
+<dd>adaptitaj al la nova uzo de <code>hazard_ligu()</code>.</dd>
+<dt>iloj/kreu_adresaron.php</dt>
+<dd>forŝovita al <code>malnovajxoj/</code>.</dd>
+</dl>
+
+<h2>Revizo 182</h2>
+
+<p>Adresaro, index-paĝo.</p>
+<dl>
+<dt>administrado.php, iloj/kreu_adresaron_tcpdf.php</dt>
+<dd>Restukturado de la adresaro-kreilo,
+      kaj dume solvado de cimoj #13524 kaj #13766.</dd>
+<dt>iloj/iloj_html.php</dt>
+<dd>Nova funkcio <code>metu_stilfolion_kaj_titolon()</code>, kaj ties
+uzo en <code>HtmlKapo()</code></dd>
+<dt>index.php</dt>
+<dd>Uzo de <code>metu_stilfolion_kaj_titolon()</code> (tiel nun aperas
+        la nomo de la renkontiĝo en la titollinio de la retumilo),
+        korekto de forgesita $ (kiu kaŭzis tutan ne-eblon montri
+        la paĝon).</dd>
+<dt>doku/shanghoj.php</dt>
+<dd>mi forigis multajn HTML-erarojn, do nun la paĝo estas valida.</dd>
+</dl>
+
+
+<h2>Revizo 180</h2>
+
+<p>Adresaro-retmesaĝo-reimplementado kaj rilataj ŝanĝoj.</p>
+
+<dl>
+<dt>partrezultoj.php, sercxrezultoj.php</dt>
+<dd>kosmetikaĵoj</dd>
+<dt>administrado.php, stilo.css,
+        specialaj_skriptoj/sendu_adresaron_gxenerale.php,
+        specialaj_skriptoj/sendu_duan_informilon.php</dt>
+<dd>markado de specialaj skriptoj per ruĝa kadro.</dd>
+<dt>specialaj_skriptoj/sendu_adresaron_gxenerale.php,
+        sxablonoj/adresaro_retposxto.txt</dt>
+<dd>nova adresaro-sendilo, daŭre uzebla (ne nur por unu jaro).
+        La ŝanĝenda parto de la teksto estas nun en la datumbazo.</dd>
+<dt>iloj/iloj_tekstoj.php</dt>
+<dd>nova funkcio <code>trovu_necesajn_tekstojn()</code>.</dd>
+<dt>iloj/iloj_html.php</dt>
+<dd>diversaj etaj plibonigoj kaj korektoj (kaj unikodigo de la
+          dokumentajxo)</dd>
+</dl>
+
+<h2>Revizo 179</h2>
+
+<p>Cimo #13519</p>
+<dl>
+<dt>cxambrostatistiko.php</dt>
+<dd>Restrukturigo de la kodo, por ebligi plurajn similajn
+    tabelojn, por diversaj alvenstatoj.</dd>
+</dl>
+
+<h2> Revizo 178 </h2>
+
+<p>Cimo #13597</p>
+<dl>
+<dt>partrezultoj.php</dt>
+<dd>forigo de ligoj al rabato-ŝanĝo-paĝo kaj pago-ŝanĝo-paĝo, se
+    la aktuala uzanto ne rajtas rabati aŭ ŝanĝi ion pri mono.
+        Krome aldonis titolo por la du tabeloj.
+</dd>
+</dl>
+
+
+<h2> Revizo 177</h2>
+
+<p>Cimo #14386</p>
+<dl>
+<dt>shablonoj/unua_konfirmilo_de.txt, shablonoj/unua_konfirmilo_eo.txt</dt>
+<dd>Aldono de paragrafo pri la provizoreco de la kalkulado.</dd>
+</dl>
+
+<h2> Revizo 176 </h2>
+
+<p>Diversaj cimoj rilate al la serĉfunkcio</p>
+
+<dl>
+<dt>partsercxo.php, sercxrezultoj.php</dt>
+<dd>
+   korektis serĉon pri landokategorioj (nun depende de
+   kotizosistemo kaj ties kategoriosistemo) (sen cimo-numero)
+</dd>
+<dt>partsercxo.php</dt>
+<dd>Fiksis cimon #14387 (estis &gt; anstataŭ &lt;),
+        krome kelkaj kosmetikaĵoj
+</dd>
+</dl>
+
+<h2>Revizo 175</h2>
+
+<p>Forigo de ne plu bezonata objektoj_kotizo.php (en IS-konfiguro).</p>
+
+<h2>Revizo 174</h2>
+
+<p>Cimo #14388 (nur en IS-specifa konfiguro)</p>
+
+<h2>Revizo 173</h2>
+
+<p>korekto de Cimo <a href='https://developer.berlios.de/bugs/?func=detailbug&amp;bug_id=14385&amp;group_id=8006'># 14385</a>.</p>
+
+<dl>
+<dt>publikaj_skriptoj/2008/Aligxilo3a.php</dt>
+<dd>Je la ŝanĝoj en revizo #143 mi forgesis trakti tiun ĉi dosieron ...
+    ĝi ankoraŭ referencis al <code>datumbazkonekto.php</code>, kiu ne
+    plu ekzistas. Nun ŝanĝita al <code>iloj/iloj.php</code>.
+</dd>
+</dl>
+
+
+<h2> Revizo 172 </h2>
+
+
+<p>novaj dokumentoj por iloj_sql.</p>
+
+<dl>
+<dt>iloj/iloj_sql.php</dt>
+<dd><p>tuta renovigo de la dokumentaĵo, kaj dume kelkaj poluradoj pri
+        la interna funkciado kaj la interfaco:</p>
+        <ul><li>
+            <code>kreu_as_esprimon</code> nomiĝas nun
+            <code>kreu_tabelan_as_esprimon</code> kaj havas pli simplan
+            implementadon, kun malmultege pli da skrib-laboro du el la tri
+            vok-lokoj.</li>
+          <li>
+            <code>eltrovu_laux_id</code>
+            nun speciale traktas array()-oj kun nur unu elemento.
+          </li>
+          <li>nova funkcio <code>eltrovu_gxenerale</code> por eltrovi unu
+            informon kun eble komplikaj kondiĉoj.</li>
+          <li>forigis la neuzitan funkcion <code>jampartoprenis</code>.</li>
+          <li>pli pura implementado por <code>JMTdisigo()</code> kaj
+            <code>kontrolu_daton()</code></li>
+          <li><code>eltrovu_renkontigxo()</code> nun nomiĝas
+            <code>eltrovu_renkontigxon()</code></li>
+</ul>
+</dd>
+<dt>transferi.php, partrezultoj.php, partopreno.php</dt>
+<dd><code>eltrovu_renkontigxo()</code> nun nomiĝas
+            <code>eltrovu_renkontigxon()</code>
+</dd>
+<dt>cxambro_sxangxo.php</dt>
+<dd>korektis eraron, kiu fakte nur funkciis pro stranga interpretado
+    de kompar-reguloj (t.e. uzo de ĉeno "XXXXX" kiel portempa valoro en int-kolumno de datumbazo) - nun ni uzas iun negativan valoron anstataŭe.</dd>
+</dl>
+
+<h2>Revizo 172</h2>
+
+<p>Korektoj pri la aliĝilo.</p>
+
+<dl>
+<dt>publikaj_skriptoj/2008/Aligxilo5.php</dt>
+<dd>Korekto de difekta konto-ligo.</dd>
+<dt>publikaj_skriptoj/2008/stilo.css.php</dt>
+<dd>korekto de la import-ligo al la nova adreso.</dd>
+<dt>publikaj_skriptoj/retpagxo.php, publikaj_skriptoj/lib/konfiguro.php</dt>
+<dd>adapto al voko de la aliĝilo per alia adreso (ekzemple <code>is.esperanto.de/ali/eo/2008/</code>)</dd>
+</dl>
+
+<h2>Revizo 170</h2>
+<dl>
+<dt>iloj/objekto_partopreno.php</dt>
+<dd>cimkorekto en <code>simpla_kampo1()</code>.</dd>
+</dl>
+
+<h2>Revizo 169</h2>
+
+<dl>
+<dt>stilo.css</dt>
+<dd>korektoj de CSS-eraroj.</dd>
+</dl>
+
+<h2>Revizo 168</h2>
+
+<p>kelkaj cimo-korektoj, restrukturigo de internaĵoj de entajpantoj.php</p>
+
+<dl>
+<dt>entajpantoj.php</dt>
+<dd>reimplementado de la interna listo de rajtoj, kaj kio estas kreita el ĝi.</dd>
+<dt>iloj/iloj_sercxo_rezulto.php</dt>
+<dd>korekto de nefunkcia alineado de kolumnoj.</dd>
+</dl>
+
+
+<h2>Revizo 167</h2>
+
+<p>reverkado de <code>sendumesagxon.php</code> (+ multaj ŝanĝoj de
+      dokumentaĵo)</p>
+
+<dl>
+<dt>sendumesagxon.php</dt>
+<dd>preskaŭ tute renovigita, kun pli da eblecoj (ekzemple ŝanĝi sendanton
+        kaj temlinion), kaj espereble ne pli da problemoj. Bezonas elprovadon.
+</dd>
+<dt>iloj/iloj_sql.php</dt>
+<dd><code>eltrovu_laux_id</code> ne nur laŭ dokumentaĵo akceptas
+array-parametrojn, sed tio nun ankaŭ funkcias ...</dd>
+<dt>iloj/iloj_mesagxoj.php, iloj/retmesagxiloj.php</dt>
+<dd><code>antauxnomo()</code> ŝoviĝis al retmesaĝiloj.</dd>
+<dt>iloj/diversaj_retmesagxoj.php</dt>
+<dd>nova funkcio <code>sendu_malauxtomatan_mesagxon_el_POST</code>.</dd>
+</dl>
+
+
+<h2>Revizo 166</h2>
+
+<p>ankoraŭ kelkaj finaj poluraĵoj de la aliĝilo.</p>
+
+<dl>
+<dt>programo/publikaj_skriptoj/2008/Aligxilo4.php,
+        programo/publikaj_skriptoj/2008/Aligxilo5.php</dt>
+<dd>Aldono/ŝanĝo de ligoj al la retpaĝo pri pago-manieroj,
+        partoprenanto-listo, kondiĉoj.</dd>
+</dl>
+
+<h2>Revizo 165</h2>
+
+<p>kosmetikaĵo por la aliĝilo.</p>
+
+<dl>
+<dt>publikaj_skriptoj/2008/Aligxilo1.php, publikaj_skriptoj/2008/Aligxilo2.php, publikaj_skriptoj/2008/Aligxilo3.php, publikaj_skriptoj/2008/Aligxilo3a.php, publikaj_skriptoj/2008/Aligxilo4.php, publikaj_skriptoj/2008/Aligxilo5.php, publikaj_skriptoj/2008/kontrolu.php, publikaj_skriptoj/2008/kotizokalkulo.js.php, publikaj_skriptoj/2008/kotizokalkulo2.js.php, publikaj_skriptoj/2008/stilo.css.php, publikaj_skriptoj/2008/AligxiloDankon.php, publikaj_skriptoj/2008/konfiguro.php, publikaj_skriptoj/2008/aligxilo.php</dt>
+<dd>ŝanĝo de linfina stilo al LF</dd>
+<dt> publikaj_skriptoj/2008/Aligxilo5.php</dt>
+<dd>formatado de la atentigo per <code>&lt;strong></code>.</dd>
+</dl>
+
+
+<h2>Revizo 161</h2>
+
+
+<p>Fikso de <a href="https://developer.berlios.de/bugs/?func=detailbug&amp;bug_id=13596&amp;group_id=8006">Bug #13596</a>, kun diversaj aliaj plibonigoj survoje.</p>
+
+<dl>
+<dt>antauxpago.php</dt>
+<dd>tuta reverkado laŭ pli modernaj metodoj ...</dd>
+<dt>partrezultoj.php</dt>
+<dd>Korekto de la ligo al pago-redaktilo (nun <code>id=</code> anstataŭ <code>jena=</code>.</dd>
+<dt>sercxrezultoj.php</dt>
+<dd><code>antaŭpagoj</code>: ioma minimumigo de la SQL-demando, samtempe pliampleksigo de la rezulto (nun kun ligo al la pago-redaktilo.)</dd>
+<dt>route.php</dt>
+<dd>uzo de switch anstataŭ ripetaj if, kaj {@link http_redirect()} anstataŭ
+    {@link require()}.</dd>
+<dt>iloj/iloj_tekstoj.php</dt>
+<dd>forigo de ne plu uzata <code>anstatauxu()</code> (kiu estis nur malpli bone
+  funkcianta varianto de {@link strtr()}), polurita implementado de
+  {@link montru_elekto_liston()}.</dd>
+<dt>iloj/iloj_html.php, iloj/iloj_sercxo_rezulto.php</dt>
+<dd>forigo de <code>sercxu()</code> en iloj_html, kaj renomigo de <code>sercxo_nova</code> al <code>sercxu</code> en iloj_sercxo_rezulto. (Antaŭe estis
+ simpla pludono de la voko.) Krome kelkaj kosmetikaj ŝanĝoj de la kreita
+ HTML de sercxu().</dd>
+<dt>iloj/iloj_html.php</dt>
+<dd>ŝanĝo de la dokumenttipo de strict al transient, por havi malpli da
+    eraroj en la kreita HTML-dokumentoj. Tio tamen nur estas provizora solvo,
+    finfine ni tamen havu striktajn XHTML-dokumentojn. </dd>
+<dt>iloj/kreu_konfirmilon.php</dt>
+<dd>uzo de {@link strtr} anstataŭ anstatauxu (el tekstoj.php).</dd>
+</dl>
+
+<h2>Revizo 160</h2>
+
+<dl>
+<dt>specialaj_skriptoj/zeichensatz.php</dt>
+<dd>dokumentado, uzo de {@link hazard_ligu()} el {@link iloj_html.php}</dd>
+<dt>sercxrezultoj.php</dt>
+<dd>plibeligo de supersigno, korekto de priskribo (ne-nulaj saldoj),
+        dokumentado.</dd>
+<dt>partopreno.php</dt>
+<dd>nova entajpilo por la TEJO-kotizo.</dd>
+</dl>
+
+<h2>Revizo 159</h2>
+
+<dl>
+<dt>iloj/iloj_html.php</dt>
+<dd>dokumentado, alivortumo de kodigo-eltrovo en {@link eotransform()}</dd>
+</dl>
+
+<h2>Revizo 158</h2>
+
+<dl>
+<dt>specialaj_skriptoj/zeichensatz.php</dt>
+<dd>refunkciado, diversaj plibonigoj.</dd>
+<dt>index.php</dt>
+<dd>dokumentado, uzo de $_POST/</dd>
+<dt>iloj/iloj_html.php</dt>
+<dd>dokumentado (nun en UTF-8), <code>eotransformado()</code> nun ankaŭ
+  povas trakti kodigon "pdf-speciala".</dd>
+<dt>iloj/iloj.php</dt>
+<dd>ne plu uzas la (ekde #143 ne plu ekzistantan) <code>konfiguro/objektoj_kotizo.php</code>, forigo de <code>es()</code>, <code>estas_ekster_latin1()</code> nun faras pli ĝustajn kontrolojn, multe da dokumentado</dd>
+</dl>
+
+<h2>Revizo 153</h2>
+<dl>
+<dt>sxablonoj/unua_konfirmilo_de.txt, sxablonoj/unua_konfirmilo_de.txt</dt>
+<dd>aldono de eta teksto pri la provizoreco de la kotizotabelo.</dd>
+<dt>menuo.php</dt>
+<dd>Aldono de ligo al la projekta paĝaro.</dd>
+</dl>
+
+
+<h2>Revizo 148</h2>
+
+<p>Korekto de Bug <a href="https://developer.berlios.de/bugs/?func=detailbug&amp;bug_id=13680&amp;group_id=8006">#13680</a>.</p>
+<dl>
+<dt>iloj/diversaj_retmesagxoj.php</dt>
+<dd><code>kreu_kaj_sendu_unuan_konfirmilon()</code> nun metas la sendodaton
+        de la unua konfirmilo en la datumbazon.</dd>
+<dt>publikaj_skriptoj/2008/AligxiloDankon.php</dt>
+<dd>Ne plu mem memoras la sendodaton de la konfirmilo.</dd>
+</dl>
+
+<h2>Revizo 147</h2>
+
+<p>Kontraŭo de Javaskript-injekto.</p>
+<dl>
+<dt>iloj/objektoj.php</dt>
+<dd>Sekurecproblemo (Javascript-injektado) solvita, sed alia problemo
+      enkonduktia
+      (<a href='https://developer.berlios.de/bugs/?func=detailbug&amp;bug_id=13761&amp;group_id=8006'>Bug #13761</a>).</dd>
+</dl>
+
+<h2>Revizo 146</h2>
+
+<p>Korekto de la titoloj al la novaj jaro (pli ĝuste,
+      sendependigo de tio).</p>
+<dl>
+<dt>publikaj_skriptoj/2008/Aligxilo1.php,
+        publikaj_skriptoj/2008/Aligxilo3.php,
+        publikaj_skriptoj/2008/Aligxilo3a.php,
+        publikaj_skriptoj/2008/Aligxilo5.php</dt>
+<dd>uzo de <code>CH("aligxilo#titolo")</code>
+        anstataŭ <code>CH("/2007/aligxilo#titolo")</code>.</dd>
+</dl>
+
+<h2>Revizo 145</h2>
+
+<p>Forigo de partoprenantoj - nova varianto</p>
+<dl>
+<dt>partoprenforigo.php</dt>
+<dd>nova dosiero, por havi dialogon pri forigo de partoprenantoj kaj ties partoprenoj.</dd>
+<dt>iloj/objekto_partoprenanto.php</dt>
+<dd>ligas nun al la nova partoprenforigo-dosiero anstataŭ la malnova (jam de kelka tempo ne funkcianta) estingi-funkcio de partrezultoj.php.
+Krome la <code>landokategorio()</code>-metodo estas riparita.
+</dd>
+<dt>iloj/iloj_html.php</dt>
+<dd>nova funkcio <code>listu_notojn()</code> (de iu partoprenanto).</dd>
+<dt>transferi.php, sercxrezultoj.php</dt>
+<dd>uzo de nova funkcio <code>listu_notojn()</code></dd>
+</dl>
+
+
+<h2>Revizo 144</h2>
+
+<p>Aliĝilo nun funkcias ... espereble.</p>
+<dl>
+<dt>publikaj_skriptoj/lib/shablono.php</dt>
+<dd>forigo de superfluaj funkcioj <code>komencu_artiston</code>,
+<code>finu_artiston</code>, <code>komencu_alvenon</code>,
+        <code>finu_alvenon</code>. Uzo de $titolo anstataŭ
+        aparta tradukebla teksto por la titolo de la aliĝilo. Kelkaj
+        formularero-funkcioj metas spacon antaŭ ebla posta teksto.
+</dd>
+<dt>publikaj_skriptoj/2008/Aligxilo4.php</dt>
+<dd>forŝovo de la Javaskript-parto al aparta dosiero, rekta uzo de
+        <code>iloj/iloj.php</code> anstataŭ
+        <code>lib/datumbazkonekto.php</code>.
+      Uzo de la nova kotizokalkulilo (anstataŭ la malnova).
+      Korekto de <code>minumuma_antauxpago</code> al <code>minimuma_antauxpago</code> :-) </dd>
+<dt>publikaj_skriptoj/2008/kotizokalkulo2.js.php</dt>
+<dd>nova dosiero, kun la Ĵavoskript-partoj el <code>Aligxilo4.php</code>.</dd>
+<dt>publikaj_skriptoj/2008/Aligxilo5.php</dt>
+<dd>      Korekto de <code>minumuma_antauxpago</code> al <code>minimuma_antauxpago</code> :-), nova elektilo por ĉu aperi en la adresaro.</dd>
+<dt>publikaj_skriptoj/2008/kotizokalkulo.js.php</dt>
+<dd>pli komplika varianto pludoni la komencodaton, ĉar la
+    Javaskript-implementado en Firefox ne komprenas <code>new Date("2008-12-27")</code> (kontraŭe al tiu en Opera).</dd>
+<dt>publikaj_skriptoj/2008/stilo.css.php</dt>
+<dd>diversaj adaptoj, por ke la aspekto estu taŭga (ekzemple larĝeco de
+        <code>&lt;select&gt;</code>, alineado de tabelaj ĉeloj, butonoj (sekven/reen)</dd>
+<dt>publikaj_skriptoj/2008/AligxiloDankon.php</dt>
+<dd>rekta uzo de <code>iloj/iloj.php</code> anstataŭ
+        <code>lib/datumbazkonekto.php</code>.</dd>
+<dt>publikaj_skriptoj/2008/konfiguro.php</dt>
+<dd>nova dosiero, por renkontiĝo/aliĝilo-specifaj konfiguroj.</dd>
+<dt>partopreno.php</dt>
+<dd><code>listo</code> nun kun defaŭlta kazo, kaj novaj elektiloj por <code>intolisto</code>.</dd>
+<dt>partoprenkontrolo.php</dt>
+<dd>forigo de specialkaz-aĵo por <code>listo</code></dd>
+<dt>iloj/iloj_kotizo.php</dt>
+<dd>nova metodo <code>limdato()</code> por la kotizokalkulilo.</dd>
+<dt>iloj/objekto_partopreno.php</dt>
+<dd>Aldono de <code>adresaro</code> al la konfirmilo-detaloj kaj
+            <code>montru_aligxo</code>, kaj tuta reimplementado de
+            <code>montru_aligxo</code> per novaj helpaj metodoj, por
+            ŝpari ripetan kodon.
+          </dd>
+<dt>iloj/iloj_sql.php</dt>
+<dd>korekto en <code>protokolu</code> (kiu ne eltenis la ŝanĝon de <code>aldonu_al_datumbazo()</code> por kompreni NULL-valorojn en revizo 138.</dd>
+</dl>
+
+<h2>Revizo 143</h2>
+
+<p>forigo de kelkaj ne plu uzataj dosieroj (ankoraŭ en dosierujo malnova),
+      ekfunkciigo de la aliĝilo (kun nova kotizosistemo), kotizotabelo por
+      la retpaĝo, ...</p>
+<dl>
+<dt>akceptado.php, konfiguro/objektoj_kotizo.php</dt>
+<dd>forŝovo al <code>malnovajxoj</code></dd>
+<dt>publikaj_skriptoj/listo.php, publikaj_skriptoj/publikkontrolo.php,
+        publikaj_skriptoj/publik_kotizo.php, publikaj_skriptoj/publik.php</dt>
+<dd>forigitaj dosieroj, neuzataj jam dum longa tempo.</dd>
+<dt>malnovajxoj</dt>
+<dd>Nova dosierujo, por ne plu uzataj dosieroj, el kiuj oni tamen eble iam volas ŝteli ideojn, nun kun la jenaj dosieroj:
+          <ul>
+            <li>akceptado.php,</li>
+            <li>konfiguro/objektoj_kotizo.php,</li>
+          </ul>
+</dd>
+<dt>publikaj_skriptoj/retpagxo.php</dt>
+<dd>nova dosiero (parte kopio de <code>lib/cxio.php</code>),
+    por montri parton de la aliĝilo.</dd>
+<dt>publikaj_skriptoj/lib/*, publikaj_skriptoj/2008/*</dt>
+<dd>diversaj adaptoj, por ke la nova paĝaro funkciu, inter alie kun nova
+          kotizokalkulilo en Javaskripto, kiu ricevas tabelon de la
+          bazaj kotizoj en JSON-formo el la datumbazo.
+          Ankoraŭ ne finita.</dd>
+<dt>wp-kromprogramoj/aligilo-bazo.php</dt>
+<dd>nova opcio por la renkontiĝo-identigilo (de kiu renkontiĝo montri la tabelojn ktp.), ŝanĝo al vera datumbazo anstataŭ testa.</dd>
+<dt>wp-kromprogramoj/aligilo-aligxintoj-listo.php</dt>
+<dd>korekto de la regula esprimo, sinsekvo de parametroj, uzo de plenaj nomoj anstataŭ mallongigo</dd>
+<dt>wp-kromprogramoj/aligilo-aligxintoj-nombro.php</dt>
+<dd>uzo de opcio anstataŭ fiksa renkontiĝo-ID</dd>
+<dt>wp-kromprogramoj/aligilo-kotizotabelo.php</dt>
+<dd>nova kromprogramo: ebligas montradon de
+    la kotizotabelo laŭ la datumbazo.</dd>
+<dt>wp-kromprogramoj/README.txt</dt>
+<dd>Kiel aldoni novajn kromprogramojn (mi la saman eraron faris ĉiam denove,
+    nun espereble ne plu - aŭ almenaŭ mi ne plu devos longe serĉi).</dd>
+<dt>iloj/iloj_kotizo.php</dt>
+<dd>novaj metodoj en Kotizosistemo: <code>kreu_kotizotabelon</code> kaj
+            <code>kreu_kotizotabelparton</code>, kiuj kreas array-strukturon
+            por la kotizotabelo.</dd>
+<dt>iloj/iloj_kotizo_formatado.php</dt>
+<dd>novaj klasoj (KotizoSistemFormatilo) por formati la tabelon kreitan de
+      <code>kreu_kotizotabelo()</code> - nuntempe implementita
+            nur en <a href='http://www.json.org/'>JSON</a>-formato por
+            la aliĝila kotizokalkulilo,
+            sed mi ŝovos ankaŭ la HTML-formatadon ĉi tien.
+</dd>
+<dt>iloj/iloj_kotizo_kategorioj.php</dt>
+<dd>Uzo de <code>$GLOBALS</code> por difino de globalaj variabloj (por ke tio
+ankaŭ funkciu, se la dosiero estas vokata el funkcio), nova funkcio
+<code>eltrovu_landokategorion</code>. En la aliĝkategori-tabeloj aperas ankaŭ
+            la renkontiĝo-specifa limdato nun, kaj la klaso havas novan
+            funkcion, kiu kalkulas ĝin.</dd>
+<dt>iloj/iloj_sql.php</dt>
+<dd>forigo de <code>eltrovu_landokategorion()</code></dd>
+<dt>iloj/iloj_html.php</dt>
+<dd><code>montru_landoelektilon()</code> havas novan parametron (la
+          renkontiĝon), relative al ties kotizosistemo ĝi montru la landokategorion.</dd>
+<dt>iloj/objekto_renkontigxo.php</dt>
+<dd>nova funkcio <code>donu_kotizosistemon</code></dd>
+</dl>
+
+<h2>Revizo 141</h2>
+
+<p>Kotizo-tabelado restrukturigita, kaj nun ankaŭ teksta versio.</p>
+<dl>
+<dt>iloj/iloj_kotizo_formatado.php</dt>
+<dd>Nova: formatilo por la kotizo-kalkul-tabeloj, en apartaj klasoj
+        por la diversaj formatoj (HTML, PDF, teksto).</dd>
+<dt>iloj/iloj_kotizo.php</dt>
+      <dd>
+        Diversaj ŝanĝoj:
+        <ul>
+          <li>Kotizokalkulilo(): la kotizosistemo estas nun opcia
+            (defaŭlto: laŭ la renkontiĝo)</li>
+          <li>cimokorekto ĉe nemembro-krompagoj en la tabelo</li>
+          <li>forigo de funkcioj <code>html_formatu_linireston()</code>,
+            kaj <code>formatu_tabelon()</code>, <code>montru_kotizon</code>,
+            anstataŭe <code>kreu_kotizotabelon()</code> kaj
+            <code>tabelu_kotizon()</code>.</li>
+        </ul>
+      </dd>
+<dt>partrezultoj.php</dt>
+<dd>Nur plu uzo de la nova kotizotabelo (HTML-formo). Nur plu montrado de
+        la nova unua informilo, butono anstataŭ simpla ligo por sendi.</dd>
+<dt>akceptado-pago.php</dt>
+<dd>Uzo de nova kotizo-tabelo (HTML-formo)</dd>
+<dt>stilo.css</dt>
+<dd>adaptoj por la HTMLa kotizotabelo (allineadoj dekstraj
+        aŭ maldekstraj)</dd>
+<dt>iloj/iloj_konfirmilo.php, sxablonoj/unua_konfirmilo_eo.txt,
+        sxablonoj/unua_konfirmilo_de.txt</dt>
+<dd>Uzo de nova kotizokalkulilo, aldono de kotizotabelo (teksta varianto)
+        al la unua konfirmilo.
+</dd>
+<dt>doku/aligilo-tabeloj.sql</dt>
+<dd>Aktuala versio de la datumbazskemo</dd>
+<dt>iloj/iloj.php</dt>
+<dd>nova funkcio <code>plilongigu</code>, simpligita uft8-varianto de
+        <a href='http://de.php.net/manual/de/function.str-pad.php'>str_pad</a>.
+</dd>
+<dt>iloj/kreu_konfirmilon.php</dt>
+<dd>Uzo de nova kotizoformatilo (PDF-varianto)</dd>
+<dt>iloj/diversaj_retmesagxoj.php</dt>
+<dd><code>kreu_kaj_sendu_unuan_konfirmilon</code> nun mendas jam koditan
+        mesaĝon, anstataŭ kodi ĝin mem, por eviti misan alineadon de
+        kotizotabelo (kio dependas de kodigo).
+</dd>
+<dt>iloj/kreu_akceptofolion.php</dt>
+<dd>forlaso de "sur nomŝildo" kaj ŝovo de la partopreno-ID por eviti kolizon,
+        uzo de nova kotizomontrilo (PDF-varianto).</dd>
+</dl>
+
+<h2>Revizo 138</h2>
+
+
+<p>Sistemo por trakti la kotizojn de malaliĝintoj.</p>
+
+<dl>
+<dt>partrezultoj.php, sercxrezultoj.php</dt>
+<dd>korekto de tajperaroj</dd>
+<dt>kategorisistemoj.php</dt>
+<dd>Aldono de Malaliĝkondiĉsistemoj kaj malaliĝkondiĉotipoj</dd>
+<dt>doku/strukturo-kotizosistemo.png, doku/strukturo-kotizosistemo.dot</dt>
+<dd>Reordigo de iuj tabeloj, por ebligi pli bonan bildon.</dd>
+<dt>doku/kreu-grafikojn.sh</dt>
+<dd>Nova: bash-skripto por aŭtomate krei la .png-dosierojn
+    el la .dot-versioj.</dd>
+<dt>doku/strukturo-malaligxkotizosistemo.png, doku/strukturo-malaligxkotizosistemo.dot</dt>
+<dd><img src='strukturo-malaligxkotizosistemo.png' alt='' style='float:right; width: 300px' />
+Pligrandigita diagramo, kun la malaliĝkondiĉoj</dd>
+<dt>konfiguro/ma-kondicxoj.php</dt>
+<dd>nova: diversaj funkcioj por uzo kiel malaliĝkondiĉoj.</dd>
+<dt>konfiguro/kondicxoj.php</dt>
+<dd>La plej multaj antaŭpagoj nun ne plu validas por malaliĝintoj.</dd>
+<dt>iloj/iloj_kotizo_malaligxo.php</dt>
+<dd>nova: klasoj <code>Malaligxkondicxsistemo</code> kaj <code>Malaligxkondicxotipo</code>.</dd>
+<dt>malaligxkondicxotipo.php</dt>
+<dd>nova: redaktilo por malaliĝkondiĉotipoj.</dd>
+<dt>malaligxkondicxsistemo.php</dt>
+<dd>nova: redaktilo por Malaliĝkondiĉsistemoj.</dd>
+<dt>finkalkulado.php, iloj/iloj_kotizo.pho</dt>
+<dd>Kelkaj ŝanĝoj en la finkalkula tabelo:
+          <ul>
+            <li>invitilo-kampo for</li>
+            <li>alvenstato-kampo montras ankaŭ la trakton de malaliĝoj</li>
+            <li>IS-kotizo-kampo montras nun la kotizon post ebla trakto de
+              malaliĝoj, same kiel la fina sumo</li>
+            <li>montrado de IS-krompagoj nun funkcias.</li>
+          </ul>
+</dd>
+<dt>iloj/iloj_kotizo.php</dt>
+<dd>
+          <ul>
+            <li>uzo de iloj_kotizo_malaligxo.php,</li>
+            <li>la kotizosistemo konas sian malaliĝkondiĉosistemon kaj
+              havas metodon por redoni tiun objekton</li>
+            <li>la kotizokalkulilo povas trakti malaliĝojn (per delegado al
+              la respondeca malaliĝkondiĉotipo en
+              <code>traktu_malaligxon</code>), kaj tiel kalkuli alian
+              kotizon por malaliĝintoj. Tio ankaŭ estos montrata en la
+              kotizotabelo (<code>montru_kotizon</code>).</li>
+            <li>rabatoj ne plu estas kalkulataj por malaliĝintoj.</li>
+            <li><code>minimuma_antauxpago()</code> nun funkcias.</li>
+          </ul>
+</dd>
+<dt>iloj/iloj_kotizo_kategorioj.php</dt>
+<dd>nova metodo <code>trovu_kategorion_laux_dato</code> por la
+          aliĝkategorisistemo, uzata de <code>trovu_kategorion</code>
+          kaj de la malaliĝ-traktado.
+</dd>
+<dt>iloj/iloj_sql.php</dt>
+<dd><code>aldonu_al_datumbazo</code> kaj <code>sxangxu_datumbazon()</code>
+   nun povas trakti null-valorojn, per uzo de nova funkcio <code>sql_quote</code>.</dd>
+<dt>iloj/iloj_html.php</dt>
+<dd>erarkorekto en <code>tabela_kondicxoelektilo()</code>, nova (simila)
+funkcio <code>tabela_ma_kondicxoelektilo()</code>.
+Erarkorekto en <code>elektilo_simpla_db()</code> (ne traktinte esperantajn signojn ĝuste).</dd>
+<dt>iloj/iloj.php</dt>
+<dd>ŝarĝo de <code>konfiguro/ma-kondicxoj.php</code>, nova funkcio
+<code>estas_unu_el()</code>.</dd>
+<dt>iloj/iloj_kotizo_krompagoj.php</dt>
+<dd>forigo de superfluaĵoj.</dd>
+<dt>iloj/objektoj.php</dt>
+<dd>nova metodo <code>korektu_kopiitajn()</code>, vokata de
+          <code>kopiu()</code>, por anstataŭo en subklasoj.
+  (Ne uzata ĝis nun, evidentiĝis ke la problemo tiel ne estas
+    solvebla, anstataŭe la ŝanĝo en iloj_sql (vidu supre).)</dd>
+<dt>kotizosistemo.php</dt>
+<dd>+ formularero por elekti la malaliĝkondiĉsistemon.</dd>
+</dl>
+
+<h2>Revizo 137</h2>
+
+<p>Diversaj ŝanĝoj intertempe ...</p>
+
+<dl>
+<dt>wp-kromprogramoj/aligilo-bazo.php, wp-kromprogramoj/aligilo-aligxintoj-listo.php, wp-kromprogramoj/aligilo-aligxintoj-nombro.php</dt>
+<dd>Kelkaj kromprogramoj por WordPress, por montri tie la liston de aliĝintoj,
+       kaj la nombron de aliĝintoj. Pliaj eble sekvos.
+</dd>
+<dt>publikaj_skriptoj/2008/*</dt>
+<dd>skriptoj uzendaj de ekstere, ekzemple la aliĝilo, en versio uzonta (post necesaj ŝanĝoj) en 2008. Kopio de 2007aj dosieroj (ekster tiu programo).</dd>
+<dt>krompagotipo.php</dt>
+<dd>+ entajpejo por mallongigo</dd>
+<dt>konfiguro/opcioj.php, iloj/iloj_kotizo.php</dt>
+<dd>+ opcioj por tiuj pagotipoj, kiuj estas konsiderataj kiel "surlokaj",
+    kaj uzo de tiu opcio por eltrovi, kiuj pagoj estas surlokaj pagoj.
+
+    Hmm, eble indas meti tiun en la datumbazon, ĉu ne?</dd>
+<dt>finkalkulado.php</dt>
+<dd>ŝanĝo al nova sistemo, kion montri. (Ankoraŭ necesas forigi
+    restojn de la malnova sistemo.) </dd>
+<dt>iloj/iloj_kotizo.php</dt>
+<dd>nova funkcio <code>donu_informon</code> por doni la necesajn informojn
+     por finkalkulado.php, per granda <code>switch</code>.</dd>
+<dt>iloj/objekto_partopreno.php, administrado.php, cxambrostatistiko.php, finkalkulado.php, gxenerala_sercxo.php, partoprenkontrolo.php, partrezultoj.php, partsercxo, sercxrezultoj.php, statistikoj.php,</dt>
+<dd>Pliaj variantoj por <code>alvenstato</code>, nome "vidita, sed ne akceptiĝis" kaj "ne venis/venos, sen malaliĝi".</dd>
+<dt>iloj/objekto_partopreno.php, partrezultoj.php, (datumbazo)</dt>
+<dd>forigo de la kampoj <code>venos</code> kaj <code>alvenis</code>, kiuj
+    ŝajne estas ankoraŭ de iu tre frua versio de la datumbazo, kaj ne plu
+    estas uzataj.</dd>
+<dt>iloj/iloj_sesio.php</dt>
+<dd>Nova dosiero, kiu enhavas funkciojn por trakti sesiajn variablojn.</dd>
+<dt>iloj/iloj_html</dt>
+<dd>nova funkcio <code>elektilo_kun_butono()</code>.</dd>
+<dt>renkontigxo.php</dt>
+<dd>Funkcio por krei novan renkontiĝon finfine implementita. </dd>
+<dt>partoprensxangxo.php</dt>
+<dd>Nova dosiero, ĝi faru unuopajn ŝanĝojn pri partopreno-objektoj
+    (anstataŭ partrezultoj.php).</dd>
+</dl>
+
+<h2>Revizo 133</h2>
+
+
+<p>2008-01-15, adresaro (nun sendita), ktp.</p>
+
+<dl>
+<dt>specialaj_skriptoj/sendu_adresaron-2008.php</dt>
+<dd>Finaj adaptoj por sendado</dd>
+<dt>doku/farendajhoj.html</dt>
+<dd>Kelkaj aldonoj.</dd>
+<dt>konfiguro/datumaro.php</dt>
+<dd>Forpreno de la pasvorto. (La aktualan pasvorton de la servilo mi
+    jam ŝanĝis, do ne plu indas elprovi la antaŭan.)</dd>
+<dt>iloj/kreu_adresaron.php</dt>
+<dd>Indiko, ke oni ne plu uzu tiun ĉi, sed la tcpdf-varianton.</dd>
+<dt>iloj/kreu_adresaron_tcpdf.php</dt>
+<dd>reŝalto al LF por la linrompiĝoj.</dd>
+<dt>diversaj dosieroj</dt>
+<dd>SVN-eco: <code>svn:eol-style LF</code> je ĉiuj PHP-dosieroj, kiuj tion
+     ankoraŭ ne havis.</dd>
+</dl>
+
+<h2>Revizo 132</h2>
+
+<p>2008-01-12, <em>adresaro ...</em></p>
+
+<dl>
+<dt>iloj/kreu_adresaron_tcpdf.php</dt>
+<dd>nun nur la uloj kun <code>listo = 'J'</code>.</dd>
+<dt>specialaj_skriptoj/sendu_adresaton-2008.php</dt>
+<dd>Nova: Adresaro-senda programo, kun la teksto kaj kondiĉoj por 2008.</dd>
+</dl>
+
+<h2>Revizo 131</h2>
+
+<p>2008-01-11, surlokaj ŝanĝoj de Würzburg</p>
+
+<dl>
+<dt>administrado.php</dt>
+<dd>malaktivigis funkcion <code>esso()</code>.</dd>
+<dt>akceptado-fino.php</dt>
+<dd>cimkorekto pri domotipo (estis 'j' anstataŭ 'J').</dd>
+<dt>akceptado-pago.php</dt>
+<dd>Cimkorekto: dato de surloka pago mankis.
+ Krome nun uzo de nova kotizokalkulilo</dd>
+<dt>enspezokalkulado.php</dt>
+<dd>Cimkorekto: kostokalkulilo bezonas la renkontiĝon.</dd>
+<dt>iloj/iloj_kostoj.php</dt>
+<dd>Cimkorekto: uzo de pluralo en datumbazkampoj</dd>
+<dt>iloj/iloj_kotizo_kategorioj.php</dt>
+<dd>Cimkorekto: funkciigo de <code>dekodu_kategoriojn()</code>, kiu
+   konsistis preskaŭ nur el eraroj.</dd>
+<dt>iloj/iloj_sercxo_rezulto.php</dt>
+<dd>Adapto de kelkaj specialaj konstruktoj al funkciado kun PHP 5, kie
+    aperis strangaj eraroj.</dd>
+<dt>iloj/iloj_sql.php</dt>
+<dd>Cimkorekto en <code>datumbazsxangxo()</code> (pri uzo de malplena
+        opcia argumento)</dd>
+<dt>iloj/tcpdf_php4/config/tcpdf_config.php</dt>
+<dd>Adapto de la adresoj de <code>is/admin</code> al
+    <code>is/admin-test</code>. Pripensenda estas iom pli ĝenerala
+     sistemo (uzo de $GLOBALS['prafix'], ekzemple).</dd>
+<dt>partopreno.php</dt>
+<dd>aldono de atentigo, ke oni elektu "parttempa"</dd>
+<dt>partsercxo.php</dt>
+<dd>Ioma reformatado, serĉeblecoj pri TEJO- kaj GEJ/GEA-membreco.</dd>
+<dt>route.php</dt>
+<dd>cimkorekto: nun ankaŭ la partoprenanto estas metata en la sesion,
+    se oni elektis partoprenon.</dd>
+<dt>sercxrezultoj.php</dt>
+<dd>La kalkulado de <em>ne-nula saldo</em> nun uzas la novan kotizokalkulilon,
+    la detala serĉo komprenas la aldonojn ĉe partserĉo.php.</dd>
+</dl>
+
+<h2>Revizo 130</h2>
+
+
+<p>2007-12-21, ebleco pagi al TEJO sen ricevi rabaton.</p>
+
+<dl>
+<dt>akceptado-tejo.php, gxenerala_sercxo.php, partopreno.php, iloj/objekto_partopreno.php, iloj/iloj_kotizo.php</dt>
+<dd>Plia ebleco <code>p</code> por <var>tejo_membro_kontrolita</var>
+   (en partopreno), kiu ebligas pagi kotizon (aŭ alian pagon) al TEJO,
+    sed ne ricevi rabaton.</dd>
+<dt>stilo.css, akceptado-lokaasocio.php, akceptado-tejo.php</dt>
+<dd>Pli bela formatigo de listo el elekteblecoj.</dd>
+</dl>
+
+<h2>Revizo 129</h2>
+
+<p>2007-12-19, diversaj erarkorektoj de la lastaj tagoj.</p>
+
+<dl>
+<dt>bildoj/infanojBuntaj-1.png, bildoj/infanojBuntaj-2.png,
+    bildoj/infanojBuntaj.png, bildoj/infanojSenkoloraj-1.png,
+    bildoj/infanojSenkoloraj-2.png, bildoj/infanojSenkoloraj.png</dt>
+<dd>diversaj versioj de la nova IS-simbolo.</dd>
+<dt>partsercxo.php, sercxrezultoj.php</dt>
+<dd>kotizo-kalkulilo-komparo</dd>
+<dt>route.php</dt>
+<dd>Pli bona erarmesaĝo</dd>
+<dt>konfiguro/kondicxoj.php</dt>
+<dd>korekto de unulita-ĉambro-krompago-kondiĉo (nur por homoj en
+     junulargastejo)</dd>
+<dt>partopreno.php</dt>
+<dd>forigo de kelkaj "kutima"-opcioj ĉe la entajpbutonoj.</dd>
+<dt>iloj/kreu_nomsxildojn.php</dt>
+<dd>Uzo de nova bildo (infanojBuntaj-2.png) anstataŭ la Eo-ovo.</dd>
+<dt>iloj/iloj_sercxo_rezulto.php</dt>
+<dd>?</dd>
+<dt>iloj/objekto_partopreno.php</dt>
+<dd>korekto de tajperaro en <code>montru_aligxon()</code>.</dd>
+<dt>iloj/iloj_kotizo_kategorioj.php</dt>
+<dd>korekto de erara kategorio-kalkulado (de &gt; al &ge;).</dd>
+<dt>iloj/iloj.php, iloj/kreu_konfirmilon.php</dt>
+<dd>ŝovo de la funkcioj <code>estas_ekster_latin1()</code> kaj <code>bezonas_unikodon()</code> al iloj.php.</dd>
+<dt>iloj/iloj.php</dt>
+<dd>korektitaj funkcioj pri pasvortkontroloj (<code>rajtas()</code> kaj <code>kontrolu_entajpanton()</code>).</dd>
+</dl>
+
+
+<h2>Revizo 128</h2>
+<p>2007-12-19</p>
+
+<dl>
+<dt>tools-org -> ../tools-org/</dt>
+<dd>Hmm, tiu loko estas espereble pli bona.</dd>
+</dl>
+
+
+<h2>Revizo 127</h2>
+
+<dl>
+<dt>iloj/tcpdf_1_53_0_TC034_php4.zip -> tools-org/tcpdf_1_53_0_TC034_php4.zip</dt>
+<dd>ŝovo de dosiero, por povi ĝin forigi el la labora kopio, kiun mi havas,
+    kaj tiel ŝpari iom da spaco.</dd>
+</dl>
+
+<h2>Revizo 126</h2>
+
+<dl>
+<dt>cxambrostatistiko.php</dt>
+<dd>korekto de tajperaro, aldono de tuta partoprenantonombro.</dd>
+<dt>gxenerala_sercxo.php</dt>
+<dd>tajperaroj: prilaborita -> prilaborata, sercxtabellinio -> sercxelektolinio
+  (kaŭzis stultan erarmesaĝon)</dd>
+<dt>iloj/iloj_cxambroj.php</dt>
+<dd>erara voko de metodo en (ebla) null-objekto - nun kun taŭga kondiĉo.</dd>
+</dl>
+
+<h2>Revizo 125</h2>
+
+<dl>
+<dt>sercxoj.php</dt>
+<dd>Ebleco redakti la meta-datumojn (nomo + priskribo) de
+    daŭrigita serĉo.</dd>
+<dt>administrado.php</dt>
+<dd>Forigis la (neniam uzitan) eblecon sendi retajn duajn konfirmilojn.</dd>
+<dt>gxenerala_sercxo.php</dt>
+<dd>+ ISO-kodo de landoj</dd>
+<dt>akceptado-fino.php, akceptado-datoj.php</dt>
+<dd>kelkaj reformatadoj de la akceptadaj instrukcioj</dd>
+<dt>doku/farendajhoj.html</dt>
+<dd>Aktualigo - kio estas intertempe farita</dd>
+<dt>finkalkulado.php, iloj/mangxkuponoj.php</dt>
+<dd>Uzo de TCPDF kaj rilataj ŝanĝoj.</dd>
+<dt>iloj/kreu_nomsxildojn.php</dt>
+<dt>iloj/kreu_adresaron.php, iloj/kreu_adresaron_tcpdf.php, iloj/mangxkuponoj.php, iloj/kreu_akceptofolion.php</dt>
+<dd>Uzo de  $prafix-relativaj dosierlokoj</dd>
+<dt>iloj/kreu_adresaron_tcpdf.php</dt>
+<dd>Adapto de formato</dd>
+<dt>iloj/iloj_cxambroj.php</dt>
+<dd>Korekto de eraro en la kalkulo de mankantaj litoj</dd>
+</dl>
+
+<h2>Revizo 124</h2>
+
+<dl>
+<dt>partrezultoj.php</dt>
+<dd>sendado de duaj informilo nun estas notata en la datumbazo.</dd>
+<dt>administrado.php</dt>
+<dd>Uzu unikodan varianton de la konfirmilo (ĉiam - ni ja ne devas sendi
+   ĝin per retpoŝto).</dd>
+<dt>specialaj_skriptoj/sendu_duan_informilon.php</dt>
+<dd>nova dosiero por sendado de duaj informiloj. (Necesas adaptoj en la programkodo antaŭ uzi ĝin.)</dd>
+<dt>partoprenkontrolo.php</dt>
+<dd>forigo de Debug-teksteldono</dd>
+<dt>krompagotipo.php, iloj/iloj_kotizo_kategorioj.php</dt>
+<dd>nun kun loka nomo de krompagotipoj kaj aliĝkategorioj.</dd>
+<dt>doku/kotizosistemo.sql</dt>
+<dd>Nova: La strukturo kaj enhavo de la kotizo-sistem-relevantaj tabeloj.</dd>
+<dt>doku/aligilo-tabeloj.sql</dt>
+<dd>Aktuala versio de la datumbaz-strukturo.</dd>
+<dt>konfiguro/kondicxoj.php</dt>
+<dd>Adapto al iu ŝanĝo de la kategorioj-strukturo.</dd>
+<dt>iloj/iloj_kotizo.php</dt>
+<dd>Pli kompleta dulingveco de la kotizo-tabelo.</dd>
+<dt>iloj/kreu_konfirmilon.php</dt>
+<dd>Adapto al TCPDF-specialaĵoj, uzo de $prafix-relativaj dosierlokoj, forigo de nenecesaj kodo-partoj</dd>
+<dt>iloj/diversaj_retmesagxoj.php</dt>
+<dd>korekto de dosiernomoj.</dd>
+<dt>iloj/iloj_kostoj.php</dt>
+<dd>korekto de malĝusta foreach.</dd>
+</dl>
+
+<h2>Revizo 123</h2>
+
+<dl>
+<dt>iloj/iloj_konfirmilo.php</dt>
+<dd>novaj funkcioj por krei la retmesaĝan tekston por la dua konfirmilo.</dd>
+<dt>iloj/diversaj_retmesagxoj.php</dt>
+<dd>nova funkcio por sendi la duajn konfirmiloj</dd>
+<dt>partrezultoj.php</dt>
+<dd>Uzo de la novaj duaj konfirmiloj anstataŭ la malnovaj</dd>
+<dt>sxablonoj/dua_konfirmilo_retposxto_de.txt, sxablonoj/dua_konfirmilo_retposxto_eo.txt</dt>
+<dd>novaj dosieroj: enhavo de la teksto por la dua konfirmilo-mesaĝo.</dd>
+<dt>doku/tekstoj.php</dt>
+<dd>Nova teksto: konf2_dua-informilo-teksto</dd>
+<dt>iloj/retmesagxiloj.php</dt>
+<dd>nova metodo <code>latin1a_teksto_estu</code>, kaj ties voko de
+  <code>auxtomata_teksto_estu</code>, depende de la enhavo.
+  Krome sendu() nun <code>sendu()</code> printas post la sendado, kien
+  ĝi sendis.
+</dd>
+<dt>kreu_konfirmilon.php</dt>
+<dd>splitiĝo de <code>bezonas_unikodon</code>, por povi testi ankaŭ
+   tekstojn, ne nur partoprenantojn.
+  La <code>kreu_konfirmilon()</code>-Metodo nun ankaŭ povas preni jam pretajn
+  objektojn, anstataŭ krei tiujn mem.</dd>
+</dl>
+
+<h2>Revizo 122</h2>
+
+<dl>
+<dt>menuo.php</dt>
+<dd>forigo de elprovejo</dd>
+<dt>administrado.php</dt>
+<dd>Aldono de pluraj ligoj al subdosierujoj (+ iom da reformatado)</dd>
+</dl>
+
+<h2>Revizo 121</h2>
+
+<dl>
+<dt>enspezokalkulado.php</dt>
+<dd>
+Uzo de <code>tabela_elektilo()</code> anstataŭ <code>elektilo_simpla</code> en apartaj tabeleroj,
+ebleco elekti kostosistemon.
+...
+</dd>
+<dt>iloj/iloj_kostoj.php</dt>
+<dd>nova Klaso kostokalkulilo, kun pluraj metodoj.
+</dd>
+<dt>iloj/objekto_partopreno.php</dt>
+<dd>Nova metodo <code>partopennoktoj()</code>.
+</dd>
+<dt>iloj/objekto_renkontigxo.php</dt>
+<dd>Nova metodo <code>renkontigxonoktoj()</code>.</dd>
+<dt>cxambrostatistiko.php, cxambroj.php, iloj/iloj_kotizoj.php, iloj/mangxkuponoj.php, iloj/iloj_cxambroj.php, iloj/iloj_kostoj.php</dt>
+<dd>Uzo de <code>...->renkontigxonoktoj()</code> aŭ
+   <code>...->partoprennoktoj()</code> anstataŭ rekta
+   <code>kalkulu_tagojn(...->datoj['de'], ...->datoj['gxis'])</code>.
+</dd>
+</dl>
+
+<h2>Revizo 120</h2>
+
+<dl>
+<dt>iloj/iloj_kotizo_kategorioj.php</dt>
+<dd>Adapto de <code>enkodu_kategoriojn()</code> al la
+        <a href="#kategori-listoj-array">ŝanĝoj en Revizo 117</a> (kiuj kaŭzis ne-funkcion de la
+        kalkulado en enspezokalkulado.php). </dd>
+</dl>
+
+<h2>Revizo 119</h2>
+
+<dl>
+<dt>iloj/iloj_sercxo_analizo.php</dt>
+<dd>certigas konekton de invitpetoj al aliaj tabeloj.</dd>
+</dl>
+
+
+<h2>Revizo 118</h2>
+
+<dl>
+<dt>iloj/objektoj.php, invitpeto.php</dt>
+<dd>
+        La ŝanĝo en <a href='#skribu_kreante_problemo'>revizo 107</a> montriĝis problema.
+        Pro tio mi nun aldonis apartan funkcion <code>skribu_kreante_kun_ID()</code>, kiu
+        konservas la ID, kaj nun uzas tiun funkcion (anstataŭ <code>skribu_kreante()</code>)
+        por la invitpetoj.
+</dd>
+</dl>
+
+<h2>Revizo 117</h2>
+
+<dl>
+<dt>administrado.php</dt>
+<dd>Rekta aliro al tekstoj.php (ne plu necesas iri tra renkontigxo.php)</dd>
+<dt>doku/tekstoj.txt</dt>
+<dd>Novaj tekstoj: konf2-sendanto-adreso, konf2-kunportu-reston.</dd>
+<dt id='kategori-listoj-array'>iloj/iloj_kotizo.php, iloj/iloj_kotizo_kategorioj.php</dt>
+<dd>Kategorioj-listoj nun enhavas kaj la identigilon de la kategorio,
+kaj iun liberan tekston (povas esti dulingva) por klarigi ĝin. Pro
+tio necesis adapti plurajn funkciojn.</dd>
+<dt>iloj/iloj_kotizo.php</dt>
+<dd>La kotizokalkulilo nun memoras krom la nombro de partoprennoktoj
+   tekston pri la fakto, ĉu estas tuttempa aŭ parttempa partopreno.
+  Tiu estas uzata en la kotizokalkulo-tabelo.
+  La interna formato de la kotizokalkulotabelo iom ŝanĝiĝis, inter
+  alie por ebligi tradukojn.
+  La PDF-kreila parto multe ŝanĝiĝis.
+</dd>
+<dt>iloj/iloj_tekstoj.php</dt>
+<dd>Ni nun fortranĉas spac-signojn (kaj similaĵojn) fine de tekstoj
+    antaŭ la uzado, ĉar tiuj estas malfacile videbla dum la entajpado,
+    kaj povus ŝanĝi la aspekton de la rezulto.</dd>
+<dt>iloj/kreu_konfirmilon.php</dt>
+<dd> Entute ni ŝanĝis de Latina-1 al UTF-8.
+    La adreso de la sendinto venas nun el la datumbazo, ni montros nur
+   la kotizotabelon (kiu enhavas nun ĉion necesan, ŝajne), ne plu la
+   antaŭan tabelon. Krome estis kelkaj etaj formatadaj ŝanĝoj.
+</dd>
+</dl>
+
+
+<h2>Revizo 116</h2>
+
+<dl>
+<dt>renkontigxo.php</dt>
+<dd>Elektilo por la kotizosistemo de iu renkontiĝo.</dd>
+<dt>iloj/iloj_kotizo.php</dt>
+<dd>Kotizosistemo havas novan funkcion por eltrovi la minimumajn
+    antaŭpagoj por iu landokategorio.<br/>
+   <code>montru_kotizon()</code> nun uzas du lingvojn (de kaj eo), kaj
+    la PDF-kreado (por dua konfirmilo kaj por la akceptofolio) nun
+    parte funkcias. (Estas tamen pripensinde ŝovi tion al alia dosiero.)
+</dd>
+<dt>iloj/iloj_kotizo_kategorioj.php</dt>
+<dd><code>trovu_kategorion()</code> nun ricevas pliajn parametrojn
+  (kotizosistemon kaj la ĝis nun eltrovitajn kategoriojn) &ndash; tion uzas
+  la aliĝkategorisistemoj.
+  Aldona funkcio <code>kalkulu_kotizorelevantan_daton()</code> faras ĝuste
+  tion - kalkulas laŭ la datoj de pagoj, landokategorio ktp. la daton, kiu
+  validas por la aliĝkategorio.
+</dd>
+<dt>iloj/iloj_html.php</dt>
+<dd>Nova funkcio <code>tabela_elektilo_db</code> kiel kombinaĵo de <code>tabela_elektilo</code> kaj <code>simpla_elektilo_db</code>.</dd>
+<dt>iloj/iloj_kotizo_krompagoj.php, konfiguroj/kondicxoj.php</dt>
+<dd>La krompago-kondiĉoj ricevas kiel plian parametron la kotizokalkulilon
+    (kiun ili povos demandi pri aldonaj informoj).</dd>
+<dt>iloj/kreu_konfirmilon.php</dt>
+<dd>
+<ul>
+<li>Uzo de TCPDF anstataŭ UPDF, por la unikodaj konfirmiloj.</li>
+<li>La dosiero mem estas nun kodita en UTF-8 (germanaj specialaj literoj)</li>
+<li>forigo de <code>esso()</code>.</li>
+<li>Uzo de <code>Kotizokalkulilo</code>-objekto anstataŭ
+   <code>Kotizo</code>-objekto.</li>
+<li>Printado de kotizo-tabelo per la kotizokalkulolo. (Necesas forigo
+      de duoblaj informoj, por ŝpari spacon.)</li>
+</ul>
+</dd>
+<dt>iloj/kreu_akceptofolion.php</dt>
+<dd>
+<ul>
+<li>Uzo de TCPDF anstataŭ UPDF</li>
+<li>forigo de <code>esso()</code>.</li>
+<li>Aldono de <code>dulingva()</code> kaj <code>trans_eo</code> por
+ kompatibileco al Konfirmilo (por la kotizotabelo)</li>
+<li>Uzo de <code>Kotizokalkulilo</code>-objekto anstataŭ
+   <code>Kotizo</code>-objekto.</li>
+<li>Printado de kotizo-tabelo per la kotizokalkulolo.</li>
+<li>Kelkaj optimumigoj pri la vortumado kaj la formatado.</li>
+</ul>
+</dd>
+</dl>
+
+
+<h2>Revizo 115</h2>
+
+<dl>
+<dt>personkostotipo.php</dt>
+<dd>elekto de kondiĉo el listo anstataŭ entajpado de
+    PHP-kodo.</dd>
+<dt>krompagotipo.php &rarr; krompago.php</dt>
+<dd>Ŝanĝo de nomo, elekto de kondiĉo el listo anstataŭ entajpado de
+    PHP-kodo.</dd>
+<dt>kategorisistemoj.php, kotizosistemo.php</dt>
+<dd>ligoj nun al krompagotipo.php (anstataŭ krompago.php)</dd>
+<dt>konfiguro/kondicxoj.php</dt>
+<dd>diversaj kondiĉo-funkcioj, parte antaŭe en la datumbazo. Por uzo en
+    krompagoj kaj personkostoj.</dd>
+<dt>iloj/iloj_html.php</dt>
+<dd>...</dd>
+<dt>iloj/iloj.php</dt>
+<dd>voko de konfiguro/kondicxoj.php</dd>
+<dt>iloj/iloj_kotizo_krompagoj.php, iloj/iloj_kostoj.php</dt>
+<dd>en la datumbazo nun estas ne plu PHP-kodo, sed nur nomo de
+        kondiĉo-funkcio. Laŭe estas ŝanĝita la uzo de la
+        kondiĉo-kampo.
+</dd>
+</dl>
+
+<h2>Revizo 114</h2>
+
+<dl>
+<dt>iloj/iloj_kotizo.php</dt>
+<dd>korekto de sintaksaj eraroj.</dd>
+</dl>
+
+
+<h2>Revizo 113</h2>
+
+<dl>
+<dt>partopreno.php</dt>
+<dd>Ŝanĝo de pluraj aperoj de plurliteraj valoroj al unuliteraj, por
+    eviti problemojn, ebligo de unulitaj ĉambroj.</dd>
+<dt>iloj/iloj_kotizo.php</dt>
+<dd>Korekto de kalkulo de plurnokta (nome tuttempa) krompago.</dd>
+<dt>iloj/iloj_kotizo_kategorioj.php</dt>
+<dd>korekto de aliĝkategoridato-kontrolo</dd>
+<dt>iloj/objekto_partopreno.php, gxenerala_sercxo.php, partsercxo.php</dt>
+<dd>adapto al unulitaj ĉambroj</dd>
+<dt>iloj/iloj.php</dt>
+<dd>Ŝanĝo de la datumbazdemandoj en <code>rajtas()</code> kaj
+    <code>kontrolu_entajpanton()</code> por ne inkludi la pasvorton
+    en la datumbazdemandon (sed anstataŭe en la rezulton), por ke ĝi
+    ne montriĝu en debug- kaj erareldonoj.</dd>
+</dl>
+
+<h2>Revizo 112</h2>
+
+<dl>
+<dt>kostosistemo.php, personkostotipo.php, iloj/iloj_kostoj.php, kostosistemoj.php</dt>
+<dd>
+Novaj, komenco de la implementado de "kostosistemo", por kalkuli kostojn de iu
+renkontiĝo (kaj kompari kun la enspezoj).
+</dd>
+<dt>kotizoj.php</dt>
+<dd>Ligoj al kostosistemoj.php</dd>
+<dt>krompago.php, kategorisistemoj.php, iloj/iloj_kotizo.php</dt>
+<dd>Aldono de ebleco de laŭnokta krompago.</dd>
+<dt>kategorisistemoj.php</dt>
+<dd>Listo de personkostotipoj.</dd>
+<dt>iloj/iloj_kotizo.php</dt>
+<dd>Uzo de iloj_kostoj, </dd>
+<dt>iloj/iloj_html.php</dt>
+<dd>Korektis erareton en <code>elektilo_simpla</code>.</dd>
+</dl>
+
+<h2>Revizo 111</h2>
+
+<h2>Revizo 110</h2>
+
+<dl>
+<dt>administrado.php, gxenerala_sercxo.php, partsercxo.php,
+ partoprenkontrolo.php, cxambrostatistiko.php, partopreno.php,
+ iloj/objekto_partopreno.php, iloj/iloj_mesagxoj.php</dt>
+<dd>La kampo <em>kunmangxas</em> de partopreno nun havas la tri eblecojn
+ J (kunmanĝas sen krompago), K (krompagas por kunmanĝi) kaj N (ne krompagas).
+Pro tio en pluraj dosieroj necesis adaptoj.</dd>
+</dl>
+
+<h2>Revizo 109</h2>
+
+<dl>
+<dt>krompago.php</dt>
+<dd>Nun uzebla: kreado kaj redaktado de krompago-tipoj.</dd>
+<dt>kategorisistemoj.php</dt>
+<dd>nun kun enhavtabelo kaj listo de krompagotipoj.</dd>
+<dt>stilo.css</dt>
+<dd>ŝanĝitaj spacoj kaj koloroj por la kotizotabeloj.</dd>
+<dt>iloj/iloj_kotizo.php</dt>
+<dd>
+La granda kotizotabelo nun subtenas titolon.
+Dum la kalkulado de parttempaj kotizoj ni fortranĉas
+la post-komajn ciferojn.
+</dd>
+<dt>iloj/iloj_html.php</dt>
+<dd>
+Nova funkcio <code>tabela_elektilo</code>.
+</dd>
+<dt>iloj/iloj_kotizo_krompagoj.php</dt>
+<dd>
+<code>listu_cxiujn_krompagotipojn()</code> nun ankaŭ
+ subtenas aliajn kondiĉojn.
+</dd>
+<dt>enspezokalkulado.php</dt>
+<dd>Kontrolo, ĉu ĉiuj partoprenantoj aperas en la tabelo.
+anstataŭigo de la granda tabelo (kun pluraj informoj) per pluraj
+tabeloj (kun po unu informo).
+</dd>
+<dt>kotizosistemo.php</dt>
+<dd>korekto de cimo <code>$tipo</code> anstataŭ <code>$kromtipo</code>
+     rezultis, ke plurfoje la sama tipo estis montrita en la tabelo por
+    aldoni novan krompagon.
+</dd>
+</dl>
+
+<h2>Revizo 108</h2>
+<h2>Revizo 107</h2>
+
+<dl>
+<dt>kategorisistemo.php</dt>
+<dd>(Nova) Redaktilo por kategorio-sistemoj kaj la unuopaj kategorioj.
+(Parte uzas novajn funkciojn en iloj/iloj_kotizo_kategorioj.php.)
+Per ĝi ankaŭ eblas kopii tutajn kategoriosistemojn (inkluzive de
+ĉiuj kategorioj).
+</dd>
+<dt>iloj/iloj_kotizo_kategorioj.php</dt>
+<dd>Novaj metodoj:
+<ul>
+    <li><code>Kategoriosistemo::katKlasnomo()</code> - nomo de la respektiva kategorio-klaso.</li>
+    <li><code>Kategorisistemo::kopiu_kategoriojn_el()</code> kaj <code>Kategorio::finu_kopiadon_el()</code> - por kopii post kreado de nova kotizosistemo ĉiujn kategoriojn (kun variantoj en subklasoj) </li>
+   <li><code>Kategorisistemo::mangxu_aliajn_kategorisxangxojn()</code> -
+    por ke subklasoj (landokategorisistemo) povu prilabori ŝanĝojn de la
+    landokategorioj.</li>
+   <li><code>Kategorisistemo::kreu_kategorikreilon</code> kreas formularerojn
+     por krei novan kategorion - en subklasoj estas variantoj de tio.</li>
+   <li><code>Landokategorio::listu_landojn()</code> por krei liston de iu
+     informero pri ĉiu lando, kiu estas membro de tiu kategorio.</li>
+</ul>
+Krome <code>Kategorisistemo::listu_kategoriojn()</code> (kun
+      <code>Kategorisistemo::kreu_kategoritabelkapon()</code> kaj
+     <code>Kategorio::kreu_tabellinion()</code>) nun subtenas alternative
+      formaton, kie eblas redakti la kategoriojn. (En subklasoj ekzistas
+     variantoj de tio.)
+</dd>
+<dt>kategorisistemoj.php</dt>
+<dd>Ligoj al kategorisistemo.php, por redakti kaj krei novajn sistemojn,
+    adaptigo al la ŝanĝoj en iloj/iloj_kotizo_kategorioj, ligoj al
+    kotizosistemoj.php kaj kotizoj.php.</dd>
+<dt>stilo.css</dt>
+<dd>iom da koloro por la kotizotabelo kreita de
+    <code>Kotizosistemo::metu_kotizotabelon()</code>.</dd>
+<dt>landoj.php</dt>
+<dd>Kosmetikaj ŝanĝoj, aldono de ISO-3166-1-kodo.</dd>
+<dt>kotizosistemo.php</dt>
+<dd><code>switch($_REQUEST['sendu'])</code> anstataŭ pluraj <code>if</code>.
+Ebleco redakti krompagojn, kaj la minimumajn antaŭpagojn (laŭ
+landokategorio). Aldoniĝis <code>parttempdivisoro</code> al la kotizosistemo.
+Finfine aldoniĝis ligoj al aliaj dosieroj.
+</dd>
+<dt>iloj/iloj_kotizo.php</dt>
+<dd><code>Kotizokalkulilo</code> nun kalkulas ankaŭ la parttempan kotizon.</dd>
+<dt>iloj/iloj_sql.php</dt>
+<dd><code>datumbazsxangxo()</code> havas alternativan simpligan
+   parametron (eblas uzi <code>$id</code> anstataŭ <code>array("ID" =&gt; $id)</code>)</dd>
+<dt>iloj/iloj_html.php</dt>
+<dd><code>tabelentajpejo</code> nun uzas <code>&lt;label&gt;</code>.
+Nova funkcio <code>tabela_kasxilo()</code> por krei tabelliniojn kaj
+samtempe memori iun valoron.</dd>
+<dt id='skribu_kreante_problemo'>iloj/objektoj.php</dt>
+<dd><code>skribu_kreante()</code> nun metas ID=0 por krei novan objekton (kaj
+         aŭtomata kreado de ID en la datumbazo). (Poste rigardante, tio
+        kreas problemon por <code>invitpeto</code>,
+        kiu ne havas propran ID, sed uzas tiun de partopreno.)
+        Krome aldono de kelkaj <code>mysql_free_result()</code> por ŝpari iom da spaco.
+</dd>
+</dl>
+
+
+<h2>Revizo 106</h2>
+
+<dl>
+<dt>menuo.php</dt>
+<dd>ligo al kotizoj.php anstataŭ kotizo.php</dd>
+<dt>kotizoj.php</dt>
+<dd>(nova) simpla superrigarda paĝo pri la diversaj kotizo-rilataj paĝoj.</dd>
+<dt>iloj/iloj_kotizo.php</dt>
+<dd><code>kotizosistemo->metu_kotizotabelon()</code> reverkita, por fari
+     la bazan laboron per transdonita funkcio. Tiel eblas reuzi la saman
+     tabelon en enspezokalkulado.php.</dd>
+<dt>iloj/iloj_kotizo_kategorioj.php</dt>
+<dd>apartaj funkcioj por kodigi/malkodigi kategorio-liston en koncizan
+    formon (ekzemple <code>1=4=56=2</code>), ekzemple por uzo en
+    formularero-nomoj aŭ array()-ŝlosiloj. (Tiu kodado antaŭe estis farita
+    dise en iloj_kotizoj.php kaj kotizosistemo.php, kaj nun evidentiĝis, ke ni
+    bezonos ĝin en pliaj lokoj.)</dd>
+<dt>enspezokalkulado.php</dt>
+<dd>Preskaŭ tute nova ... programo por kalkuli la eblajn enspezojn, se
+    oni uzus iun kotizosistemon kun la partoprenantoj de iu renkontiĝo,
+    dividitaj laŭ kategorioj.</dd>
+<dt>iloj/iloj_html.php</dt>
+<dd>korekto de cimeto en <code>entajpejo()</code> (<code>type='text'</code>
+    mankis - sed ŝajne tio estas la defaŭlto por <code>&lt;input /&gt;</code>).
+    En <code>elektilo_simpla_db()</code> nun du pliaj parametroj estas opciaj -
+    montriĝis, ke "ID" kaj "nomo" estas sufiĉe taŭgaj defaŭltoj.</dd>
+<dt>iloj/iloj.php</dt>
+<dd>Nova funkcio <code>debug_echo()</code>, kiu eldonas la argumenton, se estas
+    en DEBUG-moduso (DEBUG == true), alikaze nenion faras.</dd>
+</dl>
+
+<h2>Revizo 105</h2>
+
+<dl>
+<dt>invitpeto.php</dt>
+<dd>Ligo al la partrezultoj.php (de sama partopreno),
+    Reen-ligo per <code>$_SESSION['sekvontapagxo']</code>.
+</dd>
+<dt>gxenerala_sercxo.php, iloj/iloj_sercxo_analizo.php</dt>
+<dd>Aldono de la invitpeto-tabeloj, cimkorekto ĉe notoj</dd>
+<dt>sercxoj.php</dt>
+<dd>Korekto de cimo (priskribo nomiĝis nomo)</dd>
+<dt>iloj/iloj_sercxo_html.php</dt>
+<dd>nova parametro <code>$titolo</code> por <code>sercxtabellinio()</code>
+   kaj <code>sercxelektolinio()</code>, por povi ŝanĝi la aspekton de
+   la tabelkapoj. </dd>
+<dt>iloj/iloj_sercxo_konservo.php</dt>
+<dd>kelkaj status-eldonoj, kaj uzo de <code>$_SESSION['sekvontapagxo']</code>,
+    se oni  malkonservis serĉon.</dd>
+</dl>
+
+<h2>Revizo 104</h2>
+
+<dl>
+<dt>iloj/tcpdf_php4/fonts</dt>
+<dd>Forigo de la subdosierujoj <code>old</code> (malnovaj, neunikodaj tiparoj)
+    kaj <code>ttf2ufm</code> (programo por produkti la tiparojn el alia
+    formato). (Tiel la tuta programo iom malpligrandiĝas.)
+</dd>
+</dl>
+
+
+<h2>Revizo 103</h2>
+<h2>Revizo 102</h2>
+
+<dl>
+<dt>datumbazstrukturo.dot, strukturo-kotizosistemo.dot</dt>
+<dd>
+ <img style="float:right; width: 600px" src="datumbazstrukturo.png" alt=""/>
+ <img style="float:right; width:600px" src="strukturo-kotizosistemo.png" alt="" />
+Diagramo de la datumbazstrukturo sen kaj kun la tabeloj de la
+        nova kotizosistemo.
+</dd>
+</dl>
+
+
+<h2>Revizo 101</h2>
+
+<p>Nova kotizokalkula sistemo, kun facile ŝanĝebla kotizosistemo.
+   (Ĝi ankoraŭ ne tute pretas, sed jam povas kalkuli la sistemon
+    en simplaj kazoj.)
+</p>
+
+<dl>
+<dt>partrezultoj.php</dt>
+<dd>Voko de la nova kotizokalkulo paralele al la malnova (por
+     kompari la rezultojn).</dd>
+<dt>iloj/iloj.php</dt>
+<dd>uzado de <code>iloj_kotizo.php</code></dd>
+<dt>kotizosistemoj.php, kotizosistemo.php, kategorisistemoj.php,
+     iloj/iloj_kotizo.php, iloj/iloj_kotizo_kategorioj.php,
+     iloj/iloj_kotizo_krompagoj.php</dt>
+<dd>novaj dosieroj por trakti kotizosistemojn, kategoriojn (kaj -sistemojn),
+   krompagojn ktp.</dd>
+<dt>enspezokalkulado.php</dt>
+<dd>Nova dosiero: kalkulado de la planataj enspezoj, se iu kotizosistemo estus uzata. (ankoraŭ farenda)</dd>
+<dt>krompago.php</dt>
+<dd>Nova dosiero: redaktado de krompago-tipoj. (ankoraŭ farenda.)</dd>
+<dt>doku/datumbazstrukturo.dot</dt>
+<dd>Skemo de la datumbazstrukturo (sen la kotizosistemo-tabeloj).</dd>
+<dt>doku/strukturo-kotizosistemo.dot</dt>
+<dd>Skemo de la datumbazstrukturo kun la kotizosistemo-tabeloj.</dd>
+</dl>
+
+
+<h2>Revizo 100</h2>
+
+<dl>
+<dt>iloj/iloj_html.php</dt>
+<dd>korektita cimo en <code>simpla_entajpejo()</code>,
+    novaj funkcioj <code>tabel_entajpbutono()</code>,
+   <code>elektilo_simpla()</code> kaj <code>elektilo_simpla_db</code>
+</dd>
+<dt>iloj/iloj.php</dt>
+<dd>implementado de <a href='http://www.php.net/manual/de/function.array-combine.php'><code>array_combine</code></a> el PHP 5 por PHP 4</dd>
+<dt>iloj/objektoj.php</dt>
+<dd>cimkorekto en <code>skribu_kreante()</code>.
+</dd>
+</dl>
+
+<h2>Revizo 99</h2>
+
+<dl>
+<dt>specialaj_skriptoj/sendu_varbmesagxon.php</dt>
+<dd>Teksto de la varbmesaĝo sendita la 27an de oktobro.</dd>
+</dl>
+
+<h2>Revizo 98</h2>
+
+<dl>
+<dt>akceptado-datoj.php, akceptado-tejo.php, akceptado-kontroloj.php, akceptado-pago.php, akceptado-lokaasocio.php, akceptado-cxambro.php, akceptado-fino.php, iloj/iloj_akceptado.php</dt>
+<dd>Restrukturitaj paĝoj de la akceptado-proceduro: supre la instrukcioj,
+sube la datumoj por prilabori (laŭ propono de Rolf)</dd>
+<dt>stilo.css</dt>
+<dd>Pluraj aldonaj stilaĵoj por la akceptado-proceduro.</dd>
+</dl>
+
+<h2>Revizo 97</h2>
+
+<dl>
+<dt>partrezultoj.php</dt>
+<dd>Indiko, ĉu la ĉambroj por tiu aliĝo sufiĉas.</dd>
+<dt>iloj/iloj_cxambroj.php</dt>
+<dd>Nova funkcio eltrovu_litomankon(), kiu redonas liston de noktonumeroj, en
+   kiuj mankas lito.</dd>
+</dl>
+
+
+<h2>Revizo 96</h2>
+
+<dl>
+<dt>notoj.php</dt>
+<dd>korekto de sintaksaj eraroj, kiuj aldoniĝis en Revizo 55.</dd>
+<dt>nova_teksto.php</dt>
+<dd>Pluredaktado de tekstoj post ŝanĝo aŭ kreado nun eblas,
+        krome pluraj etaj eraroj estis korektitaj.</dd>
+</dl>
+
+<h2>Revizo 95</h2>
+
+<dl>
+<dt>stilo.css</dt>
+<dd>Pli bona aspekto por la paŝolisto, laŭ proponoj de Rolf.</dd>
+<dt>route.php, menuo.php</dt>
+<dd>Tuja salto al la akceptado-proceduro, se la elektita persono aliĝis
+    al la aktuala renkontiĝo, ni estas en surloka moduso kaj tiu persono
+    nek malaliĝis nek jam alvenis.
+</dd>
+<dt>iloj/objekto_partopreno.php</dt>
+<dd>mankanta <code>break;</code>, kiu kaŭzis misan eldonon.</dd>
+<dt>iloj/iloj.php</dt>
+<dd>Korektis implementadon de <code>http_redirect</code>.</dd>
+</dl>
+
+<h2>Revizo 94</h2>
+
+<dl>
+<dt>akceptado-lokaasocio.php</dt>
+<dd>Implementado de la ago de la butono (nome ŝanĝo de la respektiva ecoj de
+     partopreno)</dd>
+<dt>akceptado-fino.php</dt>
+<dd>korekto de cimo.</dd>
+</dl>
+
+<h2>Revizo 93</h2>
+
+<dl>
+<dt>iloj/tcpdf_php4/</dt>
+<dd>Nova biblioteko tcpdf (versio por PHP 4), kiu estas variaĵo de nia
+    FPDF/UFPDF, kaj ne havas la saman problemon (ke č iĝas Ċ &ndash;
+    salutonjn al Marek!). Provizore ĝi estas
+    uzata nur de la adresaro-kreilo, sed mi iom post iom eble ankaŭ ŝanĝos
+    aliajn PDF-uzantojn al ĝi.</dd>
+<dt>iloj/kreu_adresaron_tcpdf.php</dt>
+<dd>Varianto de kreu_adresaron.php, uzante TCPDF anstataŭ UFPDF.</dd>
+<dt>administrado.php</dt>
+<dd>Uzas nun kreu_adresaron_tcpdf.php anstataŭ kreu_adresaron.</dd>
+</dl>
+
+<h2>Revizo 92</h2>
+
+<dl>
+<dt>iloj/kreu_akceptfolion.php</dt>
+<dd>aldono de TEJO-kotizo, ŝovo de GEJ-kotizo kaj linioj.</dd>
+</dl>
+
+<h2>Revizo 91</h2>
+
+<dl>
+<dt>konfiguro/objektoj_kotizo-malnova.php</dt>
+<dd>forigita (iu malnova versio de objektoj_kotizo.php)</dd>
+</dl>
+
+<h2>Revizo 90</h2>
+
+<dl>
+<dt>iloj/fpdf/fpdf-manual-de.pdf</dt>
+<dd>Germana versio de la dokumentaĵo pri FPDF, kopiita de
+        <a href='http://www.fpdf.de/dokumentation/'>www.fpdf.de</a>.
+          (La biblioteko mem kaj angla dokumentaĵo estas havebla ĉe
+          <a href='http://www.fpdf.org/'>www.fpdf.org</a>.)
+</dd>
+</dl>
+
+<h2>Revizo 89</h2>
+
+<dl>
+<dt>gxenerala_sercxo.php</dt>
+<dd>korekto de ligo</dd>
+<dt>nova_teksto.php</dt>
+<dd>diversaj erarkorektoj</dd>
+</dl>
+
+<h2>Revizo 88</h2>
+<h2>Revizo 86</h2>
+
+<dl>
+<dt>akceptado-pago.php, akceptado-fino.php</dt>
+<dd>Tute novaj.</dd>
+</dl>
+
+
+<h2>Revizo 85</h2>
+
+<dl>
+<dt>akceptado-datoj.php</dt>
+<dd>Nun kun kontrolo, ĉu la akceptoto jam alvenis aŭ malaliĝis antaŭe.</dd>
+</dl>
+
+<h2>Revizo 84</h2>
+
+<dl>
+<dt>farendajhoj.html</dt>
+<dd>La <a href='#taskoj-2007-09-13'>listo de taskoj</a> antaŭe origine
+trovebla en tiu ĉi dosiero, nun en propra dosiero kaj aktualigota, kiam
+io estos farita.
+</dd>
+</dl>
+
+<h2>Revizo 83</h2>
+<h2>Revizo 82</h2>
+
+<p>Mi trarigardis la aperojn de <code>TOD<em></em>O:</code>, forigis
+faritaĵojn, markis tiujn, kiuj estas farendaj antaŭ la sekva IS
+per <code>TO</code><code>DO!:</code>, kaj survoje plurloke faris
+aliajn plibonigojn (kaj dokumentadajn ŝanĝojn).
+</p>
+
+<h3 id='taskoj-2007-09-13'>Urĝaj taskoj:</h3>
+<dl>
+<dt>akceptado-datoj.php</dt>
+<dd>Alvenkontrolo</dd>
+<dt>akceptado-pago.php, akceptado-fino.php</dt>
+<dd>Tute farenda</dd>
+<dt>akceptado-cxambro.php</dt>
+<dd>Pripensu, ĉu ni aŭtomate disdonu (rezervitan) ĉambron,
+    aŭ ĉu tio estu farenda en tiu ŝtupo.</dd>
+<dt>stilo.css</dt>
+<dd>Pli bona koloro por la paŝolisto, elprovo de formulareto-ŝanĝo</dd>
+<dt>nova_teksto.php</dt>
+<dd>Pluredaktado de tekstoj post ŝanĝo aŭ kreado</dd>
+<dt>partrezultoj.php</dt>
+<dd>Montru mankon/nemankon de litoj por junulargastoj</dd>
+<dt>doku/dokumento.txt</dt>
+<dd>komparu la liston pri sesio-variabloj kun tiu en <code>doku/variabloj.txt</code>.</dd>
+<dt>doku/dosierlisto.txt</dt>
+<dd>Aktualigo necesas ...</dd>
+<dt>sercxoj.php</dt>
+<dd>Ebligu redaktadon de serĉoj.</dd>
+<dt>administrado.php</dt>
+<dd>Rerigardu la punkton pri la duaj informiloj-mesaĝoj.</dd>
+<dt>menuo.php</dt>
+<dd>"Akceptu"-butono aŭ simile (nur surloke)</dd>
+<dt>partopreno.php</dt>
+<dd>invitletero-limdato (en teksto) venu el datumbazo</dd>
+<dt>finkalkulado.php</dt>
+<dd>Unikodigo de la nomoj, ĝusta kalkulo de kotizo por malaliĝintoj</dd>
+<dt>iloj/kreu_nomsxildon.php</dt>
+<dd>Rerigardu kaj adaptu al nova IS</dd>
+<dt>iloj_konfirmilo.php</dt>
+<dd>traduku "vi mendis ... ĉambron".</dd>
+<dt>iloj_mesagxoj.php</dt>
+<dd>kreu novajn funkciojn por ĉio.</dd>
+<dt>iloj/kreu_konfirmilon.php</dt>
+<dd>atentu pri aktuala adreso (eble el datumbazo/konfiguro),
+    pripensu pli bonan tekston pri "kunportu la reston al IS",
+    rerigardu la ĉambrosituacion
+</dd>
+<dt>iloj/iloj_sercxo.php</dt>
+<dd>Elprovu "en la menuon"-ligon</dd>
+<dt>iloj/kreu_akceptofolion</dt>
+<dd>Enmetu kampojn por TEJO-kotizo kaj TEJO-rabato.</dd>
+</dl>
+
+<h3>Aliaj ŝanĝoj</h3>
+<dl>
+<dt>iloj/iloj_html.php, partrezultoj.php, landoj.php</dt>
+<dd>ligu_butone() nun kun plia varianto (kun ebleco doni pliajn variablojn)</dd>
+<dt>landoj.php</dt>
+<dd>korekto de la nomo de la ŝanĝu/aldonu-butono</dd>
+<dt>statistiko.php</dt>
+<dd>ligoj nun nur al aliaj versioj de la tabeloj, ne al la aktuala.</dd>
+<dt>iloj/kreu_konfirmilon_unikode.php, iloj/kreu_konfirmilon_neunikode.php</dt>
+<dd>forigitaj (nun farita en kreu_konfirmilon.php)</dd>
+<dt>iloj/kreu_akceptofolio.php</dt>
+<dd>forigita (nun kreu_akceptofolio.php</dd>
+<dt>iloj/iloj_akceptado.php</dt>
+<dd>La kapo nun havas ligon al la partoprenanto-paĝo.</dd>
+<dt>iloj/iloj_sql.php</dt>
+<dd>eltrovu_entajpanto() -> eltrovu_entajpanton()</dd>
+</dl>
+
+
+
+<h2> Revizo 81 </h2>
+
+<dl>
+<dt>stilo.css</dt>
+<dd>Stiloj por la ĉambro-detalo-tabelo</dd>
+<dt>cxambroj.php, iloj/iloj_html.php, partrezultoj.php, iloj/iloj_cxambroj.php:</dt>
+<dd>Nova ĉambro-detalo-tabelo, ŝanĝoj per butono</dd>
+<dt>akceptado-cxambroj.php</dt>
+<dd> iom pli ...</dd>
+</dl>
+
+<h2> Revizo 80 </h2>
+
+<dl>
+<dt>cxambroj.php</dt>
+<dd>Reen-ligoj (al $sekvontapagxo aŭ al partrezultoj.php), iometa ordigo
+    de la kodo, eble plusendo post ŝanĝo de ĉambrotipo.</dd>
+<dt>akceptado-cxambro.php</dt>
+<dd>Uzo de $sekvontapagxo por ebligi reiron al tiu paĝo post ĉambroŝanĝo.</dd>
+</dl>
+
+
+<h2>Revizo 79</h2>
+
+<dl>
+<dt>index.php, iloj/iloj_sql.php, fino.php, komenci.php</dt>
+<dd>Plibonigita protokolo por ensalutoj (kaj malsukcesoj pri tio),
+    iomete pli klara rezulto de malsukceso, krome fino.php nun
+    protokolas la elsalutadon kaj poste plusendas al index.php
+    anstataŭ inkludi ĝin.</dd>
+</dl>
+
+<h2>Revizo 78</h2>
+<h2>Revizo 77</h2>
+
+<dl>
+<dt>doku/shanghoj.html</dt>
+<dd> Iom da reformatado. </dd>
+</dl>
+
+<h2> Revizo 76 </h2>
+
+<dl>
+<dt>doku/shanghoj.html</dt>
+<dd>   nova nomo de shanghoj.txt. Mi supozas, en HTML-formato estos
+   pli facile legi poste la dosieron en retumilo ... mankas ankoraŭ
+   iom da reformatado.</dd>
+</dl>
+
+<h2> Revizo 75 </h2>
+
+<p>Diversaj plibonigoj de serĉoj.</p>
+
+<dl>
+<dt>iloj_sercxo_rezulto.php, menuo.php:</dt>
+<dd>   plibonigo de "metu en la maldekstran menuon": eblas nun de la
+   serĉo doni titolon, kiu aperos super la listo en la menuo.</dd>
+
+<dt>sercxoj.php, gxenerala_sercxo.php, iloj/iloj_sercxo_konservo.php,
+iloj/iloj_sercxo.php: </dt>
+<dd>   Detaloj pri la serĉo: aldono de titolo, uzo de tio kiel atentigo,
+   se on enmetas ĝin en la menuon, konservo-nomo kiel defaŭlta titolo.</dd>
+<dt>sercxrezultoj.php:</dt>
+<dd>   Ebligo de "metu en la menuon" en pluraj serĉoj (kun taŭgaj titoloj)</dd>
+
+<dt>iloj/iloj_html.php:</dt>
+<dd>   partoprenanto_elektilo() nun ankaŭ funkcias por serĉoj, kiuj ne donas
+   renkontiĝo-numeron.
+   entajpejo(): interne iom restrukturita (sen ŝanĝo de funkcio, espereble)</dd>
+</dl>
+
+<h2> Revizo 74 </h2>
+
+<p>
+Plulaboro pri la nova akceptado-proceduro:
+</p>
+<dl>
+<dt>iloj/iloj_akceptado.php:</dt>
+<dd><ul><li>   iloj por aŭtomate meti superrigardon pri la
+    akceptadoproceduro en ĉiu paŝo.</li>
+   <li> ligu_sekvan() por produkti ligon al la sekva paŝo</li>
+</ul></dd>
+<dt>stilo.css:</dt>
+<dd>   aldonoj por la akceptado-paŝo-listo</dd>
+<dt>akceptado-{datoj,kontroloj,tejo,lokaasocio,cxambroj}.php</dt>
+<dd>   uzo de ligu_sekvan() anstataŭ individuaj ligoj</dd>
+<dt>akceptado-tejo.php</dt>
+<dd>   erarkorekto (mankanta break), eldono de teksto post elekto de aliĝo</dd>
+<dt>akceptado-cxambro.php</dt>
+<dd>   preskaŭ tute nova, sed ankoraŭ ne preta.</dd>
+
+<dt>akceptado-{pago,fino}</dt>
+<dd>   ankoraŭ tute malnova, farenda.</dd>
+</dl>
+
+<h2> Revizo 73 </h2>
+
+<dl>
+<dt>iloj/iloj_html:</dt>
+<dd>   ligu() nun vokas donu_ligon() anstataŭ fari la saman aferon denove.</dd>
+</dl>
+
+<h2> Revizo 72 </h2>
+<h2> Revizo 70 </h2>
+
+<dl>
+<dt>partoprenanto.php</dt>
+<dd>   erarkorekto (reen-ligo ne aperis en certaj kazoj)</dd>
+</dl>
+
+<h2> Revizo 69 </h2>
+
+<dl>
+<dt>kreu_cxambron.php</dt>
+<dd>   erarkorekto (rimarko ne aperis dum la redaktado de ĉambro)</dd>
+</dl>
+
+<h2> Revizo 68 </h2>
+
+<dl>
+<dt>doku/akceptado.txt</dt>
+<dd>   Dokumentado pri la akceptada proceduro (komenco).</dd>
+</dl>
+
+<h2> Revizo 67 </h2>
+
+<dl>
+<dt>iloj/iloj_konfirmilo.php</dt>
+<dd>   Unua konfirmilo nun ankaŭ germanlingva.</dd>
+<dt>doku/tekstoj.txt</dt>
+<dd>   Pliaj tekstoj por la tradukebla unua informilo.</dd>
+
+<dt>doku/shablonoj.txt</dt>
+<dd>   Dokumentado de la formato de la ŝablonoj en sxablonoj/.</dd>
+</dl>
+
+<h2> Revizo 66 </h2>
+
+<dl>
+<dt>nova_teksto.php, tekstoj.php</dt>
+<dd>   plibonigita trakto de la tekstoj, inkluzive ankoraŭ ne ekzistantaj.</dd>
+
+<dt>doku/variabloj.txt:</dt>
+<dd>   Iom pli da dokumentado.</dd>
+</dl>
+
+<h2> Revizo 65 </h2>
+
+<dl>
+<dt>iloj/tekstoj.php:</dt>
+<dd>   legilo por doku/tekstoj.php, por facila uzo de la dokumentado
+   en la programo.</dd>
+<dt>nova_teksto.php, tekstoj.php:</dt>
+<dd>   uzo de doku/tekstoj.php por priskribo de tekstoj
+   en la redaktilo.</dd>
+<dt>doku/tekstoj.txt</dt>
+<dd>   ŝanĝo laŭ kelkaj novaj ebloj (opcioj, kategorio)</dd>
+</dl>
+
+<h2> Revizo 64 </h2>
+
+<dl>
+<dt>doku/variabloj.txt:</dt>
+<dd>   Listo de globalaj kaj sesio-variabloj (kaj parte ilia signifo).</dd>
+</dl>
+
+<h2> Revizo 63 </h2>
+
+<dl>
+<dt>iloj/traduko/ *:</dt>
+<dd>   Enmeto de la dosieroj de la IS-retpaĝa traduksistemo
+   (por aliĝilo/aliĝintolisto, ne la cetera retpaĝo),
+   kiun mi (en partoj, kun la necesaj ŝanĝoj) eble ankaŭ
+   uzos por la tradukendaj partoj de la aligilo (tekstoj en
+   retmesaĝoj kaj simile). (Sed intertempe mi ne tiom certas,
+   ĉu tio estas taŭga ideo.)</dd>
+</dl>
+
+<h2> Revizo 62 </h2>
+
+<dl>
+<dt>iloj/objekto_partopreno.php:</dt>
+<dd>   Nova kampo en la partoprenanto-detaloj-tabelo pri la lingva nivelo.</dd>
+<dt>iloj/diversaj_retmesagxoj.php:</dt>
+<dd>   sendu_invitilomesagxon() nun faras nenion (anstataŭ kaŭzi eraron),
+   se tiu homo ne petis invitilon.</dd>
+</dl>
+
+<h2> Revizo 61 </h2>
+
+<p>(nur en la IS-versio: korektoj de kotizo-kalkulado)</p>
+
+<h2> Revizo 60 </h2>
+
+<dl>
+<dt>transferi.php, partrezultoj.php:</dt>
+<dd>   fiksado de cimo, kiu malhelpis la funkciadon de la butono "Rigardu".</dd>
+
+<dt>landoj.php:</dt>
+<dd>   korekto de butono-priskribo (Aldonu -> Ŝanĝu), kelkaj
+    aldonoj de _REQUEST['...'].</dd>
+<dt>sxablonoj/unua_konfirmilo_eo.txt, sxablonoj/unua_konfirmilo_de.txt:</dt>
+<dd>    aldono de ŝildnomo, formatado en la germana versio.</dd>
+
+<dt>iloj_html.php:</dt>
+<dd>   forigo de kelkaj superfluaj spacoj en generita HTML.</dd>
+</dl>
+
+<h2> Revizo 59 </h2>
+<h2> Revizo 57 </h2>
+
+<dl>
+<dt>doku/tekstoj.txt</dt>
+<dd>   dokumentado pri la diversaj identifikiloj en la tekstoj-tabelo.
+   (Ĝi estu poste uzata en la programo mem.) Parte prenita el la
+   GEJ-vikio (por ke la informo ne restu tie kaŝita).</dd>
+</dl>
+
+<h2> Revizo 56 </h2>
+<h2> Revizo 55 </h2>
+
+<dl>
+<dt>iloj/iloj_konfirmilo.php:</dt>
+<dd>   uzas novan tekston 'konf1-dissendolisto-eo' kun
+   atentigo pri la dissendolisto.</dd>
+
+<dt>sercxoj.php:</dt>
+<dd>   uzis tenukasxe()/entajpejo()/granda_entajpejo()
+   anstataŭ la pura HTML, por eviti similajn problemojn
+   kiel la /////".</dd>
+<dt>menuo.php:</dt>
+<dd>   uzis nun simpla_entajpejo() anstataŭ pura HTML.</dd>
+<dt>iloj/iloj_html:</dt>
+<dd>   aldonis htmlspecialchars() en tenukasxe(), por eviti
+   problemojn kun ' aŭ " en la teksto.
+   nun vere fiksis la cimon en entajpejo() (kaj same en
+   simpla_entajpejo(), kiu malebligis la redaktadon
+   de tekstoj enhavantaj '"' aŭ "'", uzante kelkajn pliajn
+   htmlspecialchars().</dd>
+<dt>notoj.php:</dt>
+<dd>   aldonis htmlspecialchars() al kelkaj input-elementoj,
+   kiuj montras tekston el la datumbazo.</dd>
+</dl>
+
+<h2> Revizo 54  </h2>
+
+<dl>
+<dt>partoprenkontrolo.php:</dt>
+<dd>   fiksis cimon kun mankanta/difekta plusendado en
+   la kazo de redakto de datoj el partrezultoj.php.
+   Nun la defaŭlta plusendocelo estas partrezultoj.php.</dd>
+<dt>iloj/iloj_html.php:</dt>
+<dd>   fiksis cimon en entajpejo(), kiu malebligis la redaktadon
+   de tekstoj enhavantaj '"' aŭ "'".</dd>
+<dt>iloj/iloj_konfirmilo.php:</dt>
+<dd>   fiksis cimon pri malĝusta priskribo de ĉambrosekso, nun uzas
+   <code>$partopreno->cxambrotipo()</code> anstataŭ erara propra <code>switch</code>.</dd>
+
+<dt>specialaj_skriptoj/sendu_varbmesaĝon.php:</dt>
+<dd>   speciala mesaĝo por IS, sendita la 24an/25an
+    de aŭgusto 2007.</dd>
+
+<dt>doku/shanghoj.txt:</dt>
+<dd>   nova dosiero, kien mi metos la ŝanĝojn laŭ SVN-revizo.</dd>
+</dl>
+
+
+<h2> Revizo 53 </h2>
+
+<p>
+(Mi komencis tiun liston post revizo 53, do antaŭaj ŝanĝoj
+ ne enestas.)
+</p>
+
+</body>
+</html>

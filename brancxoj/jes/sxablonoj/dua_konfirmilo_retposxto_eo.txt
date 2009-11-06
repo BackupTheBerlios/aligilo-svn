@@ -1,0 +1,19 @@
+Saluton {{anto.personanomo}},
+
+la organiza teamo tre g^ojas, ke vi intencas veni al la
+c^i-jara {{igxo.nomo}} en {{igxo.loko}}.
+
+Per tiu c^i retmesag^o vi ricevas la oficialan konfirmilon
+por la {{igxo.mallongigo}} en PDF-a formo. Bonvolu legi g^in tuj (kaj
+plendu, se io ne g^ustas), kaj kunportu printitan version de g^i al
+la renkontig^o.
+
+Krome ni kreis antau^kongresan informilojn kun c^iuj informoj
+pri alvenado, kaj c^io, kion vi devos scii pri la IJK.
+G^i estas els^utebla de nia retpag^aro:
+   {{speciala.informiloadreso}} ({{speciala.informilograndeco}})
+
+
+
+Ni atendos vin en la {{igxo.nomo}},
+{{speciala.subskribo}}

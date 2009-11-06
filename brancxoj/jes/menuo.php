@@ -1,0 +1,141 @@
+<?php
+
+  // define("DEBUG", true);
+
+require_once ('iloj/iloj.php');
+session_start();
+HtmlKapo("maldekstren");
+
+malfermu_datumaro();
+if (rajtas('vidi'))
+{
+   // rapida salto al la detaloj-pagxo (aux akcepto-pagxo) laux PP-ID
+
+?>
+<form method="post" id="entajpu" name="entajpu"
+      action="route.php" target="anzeige"
+		style="float:left; text-align: center; display: block; margin: 2pt; border: outset thin; padding:1pt;">
+	<p style='margin: 1pt; font-size: small;'>partopreno-ID:</p>
+	<p style='margin: 1pt;'>
+        <?php
+        tenukasxe('elekto', 'Montru!');
+        simpla_entajpejo("", 'partoprenidento', '', 5);
+        ?>
+	</p>
+</form>
+<?php
+}
+  // TODO?: später kürzer, via session;
+
+  echo "<div style='text-align:right;margin:3pt;'>";
+if ($_SESSION['kkren']) {
+    eoecho ("Saluton, kara");
+    ligu('uzanto.php',  $_SESSION["kkren"]["entajpantonomo"]);
+    eoecho( ",\n");
+ }
+ else {
+     eoecho("Saluton, kara nekonatulo, ");
+     ligu("komenci.php", "bonvolu ensaluti!");
+ }
+  echo "<BR>\n";
+  eoecho ("Kion vi deziras fari?\n");
+  echo "<BR>\n";
+
+  echo "<P class='granda' style='clear:left;'>\n";
+  rajtligu("partoprenanto.php?sp=forgesu","Aligi partoprenantojn","anzeige","aligi");
+  echo "<BR>\n";
+  rajtligu("partsercxo.php","Serc^i partoprenantojn","anzeige","vidi");
+  echo "<BR>\n";
+rajtligu("kotizoj.php","Kotizoj kaj -kalkulado","anzeige", "vidi");
+  echo "<BR>\n";
+  rajtligu("cxambroj.php?cx_ago=forgesu","Disdoni c^ambrojn","anzeige","cxambrumi");
+  echo "<BR>\n";
+ /* rajtligu("ekzporti.php","ekzporti datumojn","anzeige","ekzporti");
+  echo "<BR>\n";*/
+  rajtligu("statistikoj.php","vidi statistikojn","anzeige","statistikumi");
+  echo "<BR>\n";
+//  rajtligu("demandoj.php","pliaj statistikojn","anzeige","vidi");
+  rajtligu("administrado.php","grava administrado","anzeige","administri");
+  echo "<BR>\n";
+  ligu("menuo.php","revoku la menuon","is-aligilo-menuo","jes");
+  echo "<BR>\n";
+  ligu("fino.php","au^ forlasi c^i tie","_top","jes");
+
+  echo "</P>\n";
+
+  if (rajtas(vidi))
+  {
+
+	// Kial cxiam kalkuli la rezultojn, se oni nur
+	// kelkfoje montras ilin? -> mi sxovis la kalkuladon
+	// en la interon de la "if".
+
+	if (isset($sercxfrazo))
+	  {
+		$sql = stripslashes($sercxfrazo) . " order by personanomo, nomo"; 
+	  }
+	else
+	  {
+		//		$rezulto = sql_faru("select pp.ID,Malnova,nomo,personanomo,max(renkontigxoID) from partoprenantoj as pp,partoprenoj as pn where pn.partoprenantoID = pp.ID group by pp.ID order by personanomo,nomo"); 
+		$sql = datumbazdemando(array("pp.ID", "pp.nomo", "personanomo",
+									 "max(renkontigxoID)" => "renkNumero" ),
+							   array("partoprenantoj" => "pp",
+									 "partoprenoj" => "pn" ),
+							   "pn.partoprenantoID = pp.ID",
+							   "",
+							   array("group" => "pp.ID",
+									 "order" => "personanomo, nomo")
+							   );
+
+		//sql_faru("select ID,renkontigxoID,partoprenantoID from partoprenoj where partoprenantoID='".$row[ID]."' order by renkontigxoID desc");
+	  }
+		?>
+		<hr id="elektilo-anker" />
+		   <form method="post" id="elektu" name="elektu" action="route.php" target="anzeige">
+		<?php
+             if (isset($sercxfrazo))
+			 {
+                 eoecho( "\n  <em>(limigita elekto: " .$_GET['listotitolo'] . " )</em><br/>\n");
+			 }
+          partoprenanto_elektilo($sql,menuoalteco);  ?>
+	  <br /><input type="submit" name="elekto" value="Montru!"></input>
+		 <input type="submit" name="elekto" value="novan noton"></input>
+		 <input type="submit" name="elekto" value="notojn"></input>
+		 </form>
+		 <?php
+		   }
+
+
+if ($_SESSION['kkren']['entajpanto']) {
+    ligu("sercxrezultoj.php?elekto=notoj_de_entajpanto&entajpantoid=" . $_SESSION['kkren']['entajpanto'], "viaj notoj");
+ }
+
+/*
+if ($_SESSION["kkren"]["partoprenanto_id"]!=0)
+  {
+    ligu('sercxrezultoj.php?elekto=notojn&partoprenantoidento=' .
+		 $_SESSION["kkren"]["partoprenanto_id"] ,"viaj notoj",'anzeige');
+  }
+*/
+
+// TODO!: estu konfigurebla la bildo kaj teksto
+
+  echo "<hr />\n";
+  echo "<h2 class='mezen'>\n";
+ligu("http://aligilo.berlios.de/", programo_nomo);
+echo( "</h3>");
+
+  echo "<p class='mezen'><img src=\"bildoj/eoei-kl.gif\" alt=\"eo-bildo\" width=88 height=50 align=\"center\" border=0>\n";
+  eoecho ("<br/>\n ".$_SESSION["renkontigxo"]->datoj[nomo]." en ".$_SESSION["renkontigxo"]->datoj[loko]."\n");
+  echo "</p>\n";
+
+  echo "<hr><BR>\n";
+
+  eoecho ("Informoj, rimarkoj, insultoj <BR>(au^ se io simple ne funkcias kiel dezirata):\n");
+  ligu ("mailto:".teknika_administranto_retadreso,"informu min!","","ne");
+  echo "</DIV>";
+  echo "<HR><BR>";
+  //echo  "<font size=60%>Farita de: Martin B. Sawitzki, Paul Ebermann</font>";
+  HtmlFino();
+
+?>
